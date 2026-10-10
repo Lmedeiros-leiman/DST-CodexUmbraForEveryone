@@ -289,35 +289,35 @@ codex_everyone_lines =
         {
             en =
             {
-                codex = "A tragic tale of woe and misery, and at last I am cast in it!",
-                codex_needsfuel = "The tale falls silent. It hungers for the fuel of darkness!",
+                codex = "A tragic tale of woe and misery! Now its shadows march for me!",
+                codex_needsfuel = "The book starves! Feed it the fuel of darkness!",
                 no_max_sanity = "Hold! My mind can bear no more shades than these.",
-                shadow_mine = "Mine understudy! A fine likeness, but she shan't steal my role.",
-                shadow_other = "Thou wear'st some ally's likeness, shade. Fight with honor!",
+                shadow_mine = "Health and strength to you, shadow-me!",
+                shadow_other = "A shade in some ally's likeness. Fight with honor!",
             },
             pt =
             {
-                codex = "Um conto trágico de infortúnio e desgraça, e enfim ganhei um papel!",
-                codex_needsfuel = "O conto se calou. Anseia pelo combustível da escuridão!",
+                codex = "Um conto trágico de infortúnio e desgraça! Agora suas sombras marcham por mim!",
+                codex_needsfuel = "O livro está faminto! Alimentem-no com o combustível da escuridão!",
                 no_max_sanity = "Basta! Minha mente não suporta mais sombras além destas.",
-                shadow_mine = "Minha substituta! Muito parecida comigo, mas não vai roubar meu papel!",
-                shadow_other = "Tens a feição de algum aliado, sombra. Luta com honra!",
+                shadow_mine = "Saúde e força para você, minha sombra!",
+                shadow_other = "Uma sombra com a feição de algum aliado. Lute com honra!",
             },
             zh =
             {
-                codex = "充满悲哀和痛苦的悲剧故事，终于有我的戏份了！",
-                codex_needsfuel = "故事戛然而止。它渴求暗黑燃料！",
+                codex = "充满悲哀和痛苦的悲剧故事！如今它的暗影为我而战！",
+                codex_needsfuel = "这本书饿坏了！快喂它暗黑燃料！",
                 no_max_sanity = "且慢！我的心神再也容不下更多暗影了。",
-                shadow_mine = "我的替身演员！长得真像我，但休想抢我的角色。",
-                shadow_other = "暗影啊，汝披着某位盟友的模样。为荣誉而战吧！",
+                shadow_mine = "我的影子，祝你健康强壮！",
+                shadow_other = "这暗影有着某位盟友的模样。为荣誉而战吧！",
             },
             ru =
             {
-                codex = "Трагичная повесть, полная горя и мучений! Наконец-то и мне досталась роль!",
-                codex_needsfuel = "Повесть умолкла. Она жаждет топлива тьмы!",
+                codex = "Трагичная повесть, полная горя и мучений! Теперь ее тени идут в бой за меня!",
+                codex_needsfuel = "Книга изголодалась! Накормите ее топливом тьмы!",
                 no_max_sanity = "Довольно! Больше теней мой рассудок не вынесет.",
-                shadow_mine = "Моя дублерша! Похожа как две капли воды, но роли моей ей не видать!",
-                shadow_other = "Облик кого-то из союзников носишь ты, тень. Бейся с честью!",
+                shadow_mine = "Здоровья и силы тебе, моя тень!",
+                shadow_other = "Тень в облике кого-то из союзников. Бейся с честью!",
             },
         },
         webber =
