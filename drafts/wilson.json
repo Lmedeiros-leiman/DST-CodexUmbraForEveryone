@@ -3,7 +3,7 @@
   "lines": {
     "en": {
       "codex": "I've decided this counts as science. Very experimental science.",
-      "codex_needsfuel": "It needs more nightmare fuel. I deduced that all by myself.",
+      "codex_needsfuel": "Looks like the plot ran dry.",
       "no_max_sanity": "Ow. My head says that's enough of me.",
       "shadow_mine": "At last, an assistant who truly understands my work!",
       "shadow_other": "Oh good. Now there's more of them.",
@@ -13,7 +13,7 @@
     },
     "pt": {
       "codex": "Decidi que isso conta como ciência. Ciência bem experimental.",
-      "codex_needsfuel": "Precisa de mais combustível de pesadelo. Descobri isso sozinho.",
+      "codex_needsfuel": "Parece que o enredo secou.",
       "no_max_sanity": "Ai. Minha cabeça diz que já chega de mim.",
       "shadow_mine": "Finalmente, um assistente que entende de verdade o meu trabalho!",
       "shadow_other": "Puxa vida! Agora tem outros que nem eles.",
@@ -23,7 +23,7 @@
     },
     "zh": {
       "codex": "我决定了，这也算是科学。极其实验性的科学。",
-      "codex_needsfuel": "需要更多噩梦燃料。这可是我自己推断出来的。",
+      "codex_needsfuel": "看来情节写不下去了。",
       "no_max_sanity": "哎哟。我的脑袋说，我已经够多了。",
       "shadow_mine": "终于有个真正懂我研究的助手了！",
       "shadow_other": "哦，挺好的。现在不止他们了。",
@@ -33,7 +33,7 @@
     },
     "ru": {
       "codex": "Решено: это тоже наука. Весьма экспериментальная.",
-      "codex_needsfuel": "Нужно больше топлива кошмара. Я сам до этого додумался.",
+      "codex_needsfuel": "Похоже, сюжет иссяк.",
       "no_max_sanity": "Ай. Голова говорит, что меня уже хватит.",
       "shadow_mine": "Наконец-то ассистент, который действительно понимает мою работу!",
       "shadow_other": "Ох, шикарно. Теперь их стало больше.",
@@ -45,7 +45,7 @@
   "literal": {
     "pt": {
       "codex": "I decided this counts as science. Very experimental science.",
-      "codex_needsfuel": "It needs more nightmare fuel. I figured that out by myself.",
+      "codex_needsfuel": "Looks like the plot dried up.",
       "no_max_sanity": "Ow. My head says enough of me already.",
       "shadow_mine": "Finally, an assistant who really understands my work!",
       "shadow_other": "Gee! Now there are others like them.",
@@ -55,7 +55,7 @@
     },
     "zh": {
       "codex": "I've decided: this counts as science too. Extremely experimental science.",
-      "codex_needsfuel": "Needs more nightmare fuel. I deduced this myself, mind you.",
+      "codex_needsfuel": "Looks like the plot can't go on.",
       "no_max_sanity": "Ouch. My head says there's enough of me already.",
       "shadow_mine": "Finally, an assistant who truly understands my research!",
       "shadow_other": "Oh, great. Now it's not just them.",
@@ -65,7 +65,7 @@
     },
     "ru": {
       "codex": "It's decided: this is science too. Highly experimental.",
-      "codex_needsfuel": "Need more nightmare fuel. I came up with that myself.",
+      "codex_needsfuel": "Looks like the plot has run dry.",
       "no_max_sanity": "Ow. My head says there's enough of me already.",
       "shadow_mine": "Finally, an assistant who really understands my work!",
       "shadow_other": "Oh, splendid. Now there are more of them.",
@@ -77,7 +77,7 @@
   "voice_notes": "Wilson is an earnest, slightly pompous man of science. He uses 'science' as a noun for everything, likes a dry pun, is vain about his brain and hair, mutters 'Drat!', distrusts magic ('That's not science.', 'Science beats magic, every time.'), and resents Maxwell ('I hate that guy.'). The Brazilian Portuguese is relaxed and colloquial ('Que bagulho doido!', 'Puxa vida!', 'pra') and keeps 'ciência' front and centre. The Chinese leans on 科学 phrasings ('为了科学', '不科学啊', '科学，救救我们！') with short exclamatory sentences. The Russian carries his pomp with bookish turns and science oaths ('Святой Ньютон', 'Спаси нас, наука!', 'Научный факт-с'). The shadow_other line is modelled directly on his vanilla Maxwell-shadow line 'Oh good. Now there's more of him.' and its official renderings 'Puxa vida! Agora tem outros que nem ele.' / '哦，挺好的。现在不止他一个了。' / 'Ох, шикарно. Теперь его стало больше.', and no_max_sanity reuses the official 'mente brilhante' / 'светлая голова' from DREADSTONEHAT.",
   "line_notes": {
     "codex": "Wilson has always said magic 'is not science', so now that he can use the book he pompously reclassifies it instead of admitting he's dabbling in magic.",
-    "codex_needsfuel": "Proud of deducing the obvious: Wilson's confidence outruns his insight.",
+    "codex_needsfuel": "A book pun in the style of his vanilla book lines ('It didn't really hook me'): the empty Codex has run out of plot.",
     "no_max_sanity": "Plain, slightly goofy self-report; his head 'says' he has had enough of himself.",
     "shadow_mine": "A shadowy copy of himself is the perfect lab assistant to a man this sure of his own genius.",
     "shadow_other": "His vanilla Maxwell-shadow line with the pronoun matched to the shadow's owner (them for plural/unknown)."

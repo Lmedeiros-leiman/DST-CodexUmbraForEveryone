@@ -9,7 +9,7 @@ codex_everyone_lines =
             en =
             {
                 codex = "I've decided this counts as science. Very experimental science.",
-                codex_needsfuel = "It needs more nightmare fuel. I deduced that all by myself.",
+                codex_needsfuel = "Looks like the plot ran dry.",
                 no_max_sanity = "Ow. My head says that's enough of me.",
                 shadow_mine = "At last, an assistant who truly understands my work!",
                 shadow_other = "Oh good. Now there's more of them.",
@@ -20,7 +20,7 @@ codex_everyone_lines =
             pt =
             {
                 codex = "Decidi que isso conta como ciência. Ciência bem experimental.",
-                codex_needsfuel = "Precisa de mais combustível de pesadelo. Descobri isso sozinho.",
+                codex_needsfuel = "Parece que o enredo secou.",
                 no_max_sanity = "Ai. Minha cabeça diz que já chega de mim.",
                 shadow_mine = "Finalmente, um assistente que entende de verdade o meu trabalho!",
                 shadow_other = "Puxa vida! Agora tem outros que nem eles.",
@@ -31,7 +31,7 @@ codex_everyone_lines =
             zh =
             {
                 codex = "我决定了，这也算是科学。极其实验性的科学。",
-                codex_needsfuel = "需要更多噩梦燃料。这可是我自己推断出来的。",
+                codex_needsfuel = "看来情节写不下去了。",
                 no_max_sanity = "哎哟。我的脑袋说，我已经够多了。",
                 shadow_mine = "终于有个真正懂我研究的助手了！",
                 shadow_other = "哦，挺好的。现在不止他们了。",
@@ -42,7 +42,7 @@ codex_everyone_lines =
             ru =
             {
                 codex = "Решено: это тоже наука. Весьма экспериментальная.",
-                codex_needsfuel = "Нужно больше топлива кошмара. Я сам до этого додумался.",
+                codex_needsfuel = "Похоже, сюжет иссяк.",
                 no_max_sanity = "Ай. Голова говорит, что меня уже хватит.",
                 shadow_mine = "Наконец-то ассистент, который действительно понимает мою работу!",
                 shadow_other = "Ох, шикарно. Теперь их стало больше.",
