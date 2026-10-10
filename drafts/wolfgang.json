@@ -2,63 +2,84 @@
   "character": "wolfgang",
   "lines": {
     "en": {
-      "codex": "Wolfgang still cannot read. Scary book does not care!",
-      "codex_needsfuel": "Scary book is hungry for scary stuff. Wolfgang is not sad.",
-      "no_max_sanity": "Wolfgang's brain cannot lift one more shadow. Is not muscle!",
-      "shadow_mine": "Is mighty shadow Wolfgang! Why is Wolfgang scared of Wolfgang?",
-      "shadow_other": "Is shadow of some tiny friend! H-hello?"
+      "codex": "Is shadow-book! Wolfgang will hold it very carefully.",
+      "codex_needsfuel": "Shadow-book is sleeping. Shh!",
+      "no_max_sanity": "No more! Wolfgang is not crying. Head just hurts.",
+      "shadow_mine": "Wolfgang has new best friend! Is Wolfgang!",
+      "shadow_other": "Is shadow-friend! Hello?",
+      "shadow_other_male": "Is shadow-man! Hello, friend! ...Friend?",
+      "shadow_other_female": "Is shadow-lady! Hello, friend! ...Friend?",
+      "shadow_other_robot": "Is shadow-robot! Hello... friend?"
     },
     "pt": {
-      "codex": "Wolfgang ainda não sabe ler. Livro assustador não liga!",
-      "codex_needsfuel": "Livro assustador tá com fome de coisa assustadora. Wolfgang não tá triste.",
-      "no_max_sanity": "Cérebro de Wolfgang não aguenta levantar mais nenhuma sombra. Não é músculo!",
-      "shadow_mine": "É sombra poderosa de Wolfgang! Por que Wolfgang tá com medo de Wolfgang?",
-      "shadow_other": "É sombra de algum amigo pequeno! O-olá?"
+      "codex": "É livro-sombra! Wolfgang vai segurar com muito cuidado.",
+      "codex_needsfuel": "Livro-sombra tá dormindo. Shh!",
+      "no_max_sanity": "Chega! Wolfgang não tá chorando. Só a cabeça dói.",
+      "shadow_mine": "Wolfgang tem melhor amigo novo! É Wolfgang!",
+      "shadow_other": "É amigo-sombra! Olá?",
+      "shadow_other_male": "É homem-sombra! Olá, amigo! ...Amigo?",
+      "shadow_other_female": "É moça-sombra! Olá, amiga! ...Amiga?",
+      "shadow_other_robot": "É robô-sombra! Olá... amigo?"
     },
     "zh": {
-      "codex": "沃尔夫冈还是看不懂字。可是吓人的书不在乎！",
-      "codex_needsfuel": "吓人的书饿了，想吃恐怖的东西。沃尔夫冈一点也不难过。",
-      "no_max_sanity": "沃尔夫冈的脑袋举不动更多影子了。脑袋又不是肌肉！",
-      "shadow_mine": "是强壮的暗影沃尔夫冈！沃尔夫冈为什么会怕沃尔夫冈？",
-      "shadow_other": "是哪个小个子朋友的影子？你、你好！"
+      "codex": "是影子书！沃尔夫冈会很小心很小心地拿着。",
+      "codex_needsfuel": "影子书在睡觉。嘘！",
+      "no_max_sanity": "不要了！沃尔夫冈没在哭。只是头好痛。",
+      "shadow_mine": "沃尔夫冈有新的好朋友了！就是沃尔夫冈！",
+      "shadow_other": "是影子朋友！你好？",
+      "shadow_other_male": "是影子人！你好，朋友！……朋友？",
+      "shadow_other_female": "是影子小姐！你好，朋友！……朋友？",
+      "shadow_other_robot": "是影子小机器人！你好……朋友？"
     },
     "ru": {
-      "codex": "Вольфганг все еще не умеет читать. А страшной книге все равно!",
-      "codex_needsfuel": "Страшная книга проголодалась, хочет страшной жидкости. Вольфганг не грустит.",
-      "no_max_sanity": "Мозг Вольфганга больше ни одной тени не поднимет. Он же не мышца!",
-      "shadow_mine": "Это могучий теневой Вольфганг! Почему Вольфганг боится Вольфганга?",
-      "shadow_other": "Это тень какого-то маленького друга! П-привет?"
+      "codex": "Это теневая книга! Вольфганг будет держать ее очень бережно.",
+      "codex_needsfuel": "Теневая книга спит. Тсс!",
+      "no_max_sanity": "Хватит! Вольфганг не плачет. Просто голова болит.",
+      "shadow_mine": "У Вольфганга новый лучший друг! Это Вольфганг!",
+      "shadow_other": "Это теневой друг! Привет?",
+      "shadow_other_male": "Это теневой человек! Привет, друг! ...Друг?",
+      "shadow_other_female": "Это теневая леди! Привет, подруга! ...Подруга?",
+      "shadow_other_robot": "Это теневой робот! Привет... друг?"
     }
   },
   "literal": {
     "pt": {
-      "codex": "Wolfgang still doesn't know how to read. Scary book doesn't care!",
-      "codex_needsfuel": "Scary book is hungry for scary stuff. Wolfgang isn't sad.",
-      "no_max_sanity": "Wolfgang's brain can't manage to lift any more shadows. It's not a muscle!",
-      "shadow_mine": "Is mighty shadow of Wolfgang! Why is Wolfgang afraid of Wolfgang?",
-      "shadow_other": "Is shadow of some small friend! H-hello?"
+      "codex": "It's shadow-book! Wolfgang will hold it very carefully.",
+      "codex_needsfuel": "Shadow-book is sleeping. Shh!",
+      "no_max_sanity": "Enough! Wolfgang isn't crying. Just the head hurts.",
+      "shadow_mine": "Wolfgang has new best friend! It's Wolfgang!",
+      "shadow_other": "It's shadow-friend! Hello?",
+      "shadow_other_male": "It's shadow-man! Hello, friend! ...Friend?",
+      "shadow_other_female": "It's shadow-girl! Hello, friend! ...Friend?",
+      "shadow_other_robot": "It's shadow-robot! Hello... friend?"
     },
     "zh": {
-      "codex": "Wolfgang still can't read. But the scary book doesn't care!",
-      "codex_needsfuel": "The scary book is hungry, wants to eat scary stuff. Wolfgang isn't sad at all.",
-      "no_max_sanity": "Wolfgang's head can't lift any more shadows. A head isn't a muscle!",
-      "shadow_mine": "It's mighty shadow Wolfgang! Why would Wolfgang be scared of Wolfgang?",
-      "shadow_other": "Which little-fellow friend's shadow is this? H-hello!"
+      "codex": "It's a shadow-book! Wolfgang will hold it very, very carefully.",
+      "codex_needsfuel": "Shadow-book is sleeping. Shh!",
+      "no_max_sanity": "No more! Wolfgang isn't crying. Head just hurts a lot.",
+      "shadow_mine": "Wolfgang has a new good friend! It's Wolfgang!",
+      "shadow_other": "It's a shadow friend! Hello?",
+      "shadow_other_male": "It's a shadow person! Hello, friend! ...Friend?",
+      "shadow_other_female": "It's Miss Shadow! Hello, friend! ...Friend?",
+      "shadow_other_robot": "It's a little shadow robot! Hello... friend?"
     },
     "ru": {
-      "codex": "Wolfgang still can't read. And the scary book doesn't care!",
-      "codex_needsfuel": "The scary book got hungry, wants some scary liquid. Wolfgang isn't sad.",
-      "no_max_sanity": "Wolfgang's brain won't lift a single shadow more. It's not a muscle!",
-      "shadow_mine": "It's mighty shadow Wolfgang! Why is Wolfgang afraid of Wolfgang?",
-      "shadow_other": "It's the shadow of some little friend! H-hello?"
+      "codex": "It's a shadow book! Wolfgang will hold it very gently.",
+      "codex_needsfuel": "Shadow book is sleeping. Shh!",
+      "no_max_sanity": "Enough! Wolfgang isn't crying. Head just hurts.",
+      "shadow_mine": "Wolfgang has a new best friend! It's Wolfgang!",
+      "shadow_other": "It's a shadow friend! Hello?",
+      "shadow_other_male": "It's a shadow man! Hello, friend! ...Friend?",
+      "shadow_other_female": "It's a shadow lady! Hello, friend! ...Friend?",
+      "shadow_other_robot": "It's a shadow robot! Hello... friend?"
     }
   },
   "voice_notes": "Wolfgang talks about himself in the third person, drops articles and starts lines with 'Is...' ('Is tiny %s! Hello!', 'Is light, but not good light.'). He sees everything through muscles and lifting, calls other people 'tiny', gives things plain childlike names (nightmare fuel is 'Scary stuff.', a low machine is 'hungry'), and keeps flipping between bragging and being frightened ('Mind says no. Muscles say yes!', 'Wolfgang not scared... and Wolfgang not cry!'). PT-BR keeps the third person, drops articles in places ('Cérebro de Wolfgang tá cheio...', 'É homenzinho frágil, %s!') and uses casual 'tá/pra'; 'scary' is 'assustador' and nightmare fuel is 'Coisa assustadora'. ZH keeps 沃尔夫冈 in the third person in otherwise grammatical, simple Chinese, using 吓人的/恐怖的 for scary, 强壮 for mighty and 小 for tiny ('是小的%s！你好！'). RU declines 'Вольфганг' correctly and keeps the grammar correct but plain and spoken: 'страшный' for scary, 'могучий' for mighty, 'маленький' for tiny, 'Страшная жидкость' for nightmare fuel, and a stutter for fear ('П-привет!').",
   "line_notes": {
-    "codex": "It reworks his vanilla 'glad he cannot read' line: he still can't read, but the book works for him anyway, which pleases and scares him at once.",
-    "codex_needsfuel": "It uses his own name for nightmare fuel ('Scary stuff') and his habit of calling empty things hungry, and he is plainly relieved the book can't do anything.",
-    "no_max_sanity": "He explains mental strain in the only terms he knows, lifting, which makes it clear he can't summon more right now.",
-    "shadow_mine": "Seeing a shadowy copy of himself sets off both sides of him at once: pride in the mighty muscles and fear of a scary shadow.",
-    "shadow_other": "It follows his usual greeting to other players ('Is tiny %s! Hello!') with the nervous stutter he uses for creepy things, and he doesn't know whose shadow it is."
+    "codex": "His habit of naming things by what they look like ('hair-cow', 'mushy-room'), and his gentleness with something he finds precious.",
+    "codex_needsfuel": "Childlike: an empty book is a sleeping book, and he hushes everyone so it can rest.",
+    "no_max_sanity": "Echoes his official 'Wolfgang not crying' denial (same wording in each translation).",
+    "shadow_mine": "Big-hearted man-child: his own shadow is simply a new best friend.",
+    "shadow_other": "Names the shadow by what it looks like, like his 'torchlady' and 'little robot' greetings, then hopes it is a friend."
   }
 }

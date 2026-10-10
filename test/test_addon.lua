@@ -247,10 +247,12 @@ do
     assert_eq(wilson.CODEX_OTHER_FEMALE, "Oh good. Now there's more of her.", "Wilson: more of her")
     assert_eq(wilson.CODEX_OTHER_ROBOT, "Oh good. Now there's more of it.", "Wilson: more of it")
     assert_eq(wilson.CODEX_OTHER, "Oh good. Now there's more of them.", "Wilson: more of them")
-    local wolfgang = G.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SHADOWWAXWELL
+    local wendy = G.STRINGS.CHARACTERS.WENDY.DESCRIBE.SHADOWWAXWELL
     for _, status in ipairs({ "CODEX_OTHER", "CODEX_OTHER_MALE", "CODEX_OTHER_FEMALE", "CODEX_OTHER_ROBOT" }) do
-        assert_eq(wolfgang[status], data.wolfgang.en.shadow_other, "Wolfgang's one line covers " .. status)
+        assert_eq(wendy[status], data.wendy.en.shadow_other, "Wendy's one line covers " .. status)
     end
+    local wolfgang = G.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SHADOWWAXWELL
+    assert_eq(wolfgang.CODEX_OTHER_FEMALE, "Is shadow-lady! Hello, friend! ...Friend?", "Wolfgang greets a shadow-lady")
     local pt = new_global(true, "pt")
     load_addon(pt)
     assert_eq(pt.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER_MALE,
