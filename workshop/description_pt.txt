@@ -1,0 +1,39 @@
+[h1]Codex Umbra para Todos[/h1]
+Complemento do [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra para o Wortox[/url]: agora todos os personagens podem criar e usar o Codex Umbra do Maxwell.
+
+[h2]Requer[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra para o Wortox[/url] versão 0.2.0 ou mais nova, com a opção Codex Umbra ativada. Sem ele, os personagens ficam com o Codex original e o log do servidor explica o motivo.
+
+[h2]O Codex para todos[/h2]
+[list]
+[*]Todos os personagens criam o Codex Umbra pela aba de sombra do Maxwell e usam exatamente como ele: servos e duelistas das sombras, armadilha e prisão sombrias.
+[*]Mesmas regras do Maxwell: os feitiços gastam combustível de pesadelo e cada sombra reduz a sanidade máxima (15% por servo, limite de 90%). As sombras somem quando quem as invocou morre, vira fantasma, troca de personagem ou viaja entre a superfície e as cavernas.
+[*]Personagens com bichinhos próprios (a Woby do Walter, as plantas do Wormwood, os drones do WX-78) continuam com eles: as sombras têm limites separados.
+[/list]
+
+[h2]Sombras com as suas cores[/h2]
+[list]
+[*]As sombras são silhuetas de quem as invoca, com a skin dele.
+[*]A cor segue a aliança de quem invoca: nenhuma mantém o preto do Maxwell, Lunar brilha em ciano de gestalt, Sombra fica violeta do vazio. O Wormwood, uma criatura lunar, sempre tem a cor Lunar.
+[*]O Wortox mantém as cores da árvore de habilidades do mod base.
+[/list]
+
+[h2]Todo mundo tem algo a dizer[/h2]
+Cada personagem tem falas próprias sobre o Codex, o Codex vazio, a mente cheia demais para mais sombras, a própria sombra e a sombra de outro jogador, em inglês, português (Brasil), chinês simplificado e russo. Algumas falas mudam conforme o gênero do dono da sombra, e outras sorteiam entre duas versões. O Maxwell tem opiniões sobre amadores apresentando o número dele.
+
+[h2]Opções[/h2]
+[list]
+[*][b]Idioma[/b]: Automático (idioma do servidor), English, Português, 简体中文, Русский.
+[*][b]Podem usar magia de sombra[/b]: uma chave por personagem, inclusive o Maxwell, e uma para personagens de mods. Todas ligadas por padrão. Quem for bloqueado não cria nem abre o Codex e mantém a fala original sobre ele; o Maxwell bloqueado perde a própria magia de sombra e não fica nada feliz.
+[/list]
+
+[h2]Bom saber[/h2]
+[list]
+[*]Todos os jogadores precisam dos dois mods.
+[*]O Maxwell continua como no jogo base, a não ser que seja bloqueado. O Wortox mantém os recursos do mod base. O Wes usa o livro em silêncio.
+[*]Personagens de mods também recebem o livro, sem garantia de funcionar.
+[*]Aprender magia de sombra também mostra as receitas do chapéu e do baú de mágico do Maxwell; só o Maxwell usa a magia do chapéu.
+[/list]
+
+[h2]Créditos[/h2]
+Don't Starve Together, seus personagens e o Codex Umbra pertencem à Klei Entertainment. O ícone do mod foi montado com arte do jogo. Este é um mod de fã não oficial, sem vínculo com a Klei. Relatos de bugs e correções de tradução são bem-vindos nos comentários.

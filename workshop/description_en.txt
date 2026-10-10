@@ -1,0 +1,39 @@
+[h1]Codex Umbra for Everyone[/h1]
+An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra for Wortox[/url]: now every character can craft and use Maxwell's Codex Umbra.
+
+[h2]Requires[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra for Wortox[/url] version 0.2.0 or newer, with its Codex Umbra option on. Without it, characters keep the vanilla Codex and the server log says why.
+
+[h2]The Codex for everyone[/h2]
+[list]
+[*]Every character crafts the Codex Umbra from Maxwell's shadow tab and uses it exactly like Maxwell: shadow workers, shadow protectors, shadow trap and shadow pillars.
+[*]Same rules as Maxwell: spells cost nightmare fuel and each shadow lowers max sanity (15% per worker, 90% cap). Shadows vanish when their caster dies, becomes a ghost, swaps character or travels between the surface and the caves.
+[*]Characters with their own pets (Walter's Woby, Wormwood's plants, WX-78's drones) keep them: shadows have their own limits.
+[/list]
+
+[h2]Shadows in your colours[/h2]
+[list]
+[*]Shadows are silhouettes of their caster, wearing their skin.
+[*]Their colour follows the caster's allegiance: none keeps Maxwell's black, Lunar glows gestalt cyan, Shadow turns void violet. Wormwood, a lunar plant creature, is always lunar.
+[*]Wortox keeps the base mod's skill-tree colours.
+[/list]
+
+[h2]Everyone has something to say[/h2]
+Every character has their own lines about the Codex, the empty Codex, a mind too crowded for more shadows, their own shadow and someone else's shadow, in English, Portuguese (Brazil), Simplified Chinese and Russian. Some lines even change with the shadow owner's gender, and a few pick between two lines at random. Maxwell has opinions about amateurs performing his act.
+
+[h2]Options[/h2]
+[list]
+[*][b]Language[/b]: Auto (server language), English, Português, 简体中文, Русский.
+[*][b]Allowed to cast shadow magic[/b]: one switch per character, Maxwell included, plus one for modded characters. All on by default. A banned character can neither craft nor open the Codex and keeps their vanilla Codex line; a banned Maxwell loses his own shadow magic and is not happy about it.
+[/list]
+
+[h2]Good to know[/h2]
+[list]
+[*]Every player needs both mods.
+[*]Maxwell plays as in the base game unless you ban him. Wortox keeps the base mod's features. Wes uses the book in silence.
+[*]Modded characters get the book too, but are not guaranteed to work.
+[*]Learning shadow magic also shows Maxwell's magician top hat and chest recipes; only Maxwell can use the top hat's magic.
+[/list]
+
+[h2]Credits[/h2]
+Don't Starve Together, its characters and the Codex Umbra belong to Klei Entertainment. The mod icon is assembled from game art. This is an unofficial fan mod, not made or endorsed by Klei. Bug reports and translation fixes are welcome in the comments.
