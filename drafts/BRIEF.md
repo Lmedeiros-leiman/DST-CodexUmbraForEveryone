@@ -24,7 +24,7 @@ Length: like vanilla examine lines, usually 3 to 14 words in English, never more
 
 ## Research (do this before writing; take your time)
 
-The game's scripts are extracted at `/home/leonardo/.cache/dst-scripts/scripts` (read-only; do not modify anything there).
+The game's scripts come from `data/databundles/scripts.zip` in the Don't Starve Together install; extract them somewhere and treat them as read-only. Paths below are relative to its `scripts` folder.
 
 1. Read the character's whole speech file `speech_<character>.lua` (for Wigfrid it is `speech_wathgrithr.lua`, WX-78 `speech_wx78.lua`, Maxwell `speech_waxwell.lua`). Absorb their vocabulary, sentence rhythm, verbal tics, recurring topics, how they talk about magic, shadows, books, Maxwell, sanity and insanity (search for `ANNOUNCE_SANITY`, `INSANE`, `SHADOW`, `WAXWELL`, `BOOK`, `NIGHTMARE`). Lines that say `only_used_by_...` or are commented `--fallback to speech_wilson.lua` are not theirs.
 2. Read their character description, title and quote in `strings.lua` (`CHARACTER_TITLES`, `CHARACTER_QUOTES`, `CHARACTER_DESCRIPTIONS`, `CHARACTER_BIOS`) and skim their skill tree strings (`SKILLTREE.<CHARACTER>`) for personality and lore.
