@@ -571,21 +571,33 @@ codex_everyone_lines =
             {
                 shadow_other = "Someone's been performing my act. Without the flair, naturally.",
                 codex_banned = "The show goes on... without me, apparently.",
+                shadow_other_male = "Some gentleman's been performing my act. Without the flair, naturally.",
+                shadow_other_female = "Some lady's been performing my act. Without the flair, naturally.",
+                shadow_other_robot = "Some automaton's been performing my act. Without the flair, naturally.",
             },
             pt =
             {
                 shadow_other = "Alguém anda apresentando o meu número. Sem a mesma classe, é claro.",
                 codex_banned = "O show continua... sem mim, pelo visto.",
+                shadow_other_male = "Algum cavalheiro anda apresentando o meu número. Sem a mesma classe, é claro.",
+                shadow_other_female = "Alguma dama anda apresentando o meu número. Sem a mesma classe, é claro.",
+                shadow_other_robot = "Algum autômato anda apresentando o meu número. Sem a mesma classe, é claro.",
             },
             zh =
             {
                 shadow_other = "有人在表演我的魔术。当然，可没有我的派头。",
                 codex_banned = "表演照常继续……看来是没我的戏份了。",
+                shadow_other_male = "某位先生在表演我的魔术。当然，可没有我的派头。",
+                shadow_other_female = "某位小姐在表演我的魔术。当然，可没有我的派头。",
+                shadow_other_robot = "某台机器在表演我的魔术。当然，可没有我的派头。",
             },
             ru =
             {
                 shadow_other = "Кто-то повторяет мой номер. Без моего шика, разумеется.",
                 codex_banned = "Шоу продолжается... но, как видно, без меня.",
+                shadow_other_male = "Какой-то господин повторяет мой номер. Без моего шика, разумеется.",
+                shadow_other_female = "Какая-то дама повторяет мой номер. Без моего шика, разумеется.",
+                shadow_other_robot = "Какой-то автомат повторяет мой номер. Без моего шика, разумеется.",
             },
         },
         wortox =
