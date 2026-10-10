@@ -140,7 +140,13 @@ do
         for _, lang in ipairs({ "en", "pt", "zh", "ru" }) do
             local lines = data.characters[prefab] and data.characters[prefab][lang] or {}
             for _, key in ipairs(full) do
-                assert_true(type(lines[key]) == "string" and #lines[key] > 0, prefab .. "/" .. lang .. "/" .. key .. " is written")
+                local value = lines[key]
+                local ok = type(value) == "string" and #value > 0
+                if type(value) == "table" then
+                    ok = #value > 0
+                    for _, v in ipairs(value) do ok = ok and type(v) == "string" and #v > 0 end
+                end
+                assert_true(ok, prefab .. "/" .. lang .. "/" .. key .. " is written")
             end
         end
     end
@@ -253,6 +259,12 @@ do
     end
     local wolfgang = G.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SHADOWWAXWELL
     assert_eq(wolfgang.CODEX_OTHER_FEMALE, "Is shadow-lady! Hello, friend! ...Friend?", "Wolfgang greets a shadow-lady")
+    -- A list of lines is stored as-is; DST picks one at random.
+    local wx = G.STRINGS.CHARACTERS.WX78.DESCRIBE.SHADOWWAXWELL
+    assert_true(type(wx.CODEX_OTHER_FEMALE) == "table" and #wx.CODEX_OTHER_FEMALE == 2, "WX-78 has two random lines")
+    assert_eq(wx.CODEX_OTHER_FEMALE[2], "SHE'S GOT THEM DOING HER BIDDING. I RESPECT THAT", "one of them matches the owner's gender")
+    assert_eq(wx.CODEX_OTHER_MALE[2], "HE'S GOT THEM DOING HIS BIDDING. I RESPECT THAT", "the male version is the vanilla line")
+
     local pt = new_global(true, "pt")
     load_addon(pt)
     assert_eq(pt.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER_MALE,

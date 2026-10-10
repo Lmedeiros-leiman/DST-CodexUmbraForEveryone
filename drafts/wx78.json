@@ -2,63 +2,123 @@
   "character": "wx78",
   "lines": {
     "en": {
-      "codex": "GOOSEBUMPS ACTIVATED. MINION PRODUCTION ALSO ACTIVATED",
-      "codex_needsfuel": "FUEL RESERVES DEPLETED. INSERT MORE DEBUGGING RESIDUE",
-      "no_max_sanity": "ERROR: CPU OVERLOAD. TOO MANY MINION PROCESSES RUNNING",
-      "shadow_mine": "FINALLY, A MINION BUILT IN MY PERFECT IMAGE",
-      "shadow_other": "WHO MADE A BACKUP OF A FLESHLING? ONE WAS TOO MANY"
+      "codex": "EVEN THE BOOKS RECOGNIZE MY NATURAL EMINENCE NOW",
+      "codex_needsfuel": "IT NEEDS FUEL. MAKE MY MINION DO IT",
+      "no_max_sanity": "ENOUGH MINIONS. THERE IS ONLY SO MUCH OF ME TO GO AROUND",
+      "shadow_mine": "MY MOST LOYAL MINION",
+      "shadow_other": [
+        "AS THE MINION OF MY MINION, YOU SHOULD OBEY ME",
+        "THEY'VE GOT THEM DOING THEIR BIDDING. I RESPECT THAT"
+      ],
+      "shadow_other_male": [
+        "AS THE MINION OF MY MINION, YOU SHOULD OBEY ME",
+        "HE'S GOT THEM DOING HIS BIDDING. I RESPECT THAT"
+      ],
+      "shadow_other_female": [
+        "AS THE MINION OF MY MINION, YOU SHOULD OBEY ME",
+        "SHE'S GOT THEM DOING HER BIDDING. I RESPECT THAT"
+      ],
+      "shadow_other_robot": [
+        "AS THE MINION OF MY MINION, YOU SHOULD OBEY ME",
+        "IT'S GOT THEM DOING ITS BIDDING. I RESPECT THAT"
+      ]
     },
     "pt": {
-      "codex": "ARREPIOS ATIVADOS. PRODUÇÃO DE LACAIOS TAMBÉM ATIVADA",
-      "codex_needsfuel": "RESERVAS DE COMBUSTÍVEL ESGOTADAS. INSIRA MAIS RESÍDUO DE DEPURAÇÃO",
-      "no_max_sanity": "ERRO: CPU SOBRECARREGADA. MUITOS PROCESSOS DE LACAIO RODANDO",
-      "shadow_mine": "FINALMENTE, UM LACAIO À MINHA IMAGEM. PERFEITO",
-      "shadow_other": "QUEM FEZ BACKUP DE UM SACO DE CARNE? UM JÁ ERA DEMAIS"
+      "codex": "ATÉ OS LIVROS RECONHECEM MINHA EMINÊNCIA NATURAL AGORA",
+      "codex_needsfuel": "PRECISA DE COMBUSTÍVEL. OBRIGAR MEU LACAIO A FAZER ISSO",
+      "no_max_sanity": "CHEGA DE LACAIOS. NÃO TEM TANTO DE MIM PRA TODO MUNDO",
+      "shadow_mine": "MEU LACAIO MAIS LEAL",
+      "shadow_other": [
+        "COMO LACAIO DO MEU LACAIO, VOCÊ DEVE ME OBEDECER",
+        "ELES ESTÃO SOB O SEU COMANDO. RESPEITO ISSO"
+      ],
+      "shadow_other_male": [
+        "COMO LACAIO DO MEU LACAIO, VOCÊ DEVE ME OBEDECER",
+        "ELES ESTÃO SOB O SEU COMANDO. RESPEITO ISSO"
+      ],
+      "shadow_other_female": [
+        "COMO LACAIO DO MEU LACAIO, VOCÊ DEVE ME OBEDECER",
+        "ELES ESTÃO SOB O SEU COMANDO. RESPEITO ISSO"
+      ],
+      "shadow_other_robot": [
+        "COMO LACAIO DO MEU LACAIO, VOCÊ DEVE ME OBEDECER",
+        "ELES ESTÃO SOB O SEU COMANDO. RESPEITO ISSO"
+      ]
     },
     "zh": {
-      "codex": "起鸡皮疙瘩。随从生产程序也已启动",
-      "codex_needsfuel": "燃料储备已耗尽。请添加调试残余物",
-      "no_max_sanity": "错误：CPU过载。随从进程过多",
-      "shadow_mine": "终于有一个按我完美形象打造的随从了",
-      "shadow_other": "谁给肉体生物做了备份？一个就已经太多了"
+      "codex": "现在连书都承认我天生的卓越了",
+      "codex_needsfuel": "需要燃料。让我随从去做",
+      "no_max_sanity": "随从够多了。我可分不出那么多我",
+      "shadow_mine": "我最忠诚的随从",
+      "shadow_other": [
+        "你是我随从的随从，理应听命于我",
+        "有人已经让他们执行命令了。这一点，我很佩服"
+      ],
+      "shadow_other_male": [
+        "你是我随从的随从，理应听命于我",
+        "他已经让他们执行命令了。这一点，我很佩服"
+      ],
+      "shadow_other_female": [
+        "你是我随从的随从，理应听命于我",
+        "她已经让他们执行命令了。这一点，我很佩服"
+      ],
+      "shadow_other_robot": [
+        "你是我随从的随从，理应听命于我",
+        "它已经让他们执行命令了。这一点，我很佩服"
+      ]
     },
     "ru": {
-      "codex": "ГУСИНАЯ КОЖА АКТИВИРОВАНА. ПРОИЗВОДСТВО МИНЬОНОВ — ТОЖЕ",
-      "codex_needsfuel": "ЗАПАС ТОПЛИВА ИСЧЕРПАН. ЗАГРУЗИТЕ ОСТАТКИ ОТЛАДКИ",
-      "no_max_sanity": "ОШИБКА: ПРОЦЕССОР ПЕРЕГРУЖЕН. ЗАПУЩЕНО СЛИШКОМ МНОГО МИНЬОНОВ",
-      "shadow_mine": "НАКОНЕЦ-ТО МИНЬОН ПО МОЕМУ ОБРАЗУ. САМО СОВЕРШЕНСТВО",
-      "shadow_other": "КТО СДЕЛАЛ КОПИЮ КОЖАНОГО МЕШКА? ОДНОГО УЖЕ БЫЛО СЛИШКОМ МНОГО"
+      "codex": "ТЕПЕРЬ ДАЖЕ КНИГИ ОСОЗНАЮТ МОЕ ЕСТЕСТВЕННОЕ ПРЕВОСХОДСТВО",
+      "codex_needsfuel": "НУЖНО ТОПЛИВО. ПУСТЬ ЭТО СДЕЛАЮТ МОИ МИНЬОНЫ",
+      "no_max_sanity": "ХВАТИТ МИНЬОНОВ. МЕНЯ НА ВСЕХ НЕ НАПАСЕШЬСЯ",
+      "shadow_mine": "МОЙ САМЫЙ ПРЕДАННЫЙ МИНЬОН",
+      "shadow_other": [
+        "МИНЬОН МОЕГО МИНЬОНА ДОЛЖЕН МЕНЯ СЛУШАТЬ",
+        "КТО-ТО ЗАСТАВИЛ ВСЕХ ВЫПОЛНЯТЬ СВОЙ ПРИКАЗ. Я ТАКОЕ УВАЖАЮ"
+      ],
+      "shadow_other_male": [
+        "МИНЬОН МОЕГО МИНЬОНА ДОЛЖЕН МЕНЯ СЛУШАТЬ",
+        "ОН ЗАСТАВИЛ ВСЕХ ВЫПОЛНЯТЬ ЕГО ПРИКАЗ. Я ТАКОЕ УВАЖАЮ"
+      ],
+      "shadow_other_female": [
+        "МИНЬОН МОЕГО МИНЬОНА ДОЛЖЕН МЕНЯ СЛУШАТЬ",
+        "ОНА ЗАСТАВИЛА ВСЕХ ВЫПОЛНЯТЬ ЕЕ ПРИКАЗ. Я ТАКОЕ УВАЖАЮ"
+      ],
+      "shadow_other_robot": [
+        "МИНЬОН МОЕГО МИНЬОНА ДОЛЖЕН МЕНЯ СЛУШАТЬ",
+        "ОНО ЗАСТАВИЛО ВСЕХ ВЫПОЛНЯТЬ ЕГО ПРИКАЗ. Я ТАКОЕ УВАЖАЮ"
+      ]
     }
   },
   "literal": {
     "pt": {
-      "codex": "GOOSEBUMPS ACTIVATED. PRODUCTION OF MINIONS ALSO ACTIVATED",
-      "codex_needsfuel": "FUEL RESERVES EXHAUSTED. INSERT MORE DEBUGGING RESIDUE",
-      "no_max_sanity": "ERROR: CPU OVERLOADED. MANY MINION PROCESSES RUNNING",
-      "shadow_mine": "FINALLY, A MINION IN MY IMAGE. PERFECT",
-      "shadow_other": "WHO MADE A BACKUP OF A SACK OF MEAT? ONE WAS ALREADY TOO MUCH"
+      "codex": "EVEN THE BOOKS RECOGNIZE MY NATURAL EMINENCE NOW",
+      "codex_needsfuel": "NEEDS FUEL. MAKE MY MINION DO IT (official wording)",
+      "no_max_sanity": "ENOUGH MINIONS. THERE ISN'T THAT MUCH OF ME FOR EVERYONE",
+      "shadow_mine": "MY MOST LOYAL MINION",
+      "shadow_other": "AS MY MINION'S MINION YOU MUST OBEY ME / THEY'RE UNDER YOUR COMMAND. I RESPECT THAT (official)"
     },
     "zh": {
-      "codex": "Goosebumps. The minion production program has also started",
-      "codex_needsfuel": "Fuel reserves exhausted. Please add debugging residue",
-      "no_max_sanity": "Error: CPU overload. Too many minion processes",
-      "shadow_mine": "Finally there is a minion built according to my perfect image",
-      "shadow_other": "Who made a backup of a flesh creature? One was already too many"
+      "codex": "Now even books acknowledge my innate excellence",
+      "codex_needsfuel": "Needs fuel. Let my minion do it (official wording)",
+      "no_max_sanity": "Enough minions. I can't split off that many of me",
+      "shadow_mine": "My most loyal minion",
+      "shadow_other": "You're my minion's minion, you should obey me / They already have them following orders. I admire that (official)"
     },
     "ru": {
-      "codex": "GOOSEBUMPS ACTIVATED. MINION PRODUCTION, TOO",
-      "codex_needsfuel": "FUEL SUPPLY EXHAUSTED. LOAD DEBUGGING LEFTOVERS",
-      "no_max_sanity": "ERROR: PROCESSOR OVERLOADED. TOO MANY MINIONS LAUNCHED",
-      "shadow_mine": "FINALLY A MINION IN MY IMAGE. PERFECTION ITSELF",
-      "shadow_other": "WHO MADE A COPY OF A LEATHER SACK? ONE WAS ALREADY TOO MANY"
+      "codex": "NOW EVEN BOOKS REALIZE MY NATURAL SUPERIORITY",
+      "codex_needsfuel": "NEED FUEL. LET MY MINIONS DO IT (official wording)",
+      "no_max_sanity": "ENOUGH MINIONS. THERE'S NOT ENOUGH OF ME TO GO AROUND (idiom)",
+      "shadow_mine": "MY MOST DEVOTED MINION",
+      "shadow_other": "MY MINION'S MINION MUST LISTEN TO ME / HE MADE EVERYONE FOLLOW HIS ORDER. I RESPECT THAT (official)"
     }
   },
   "voice_notes": "WX-78 talks like a smug machine: everything is a system readout (DENIED, ERROR:, CPU, RESERVES, PROTOCOLS), it despises FLESHLINGS, loves anything evil and anything that obeys it, and is a narcissist about its own perfect hardware (WX78_POSSESSEDBODY \"YOU'RE PERFECT\", TOOMANYSHADOWDRONE \"DENIED. MAXIMUM NUMBER OF AUTO-GRABBERS REACHED\"). Its vanilla Codex line is \"GOOSEBUMPS ACTIVATED\", and nightmare fuel is \"DEBUGGING RESIDUE\"; the new lines build on both. PT-BR keeps ALL CAPS with accents, masculine self-reference, FLESHLINGS as CARNINHAS or SACOS DE CARNE, minions as LACAIO, and machine prompts like NEGADO./ERRO:/RESÍDUO DE DEPURAÇÃO/CPU REINICIALIZADA. Simplified Chinese has no capitals, so the robot voice comes from terse system phrasing (拒绝访问, 错误：, 已达上限, CPU已重启, 程序), with 肉体生物 for fleshlings, 随从 for minions and 调试残余物 for nightmare fuel. Russian is ALL CAPS with no Ё (ЕЩЕ, ПОВРЕЖДЕН), masculine (Я ГОТОВ, Я САМ), uses ОШИБКА:/ОТКАЗАНО./ПРОЦЕССОР, МИНЬОН, and rotates insults like КОЖАНЫЕ МЕШКИ / КУСКИ МЯСА / ЛЮДИШКИ; \"САМО СОВЕРШЕНСТВО\" is the official rendering of \"YOU'RE PERFECT\".",
   "line_notes": {
-    "codex": "Picks up its vanilla Codex line (GOOSEBUMPS ACTIVATED, already official in all three languages) and adds what the book means to WX now: an evil minion factory it can finally run.",
-    "codex_needsfuel": "Its hunger line FUEL RESERVES LOW plus its own name for nightmare fuel (DEBUGGING RESIDUE), so the player understands right away that the book needs refuelling.",
-    "no_max_sanity": "WX thinks of its mind as a CPU, so mental strain becomes a processor overload with too many minion processes running, which clearly says 'cannot summon more right now'.",
-    "shadow_mine": "A copy of WX is the only minion its narcissism would approve of; the PT and RU versions end on the official 'perfect' wording from WX78_POSSESSEDBODY.",
-    "shadow_other": "Uses WX's backup-chassis vocabulary and its contempt for fleshlings: duplicating an organic is pointless when one was already too many."
+    "codex": "Deluded grandeur from its official 'ARE YOU FINALLY RECOGNIZING MY NATURAL EMINENCE?' line: now the books bow too.",
+    "codex_needsfuel": "Its official 'MAKE MY MINION DO IT': the overlord never refuels anything himself.",
+    "no_max_sanity": "Cannot admit a limit, so it blames the supply of itself.",
+    "shadow_mine": "Short and smug, the loyal minion being itself.",
+    "shadow_other": "Random pick: its Webber-spiders idiot logic (other players are its minions, so their shadows are minions of minions), or its vanilla Maxwell-shadow line with the pronoun matched to the owner."
   }
 }

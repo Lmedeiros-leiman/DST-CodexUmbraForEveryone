@@ -28,6 +28,18 @@ def lua_string(text):
     return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def lua_value(value):
+    # A list of lines makes DST pick one at random each time (stringutil's
+    # getmodifiedstring).
+    if isinstance(value, list):
+        return "{ " + ", ".join(lua_string(v) for v in value) + " }"
+    return lua_string(value)
+
+
+def variants(value):
+    return value if isinstance(value, list) else [value]
+
+
 def load(drafts):
     characters = {}
     problems = []
@@ -43,11 +55,14 @@ def load(drafts):
             lines = data["lines"].get(lang, {})
             if sorted(lines) != sorted(keys):
                 problems.append(f"{prefab}/{lang}: keys {sorted(lines)} != {sorted(keys)}")
-            for key, text in lines.items():
-                if not text.strip() or "\n" in text:
-                    problems.append(f"{prefab}/{lang}/{key}: empty or multi-line")
-                if len(text) > MAX_CHARS:
-                    problems.append(f"{prefab}/{lang}/{key}: {len(text)} chars")
+            for key, value in lines.items():
+                if isinstance(value, list) and not value:
+                    problems.append(f"{prefab}/{lang}/{key}: empty list")
+                for text in variants(value):
+                    if not isinstance(text, str) or not text.strip() or "\n" in text:
+                        problems.append(f"{prefab}/{lang}/{key}: empty or multi-line")
+                    elif len(text) > MAX_CHARS:
+                        problems.append(f"{prefab}/{lang}/{key}: {len(text)} chars")
         characters[prefab] = data
     return characters, problems
 
@@ -65,7 +80,7 @@ def write_lua(characters, out):
             rows.append(f"            {lang} =")
             rows.append("            {")
             for key in data["keys"]:
-                rows.append(f"                {key} = {lua_string(data['lines'][lang][key])},")
+                rows.append(f"                {key} = {lua_value(data['lines'][lang][key])},")
             rows.append("            },")
         rows.append("        },")
     rows += ["    },", "}", ""]
@@ -83,10 +98,10 @@ def write_table(characters, out):
         md.append("| Moment | English | Português | 简体中文 | Русский |")
         md.append("|---|---|---|---|---|")
         for key in data["keys"]:
-            cells = [data["lines"]["en"][key]]
+            cells = [" **or** ".join(variants(data["lines"]["en"][key]))]
             for lang in ["pt", "zh", "ru"]:
                 lit = data.get("literal", {}).get(lang, {}).get(key, "")
-                cells.append(data["lines"][lang][key] + (f" [{lit}]" if lit else ""))
+                cells.append(" **or** ".join(variants(data["lines"][lang][key])) + (f" [{lit}]" if lit else ""))
             md.append(f"| `{key}` | " + " | ".join(c.replace("|", "\\|") for c in cells) + " |")
         md.append("")
     Path(out).write_text("\n".join(md), encoding="utf-8")
