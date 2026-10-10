@@ -138,7 +138,7 @@ codex_everyone_lines =
             en =
             {
                 codex = "Its pages whisper of the other side. I'm listening.",
-                codex_needsfuel = "Silent as the grave. It hungers for nightmare fuel.",
+                codex_needsfuel = "No nightmares left. How rare.",
                 no_max_sanity = "My mind is heavy enough... I can bear no more shadows.",
                 shadow_mine = "It has the face Abigail and I shared, but no soul.",
                 shadow_other = "Someone else's shadow. I wonder what haunts them.",
@@ -146,7 +146,7 @@ codex_everyone_lines =
             pt =
             {
                 codex = "Suas páginas sussurram sobre o outro lado. Estou ouvindo.",
-                codex_needsfuel = "Silencioso como um túmulo. Tem fome de combustível de pesadelo.",
+                codex_needsfuel = "Sem pesadelos. Que raro.",
                 no_max_sanity = "Minha mente já está pesada o bastante... Não aguento mais sombras.",
                 shadow_mine = "Tem o rosto que eu e a Abigail dividíamos, mas nenhuma alma.",
                 shadow_other = "A sombra de outra pessoa. O que será que assombra o dono dela?",
@@ -154,7 +154,7 @@ codex_everyone_lines =
             zh =
             {
                 codex = "书页在低语着彼岸的事……我在听。",
-                codex_needsfuel = "像坟墓一样寂静。它渴求着噩梦燃料。",
+                codex_needsfuel = "没有噩梦了。真稀罕。",
                 no_max_sanity = "我的思绪已经够沉重了……承受不了更多暗影了。",
                 shadow_mine = "它长着我和阿比盖尔共有的那张脸，却没有灵魂。",
                 shadow_other = "别人的影子。不知道是什么在纠缠着它的主人。",
@@ -162,7 +162,7 @@ codex_everyone_lines =
             ru =
             {
                 codex = "Его страницы шепчут о том свете. Я слушаю.",
-                codex_needsfuel = "Безмолвен, как могила. Он жаждет топлива кошмара.",
+                codex_needsfuel = "Кошмаров не осталось. Какая редкость.",
                 no_max_sanity = "Мой рассудок и без того отягощен... Больше теней мне не вынести.",
                 shadow_mine = "У нее наше с Абигейл лицо, одно на двоих. Но души в ней нет.",
                 shadow_other = "Чужая тень. Интересно, что мучает ее хозяина?",
