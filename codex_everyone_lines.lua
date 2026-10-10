@@ -254,33 +254,33 @@ codex_everyone_lines =
         {
             en =
             {
-                codex = "Paper that makes lumberjacks, eh? Don't get jealous, Luce.",
-                codex_needsfuel = "Outta nightmare fuel, eh? It's hungry for more of my fears.",
-                no_max_sanity = "The old noggin' can't take any more of me, eh?",
+                codex = "Paper that makes lumberjacks. Now I've seen everything.",
+                codex_needsfuel = "Outta nightmare fuel. It's hungry for more of my fears.",
+                no_max_sanity = "The old noggin' can't take any more of me.",
                 shadow_mine = "Spittin' image of me, eh? Luce still prefers the original.",
                 shadow_other = "Oops, sorry bud. Thought you were one of mine.",
             },
             pt =
             {
-                codex = "Papel que cria lenhadores, hã? Não precisa ter ciúme, Lucy.",
-                codex_needsfuel = "Acabou o combustível de pesadelo, hã? Quer mais dos meus medos.",
-                no_max_sanity = "Mais um de mim e a cachola não aguenta, hã?",
+                codex = "Papel que cria lenhadores. Agora já vi de tudo.",
+                codex_needsfuel = "Acabou o combustível de pesadelo. Quer mais dos meus medos.",
+                no_max_sanity = "A cachola não aguenta mais um de mim.",
                 shadow_mine = "Sou eu cuspido e escarrado, hã? Mas a Lucy prefere o original.",
                 shadow_other = "Opa, desculpe, amigo. Achei que você era um dos meus.",
             },
             zh =
             {
-                codex = "纸还能变出伐木工，诶？别吃醋啊，露西。",
-                codex_needsfuel = "噩梦燃料用光了，是吧？它又馋我的恐惧了。",
-                no_max_sanity = "再多一个我，我这脑袋可受不了，诶。",
+                codex = "纸还能变出伐木工。这下我可真是什么都见过了。",
+                codex_needsfuel = "噩梦燃料用光了。它又馋我的恐惧了。",
+                no_max_sanity = "我这脑袋可受不了再多一个我了。",
                 shadow_mine = "跟我活脱脱一个样，是吧？不过露西还是更喜欢原版。",
                 shadow_other = "哎呀，抱歉伙计，我还以为你是我召来的。",
             },
             ru =
             {
-                codex = "Бумажка, а лесорубов плодит! Только не ревнуй, Люси.",
-                codex_needsfuel = "Топливо кошмара кончилось, а? Опять моих страхов хочет.",
-                no_max_sanity = "Кажись, еще одного меня мой котелок не выдержит.",
+                codex = "Бумага, которая плодит лесорубов. Теперь я видел все.",
+                codex_needsfuel = "Топливо кошмара кончилось. Опять моих страхов хочет.",
+                no_max_sanity = "Еще одного меня мой котелок не выдержит.",
                 shadow_mine = "Вылитый я, а? Но Люси все равно больше нравится оригинал.",
                 shadow_other = "Ой, извиняй, приятель. Думал, ты из моих.",
             },
