@@ -1,0 +1,64 @@
+{
+  "character": "wanda",
+  "lines": {
+    "en": {
+      "codex": "Hm. Extra hands would save me a great deal of time.",
+      "codex_needsfuel": "Oh botheration, it's wound down! It needs more fuel.",
+      "no_max_sanity": "Not another one! My head's spinning as it is.",
+      "shadow_mine": "Finally, a version of me who does as she's told!",
+      "shadow_other": "Not one of mine. Whose is it? Never mind, no time!"
+    },
+    "pt": {
+      "codex": "Hm. Umas mãos a mais me poupariam um tempão.",
+      "codex_needsfuel": "Ai, que amolação, ficou sem corda! Precisa de mais combustível de pesadelo.",
+      "no_max_sanity": "Mais uma não! Minha cabeça já está girando.",
+      "shadow_mine": "Até que enfim, uma versão minha que faz o que eu mando!",
+      "shadow_other": "Essa não é minha. De quem será? Deixa pra lá, não tenho tempo!"
+    },
+    "zh": {
+      "codex": "嗯。多几双手帮忙，能给我省下不少时间。",
+      "codex_needsfuel": "嗷，麻烦呐，停摆了！得再添点噩梦燃料。",
+      "no_max_sanity": "不能再来一个了！我的头已经够晕了。",
+      "shadow_mine": "总算有一个肯听话的我了！",
+      "shadow_other": "这个不是我的。是谁的呢？算了，没时间！"
+    },
+    "ru": {
+      "codex": "Хм-м. Лишние руки сберегли бы мне уйму времени.",
+      "codex_needsfuel": "Вот ведь неудобство, завод кончился! Нужно больше топлива кошмара.",
+      "no_max_sanity": "Только не еще одну! У меня и так голова кругом.",
+      "shadow_mine": "Наконец-то хоть одна версия меня делает, что ей велят!",
+      "shadow_other": "Это не моя. Чья же? Ладно, некогда!"
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Hm. A few extra hands would save me a ton of time.",
+      "codex_needsfuel": "Oh, what a bother, it ran out of winding! It needs more nightmare fuel.",
+      "no_max_sanity": "Not one more! My head is already spinning.",
+      "shadow_mine": "At long last, a version of me that does what I tell her!",
+      "shadow_other": "That one isn't mine. Whose could it be? Never mind, I don't have time!"
+    },
+    "zh": {
+      "codex": "Hm. A few more pairs of hands helping could save me a good deal of time.",
+      "codex_needsfuel": "Ugh, what a bother, it has stopped (like a clock)! I must add some more nightmare fuel.",
+      "no_max_sanity": "Can't have one more! My head is dizzy enough already.",
+      "shadow_mine": "Finally, a me who is willing to obey!",
+      "shadow_other": "This one isn't mine. Whose is it? Forget it, no time!"
+    },
+    "ru": {
+      "codex": "Hmm. Spare hands would save me heaps of time.",
+      "codex_needsfuel": "What an inconvenience, the winding has run out! It needs more nightmare fuel.",
+      "no_max_sanity": "Not one more! My head's in a whirl as it is.",
+      "shadow_mine": "Finally, at least one version of me does what she's told!",
+      "shadow_other": "That's not mine. Whose then? Oh well, no time!"
+    }
+  },
+  "voice_notes": "Wanda is brisk, impatient and practical: everything is measured in time saved or lost, she swears with 'Oh botheration', reaches for clockwork metaphors ('a clock that's been left unwound', 'tick-tock'), jokes about other timelines, and treats shadow magic matter-of-factly ('Shadow magic's just a tool, like anything else'; nightmare fuel is 'A necessary evil') while still panicking when things get out of hand. PT-BR renders her as informal and quick ('pra', 'dar o fora', 'bater pato'), with 'Ai, que amolação' for botheration and 'relógio sem corda' for an unwound clock. ZH gives her sentence-final 呐/呀 and 嗷，麻烦呐 for botheration, with clock vocabulary like 没上发条的钟 and 松发条. RU uses feminine forms, 'Вот ведь неудобство' for botheration, 'Хм-м.' for her vanilla Codex line, and clock idioms such as 'Часики тикают' and 'часы, которые забыли завести'.",
+  "line_notes": {
+    "codex": "Keeps her vanilla 'Hm.' and turns it into her pragmatic, time-obsessed reason to use the book: servants mean saved time, which is the same attitude she shows toward the Shadow Forge.",
+    "codex_needsfuel": "Her signature 'Oh botheration' plus the clockmaker's metaphor of a mechanism winding down, echoing her watch-depleted line about needing more dark fuel.",
+    "no_max_sanity": "A short, flustered refusal in her exclamatory panic register that clearly reads as 'my mind can't take another one right now'.",
+    "shadow_mine": "Plays on her timeline lore (she has met other versions of herself and everyone else) and her bossy impatience: the shadow copy is the first 'me' that obeys.",
+    "shadow_other": "She notices it isn't hers, starts to wonder whose it is, then waves it off because she never has time."
+  }
+}

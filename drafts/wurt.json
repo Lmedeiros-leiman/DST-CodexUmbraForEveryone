@@ -1,0 +1,64 @@
+{
+  "character": "wurt",
+  "lines": {
+    "en": {
+      "codex": "Still don't like stories in it... but magic work for me now, florp!",
+      "codex_needsfuel": "Book hungry for bad stuff, florp.",
+      "no_max_sanity": "Glurph... head too full for more Shadowfolk.",
+      "shadow_mine": "Hello, shadow me! Not as cute as real me, florp.",
+      "shadow_other": "That Shadowfolk not me. Whose is it, florp?"
+    },
+    "pt": {
+      "codex": "Ainda não gosto das histórias... mas agora mágica funciona pra mim, florp!",
+      "codex_needsfuel": "Livro tá com fome de coisas ruins, florp.",
+      "no_max_sanity": "Glurph... cabeça cheia demais pra mais Sombras.",
+      "shadow_mine": "Olá, eu de sombra! Menos bonita que eu de verdade, florp.",
+      "shadow_other": "Essa Sombra não sou eu. De quem é, florp?"
+    },
+    "zh": {
+      "codex": "还是不喜欢里面的故事……但现在魔法听我的了，浮浪噗！",
+      "codex_needsfuel": "书饿了，想吃坏东西，浮浪噗。",
+      "no_max_sanity": "格浪浮……脑袋满满的，装不下更多影子人了。",
+      "shadow_mine": "你好啊，影子我！没有真的我可爱，浮浪噗。",
+      "shadow_other": "那个影子人不是我。是谁的呀，浮浪噗？"
+    },
+    "ru": {
+      "codex": "Сказки в ней всё равно не нравятся… Зато теперь я колдую, хлюп!",
+      "codex_needsfuel": "Книжка проголодалась. Хочет скверной штуки, буль.",
+      "no_max_sanity": "Хлюрп… В голове тесно. Больше тенюк не влезет!",
+      "shadow_mine": "Привет, теневая я! Но настоящая я милее, хлюп.",
+      "shadow_other": "Эта тенюка — не я. А чья она, бульк?"
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Still don't like the stories... but now magic works for me, florp!",
+      "codex_needsfuel": "Book is hungry for bad stuff, florp.",
+      "no_max_sanity": "Glurph... head too full for more Shadows.",
+      "shadow_mine": "Hello, shadow me! Less pretty than real me, florp.",
+      "shadow_other": "That Shadow isn't me. Whose is it, florp?"
+    },
+    "zh": {
+      "codex": "Still don't like the stories inside... but now magic listens to me, florp!",
+      "codex_needsfuel": "Book is hungry, wants to eat bad stuff, florp.",
+      "no_max_sanity": "Glurph... head is all full, can't fit any more Shadowfolk.",
+      "shadow_mine": "Hello, shadow me! Not as cute as real me, florp.",
+      "shadow_other": "That Shadowfolk isn't me. Whose is it, huh, florp?"
+    },
+    "ru": {
+      "codex": "Still don't like the fairy tales in it... But now I do magic, splosh!",
+      "codex_needsfuel": "Little book got hungry. Wants some nasty stuff, glug.",
+      "no_max_sanity": "Splurp... It's cramped in my head. No more shadowlings will fit!",
+      "shadow_mine": "Hi, shadow me! But real me is cuter, splosh.",
+      "shadow_other": "That shadowling isn't me. So whose is it, bloop?"
+    }
+  },
+  "voice_notes": "Wurt talks like a small child learning a second language: she drops articles and the verb 'to be' ('It not ready yet'), uses 'me' as a subject, gives things simple folk-names ('Shadowfolk', 'scale-less', 'bad stuff' for nightmare fuel) and tags lines with merm sounds (florp, flort, glurph). She loves books and fairy stories, is a little proud of being cute ('Can see own cute reflection!'), and greets another Wurt with 'Hello me!'. Portuguese keeps the English sounds unchanged and drops only a few articles ('É melhor livro!', 'Olá, eu!'); 'bad stuff' becomes 'Coisas ruins!'. Chinese writes the sounds phonetically and consistently (florp 浮浪噗, glurph 格浪浮), uses childlike words (鱼鱼, 怪怪光) and calls the Shadowfolk 影子人 ('格浪……影子人！'). Russian uses normal grammar with feminine forms and a child's vocabulary ('обнимашки', 'страшила'), swaps the sounds for хлюп/буль/бульк/хлюрп, calls Shadowfolk 'тенюка' ('Кыш, тенюка!') and nightmare fuel 'Скверная штука'.",
+  "line_notes": {
+    "codex": "It picks up her vanilla line ('Don't like stories in that book'): she still dislikes the stories, but she's thrilled she can do magic now.",
+    "codex_needsfuel": "She already calls nightmare fuel 'Bad stuff!' and talks about objects as if they were alive, so the empty book is just hungry for more bad stuff.",
+    "no_max_sanity": "Her strain lines are about her head ('head hurt', 'head full of smarts'), so here her head is too full to hold more Shadowfolk, which reads plainly as 'can't summon more'.",
+    "shadow_mine": "It builds on her 'Hello me!' greeting for another Wurt and her vanity about her 'cute reflection': the shadow copy just isn't as cute as she is.",
+    "shadow_other": "She uses her own name for these creatures and notices it isn't a copy of her, so it must belong to someone else."
+  }
+}

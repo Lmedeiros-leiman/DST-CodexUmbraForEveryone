@@ -1,0 +1,64 @@
+{
+  "character": "warly",
+  "lines": {
+    "en": {
+      "codex": "A cookbook of shadows. Every kitchen could use more sous chefs, oui?",
+      "codex_needsfuel": "Ah zut, its pantry is bare. It needs nightmare fuel.",
+      "no_max_sanity": "Ah non, one more and my poor head will boil over!",
+      "shadow_mine": "A sous chef with my own face! Magnifique... I think.",
+      "shadow_other": "Not one of mine. Whose kitchen do you work in, mon ami?"
+    },
+    "pt": {
+      "codex": "Um livro de receitas das sombras. Sous-chefs nunca são demais, oui?",
+      "codex_needsfuel": "Ah, zut, a despensa tá vazia. Precisa de combustível de pesadelo.",
+      "no_max_sanity": "Ah, non! Mais uma e minha pobre cabeça vai ferver!",
+      "shadow_mine": "Um sous-chef com a minha cara! Magnifique... eu acho.",
+      "shadow_other": "Esse não é dos meus. De que cozinha você é, mon ami?"
+    },
+    "zh": {
+      "codex": "一本暗影的食谱。厨房里多几个帮厨总是好的，对吧？",
+      "codex_needsfuel": "啊这，橱柜空空的。它得添点噩梦燃料才行。",
+      "no_max_sanity": "噢不，再多一个，我的脑子就要炸锅了！",
+      "shadow_mine": "一个和我长得一模一样的帮厨！棒极了……应该吧。",
+      "shadow_other": "这不是我的帮厨。你是哪家厨房的，我的朋友？"
+    },
+    "ru": {
+      "codex": "Поваренная книга теней. Лишние су-шефы на кухне не помешают, oui?",
+      "codex_needsfuel": "Ох, zut! Кладовая пуста — нужно топливо кошмара.",
+      "no_max_sanity": "О, non, еще одна — и моя бедная голова закипит!",
+      "shadow_mine": "Су-шеф с моим лицом! Magnifique... наверное.",
+      "shadow_other": "Ты не из моих. С какой ты кухни, mon ami?"
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "A recipe book of the shadows. Sous chefs are never too many, oui?",
+      "codex_needsfuel": "Ah, zut, the pantry's empty. It needs nightmare fuel.",
+      "no_max_sanity": "Ah, non! One more and my poor head is going to boil!",
+      "shadow_mine": "A sous chef with my face (idiom: just like me)! Magnifique... I think.",
+      "shadow_other": "This one isn't one of mine. Which kitchen are you from, mon ami?"
+    },
+    "zh": {
+      "codex": "A recipe book of shadows. Having a few more kitchen helpers is always good, right?",
+      "codex_needsfuel": "Ah, well (awkward), the cupboard is empty. It has to get some nightmare fuel added.",
+      "no_max_sanity": "Oh no, one more and my brain will boil over into chaos (lit. 'blow up the wok')!",
+      "shadow_mine": "A kitchen helper who looks exactly like me! Wonderful... probably.",
+      "shadow_other": "This isn't my kitchen helper. Which family's kitchen are you from, my friend?"
+    },
+    "ru": {
+      "codex": "A cookbook of shadows. Extra sous chefs in the kitchen won't hurt, oui?",
+      "codex_needsfuel": "Oh, zut! The pantry is empty — nightmare fuel is needed.",
+      "no_max_sanity": "Oh, non, one more — and my poor head will boil!",
+      "shadow_mine": "A sous chef with my face! Magnifique... probably.",
+      "shadow_other": "You're not one of mine. Which kitchen are you from, mon ami?"
+    }
+  },
+  "voice_notes": "Warly is warm, polite and gently humorous. He reads the world through the kitchen (pantries, pots, recipes, 'sous chefs') and drops in a few stock French words: Ah zut, Ah non, Mon dieu, oui, mon ami, Magnifique. He already calls friendly shadows 'shadowy sous chefs' (ANNOUNCE_VAULT_SHADOW_ASSIST) and an empty pot is 'Empty pot, empty heart', so the minions became sous chefs and the empty Codex an empty pantry. PT-BR keeps the French words as they are ('Ah, zut, um armário vazio.', 'Eficiente, oui?', 'sous-chefs sombrios') in relaxed spoken Portuguese ('tá', 'pra'). RU also keeps the French in Latin script inside the Russian ('Ох, zut! В этом шкафчике пусто.', 'А, non', 'mon ami', 'Magnifique!') and writes 'су-шеф' in Cyrillic. ZH drops the French altogether: zut becomes 啊这/啧, non becomes 不/噢不, oui becomes 对吧/是吗, mon ami becomes 我的朋友, Magnifique becomes 好棒/棒极了, and sous chef becomes 帮厨 ('啊这，空空的柜子。', '看看，我有暗影帮厨了！').",
+  "line_notes": {
+    "codex": "Warly approaches the Codex as a chef would: it is a cookbook, and the summons are the extra kitchen hands he once called 'shadowy sous chefs', closed with his habitual 'oui?'.",
+    "codex_needsfuel": "It echoes his own 'Ah zut, an empty cupboard.' and states plainly that the book needs nightmare fuel.",
+    "no_max_sanity": "A pot boiling over is the cook's picture of overload, and 'one more' tells the player that summoning another shadow is what fails.",
+    "shadow_mine": "Warm delight at a helper who wears his face, then a beat of unease ('...I think') that fits a shadowy double.",
+    "shadow_other": "He speaks politely to a stranger's shadow the way he speaks to creatures ('mon ami') and asks which kitchen it works in, since it obviously isn't his."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "character": "winona",
+  "lines": {
+    "en": {
+      "codex": "Still don't trust it. But a tool's a tool, hey?",
+      "codex_needsfuel": "Outta juice. Figures it'd run on nightmare fuel.",
+      "no_max_sanity": "Whoa, my head's poundin'. That's all the crew I can handle.",
+      "shadow_mine": "Ha! Spittin' image! Let's see if ya work as hard as me.",
+      "shadow_other": "Dunno who you work for, but don't let 'em overwork ya."
+    },
+    "pt": {
+      "codex": "Continuo não confiando nisso. Mas ferramenta é ferramenta, né?",
+      "codex_needsfuel": "Tá sem energia. Tinha que ser movido a combustível de pesadelo.",
+      "no_max_sanity": "Eita, minha cabeça tá latejando. Essa equipe já é o máximo que eu aguento.",
+      "shadow_mine": "Ha! Cuspida e escarrada! Vamos ver se você trabalha tão duro quanto eu.",
+      "shadow_other": "Não sei pra quem você trabalha, mas não deixa ninguém te explorar."
+    },
+    "zh": {
+      "codex": "我还是信不过它。不过工具就是工具，是吧？",
+      "codex_needsfuel": "没油了。就知道这玩意儿得烧噩梦燃料。",
+      "no_max_sanity": "哎哟，头疼得要命。再多招人手我可吃不消了。",
+      "shadow_mine": "哈！跟我一模一样！看看你干活是不是也跟我一样卖力。",
+      "shadow_other": "不知道你在给谁干活，但可别让他们压榨你。"
+    },
+    "ru": {
+      "codex": "Все равно не доверяю я этой штуковине. Но инструмент есть инструмент, а?",
+      "codex_needsfuel": "Выдохлась. Ну конечно, ей же топливо кошмара подавай.",
+      "no_max_sanity": "Ох, голова трещит. Больше рабочих мне не потянуть.",
+      "shadow_mine": "Ха! Вылитая я! Посмотрим, умеешь ли ты вкалывать, как я.",
+      "shadow_other": "Не знаю, на кого ты пашешь, но не давай себя загонять."
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "I still don't trust it. But a tool is a tool, right?",
+      "codex_needsfuel": "It's out of power. Of course it had to run on nightmare fuel.",
+      "no_max_sanity": "Whoa, my head is throbbing. This crew is already the most I can take.",
+      "shadow_mine": "Ha! Spitting image! Let's see if you work as hard as I do.",
+      "shadow_other": "I don't know who you work for, but don't let anyone exploit you."
+    },
+    "zh": {
+      "codex": "I still don't trust it. But a tool is a tool, right?",
+      "codex_needsfuel": "Out of fuel. I knew this thing would have to burn nightmare fuel.",
+      "no_max_sanity": "Ouch, my head hurts like crazy. If I hire any more hands I won't be able to take it.",
+      "shadow_mine": "Ha! Exactly like me! Let's see if you work just as hard as me too.",
+      "shadow_other": "Don't know who you're working for, but don't let them squeeze you dry."
+    },
+    "ru": {
+      "codex": "I still don't trust this gizmo. But a tool is a tool, eh?",
+      "codex_needsfuel": "It's run out of steam. Of course, it wants nightmare fuel served up.",
+      "no_max_sanity": "Oh, my head is cracking. I can't manage any more workers.",
+      "shadow_mine": "Ha! The spitting image of me! Let's see if you can slog like I do.",
+      "shadow_other": "Don't know who you're grinding for, but don't let them work you to the bone."
+    }
+  },
+  "voice_notes": "Winona is a blue-collar factory handywoman: clipped, folksy speech with dropped g's ('workin''), 'ain't', 'outta', 'hey?' tags and a pleased 'Ha!', and she sees everything through work ethic, shifts, overtime, worker solidarity and the right tool for the job, while treating \"magic\" and nightmare fuel with plain suspicion ('I don't trust that thing one bit.', 'Too lazy to do your own chores, Max?', 'Workers gotta look out for one another.'). PT carries her with colloquial 'tá', 'pra', 'né?', 'Eita' and labour idioms ('Já bati o cartão!', 'Bem que a gente pode botar as sombras pra trabalhar.'). ZH keeps her blunt and spoken, with 哈！, 是吧 for 'hey?', 这玩意儿/东西 for suspect objects and workplace vocabulary (加班费, 工伤赔偿, 上工: '不妨让暗影们也上上工。', '我信不过那东西。'). RU uses rough colloquial Russian ('штуковина', 'фиговина', 'сдох', 'халтурит', 'смена') with 'а?' for 'hey?' and inverted emphatic order modelled on 'Не доверяю я этой штуке.' and 'Чертов пульт сдох.'",
+  "line_notes": {
+    "codex": "Calls back to her vanilla Codex line but lets her pragmatism win: she still distrusts magic, yet she'd never turn down a useful tool.",
+    "codex_needsfuel": "Uses her stock 'outta juice' phrasing for dead machines plus her established distrust of nightmare fuel, so it clearly says the book needs refuelling.",
+    "no_max_sanity": "Frames the shadows as her work crew (like 'I'm not lookin' to expand my workforce') and the strain as a pounding head, so it plainly reads as 'can't summon more'.",
+    "shadow_mine": "Facing a copy of herself, the proud worker immediately sizes up whether it matches her own work ethic.",
+    "shadow_other": "Her worker-solidarity streak ('Workers gotta look out for one another.') aimed at a stranger's shadow labourer whose boss she doesn't know."
+  }
+}

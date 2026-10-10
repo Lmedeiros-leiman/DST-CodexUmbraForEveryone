@@ -1,0 +1,18 @@
+{
+  "character": "wortox",
+  "lines": {
+    "en": { "shadow_other": "Some mortal's been dabbling in the dark! Hyuyu, what a lark!" },
+    "pt": { "shadow_other": "Algum mortal anda mexendo com magia sombria! Huehue, que alegria!" },
+    "zh": { "shadow_other": "哪个凡人玩起了暗影把戏？哼哼，真有趣！" },
+    "ru": { "shadow_other": "Кто-то из смертных балуется тёмной магией! Хо-хо, вот потеха!" }
+  },
+  "literal": {
+    "pt": { "shadow_other": "Some mortal is messing around with shadowy magic! Huehue, what joy!" },
+    "zh": { "shadow_other": "Which mortal has started playing shadow tricks? Hmhm, how amusing!" },
+    "ru": { "shadow_other": "One of the mortals is dabbling in dark magic! Ho-ho, what fun!" }
+  },
+  "voice_notes": "Wortox is a playful, guilt-tinged imp who treats the survivors as 'mortals' whose antics amuse him, frames everything as pranks and games, laughs 'Hyuyu', and speaks in light, natural couplets (\"I felt a keen blow, from an unseen foe!\"). His closest vanilla precedent is Winona's high-tier generator: \"Ooohoohoo! The mortal learned magic!\" (PT \"Uh-hu-hu! O mortal aprendeu magia!\", ZH \"呼呼！凡人都学会魔法了！\", RU \"Ох-хо-хо-хо! Смертная обучилась магии!\"). PT carries him with 'mortais' and 'huehue' plus plain, breezy phrasing and keeps rhymes only where they come easily; ZH uses 凡人 and 哼/哼哼 and often lands a loose two-clause rhyme (\"我感受到猛烈一击，来自看不见的仇敌！\"); RU uses 'смертные' and 'Хо-хо' and frequently drops the rhyme for a punchy colloquial line (\"Хо-хо, что же эти смертные выдумают дальше?\").",
+  "line_notes": {
+    "shadow_other": "He doesn't know whose shade it is, only that 'some mortal' picked up the dark arts, and he greets it with the delighted condescension he shows whenever mortals dabble in magic, in one easy couplet (dark/lark) that stays distinct from his other-imp line. PT keeps a natural rhyme (sombria/alegria, both everyday phrases), ZH has a loose 一七辙 echo (戏/趣) without bending syntax, and RU drops the rhyme for an idiomatic 'вот потеха'."
+  }
+}

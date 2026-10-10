@@ -1,0 +1,64 @@
+{
+  "character": "wendy",
+  "lines": {
+    "en": {
+      "codex": "Its pages whisper of the other side. I'm listening.",
+      "codex_needsfuel": "Silent as the grave. It hungers for nightmare fuel.",
+      "no_max_sanity": "My mind is heavy enough... I can bear no more shadows.",
+      "shadow_mine": "It has the face Abigail and I shared, but no soul.",
+      "shadow_other": "Someone else's shadow. I wonder what haunts them."
+    },
+    "pt": {
+      "codex": "Suas páginas sussurram sobre o outro lado. Estou ouvindo.",
+      "codex_needsfuel": "Silencioso como um túmulo. Tem fome de combustível de pesadelo.",
+      "no_max_sanity": "Minha mente já está pesada o bastante... Não aguento mais sombras.",
+      "shadow_mine": "Tem o rosto que eu e a Abigail dividíamos, mas nenhuma alma.",
+      "shadow_other": "A sombra de outra pessoa. O que será que assombra o dono dela?"
+    },
+    "zh": {
+      "codex": "书页在低语着彼岸的事……我在听。",
+      "codex_needsfuel": "像坟墓一样寂静。它渴求着噩梦燃料。",
+      "no_max_sanity": "我的思绪已经够沉重了……承受不了更多暗影了。",
+      "shadow_mine": "它长着我和阿比盖尔共有的那张脸，却没有灵魂。",
+      "shadow_other": "别人的影子。不知道是什么在纠缠着它的主人。"
+    },
+    "ru": {
+      "codex": "Его страницы шепчут о том свете. Я слушаю.",
+      "codex_needsfuel": "Безмолвен, как могила. Он жаждет топлива кошмара.",
+      "no_max_sanity": "Мой рассудок и без того отягощен... Больше теней мне не вынести.",
+      "shadow_mine": "У нее наше с Абигейл лицо, одно на двоих. Но души в ней нет.",
+      "shadow_other": "Чужая тень. Интересно, что мучает ее хозяина?"
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Its pages whisper about the other side. I'm listening.",
+      "codex_needsfuel": "Silent as a tomb. It is hungry for nightmare fuel.",
+      "no_max_sanity": "My mind is already heavy enough... I can't stand any more shadows.",
+      "shadow_mine": "It has the face that Abigail and I shared, but no soul.",
+      "shadow_other": "Someone else's shadow. I wonder what haunts its owner?"
+    },
+    "zh": {
+      "codex": "The pages are whispering about the other shore (the beyond)... I am listening.",
+      "codex_needsfuel": "Silent like a grave. It craves nightmare fuel.",
+      "no_max_sanity": "My thoughts are already heavy enough... I can't bear any more shadows.",
+      "shadow_mine": "It wears the face Abigail and I had in common, yet has no soul.",
+      "shadow_other": "Someone else's shadow. I wonder what is haunting its master."
+    },
+    "ru": {
+      "codex": "Its pages whisper of the other world (the afterlife). I'm listening.",
+      "codex_needsfuel": "Mute as a grave. It thirsts for nightmare fuel.",
+      "no_max_sanity": "My mind is burdened enough as it is... I cannot bear any more shadows.",
+      "shadow_mine": "It has our face, mine and Abigail's, one for the two of us. But there is no soul in it.",
+      "shadow_other": "Someone else's shadow. I wonder what torments its master?"
+    }
+  },
+  "voice_notes": "Wendy speaks in short, grave, slightly archaic sentences that turn everyday objects into images of death, emptiness and cold ('It is as cold as my heart.', 'I am full of emptiness.'). She addresses or mentions Abigail constantly, uses trailing ellipses for weariness, and treats the dark with calm familiarity instead of fear. Her backstory is seances and spirit boards to reach 'the other side', so a whispering book is something she would welcome. The PT translation keeps her plain and somber with light colloquialisms ('pra', 'a gente') and the article before the name ('a Abigail gosta de você'); I modelled no_max_sanity on 'Meu coração já é pesado o bastante... sem isso...'. ZH gives her a literary, melancholic register with …… and 阿比盖尔 (我内心已经极其沉重了, 他被过去纠缠着), so I used 彼岸 and 纠缠. RU uses feminine forms, bookish phrasing and 'и без того' (from 'У меня на сердце и без того слишком большая тяжесть…'), with Абигейл as the name and 'мучает' for haunted ('Его мучает прошлое...').",
+  "line_notes": {
+    "codex": "She once only read the book aloud to Abigail; now it speaks to her of the other side she spent her life trying to reach, and she leans in.",
+    "codex_needsfuel": "'Silent as the grave' is her natural imagery, and 'hungers for nightmare fuel' makes the empty state unmistakable.",
+    "no_max_sanity": "Echoes her official 'My heart is heavy enough... without this...' while stating plainly she can't take on another shadow.",
+    "shadow_mine": "Wendy and Abigail are identical twins, so a soulless copy of Wendy is a copy of Abigail too, which makes this the most painful thing she could look at.",
+    "shadow_other": "She doesn't know whose shadow it is; she relates to it the only way she knows, by asking what grief or ghost follows its owner."
+  }
+}

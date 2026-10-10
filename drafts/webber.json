@@ -1,0 +1,64 @@
+{
+  "character": "webber",
+  "lines": {
+    "en": {
+      "codex": "Mum said no scary stories before bedtime. It's not bedtime yet!",
+      "codex_needsfuel": "It's hungry! We should feed it some of that cold, slippery stuff.",
+      "no_max_sanity": "Our head's too crowded! There's only room for the two of us.",
+      "shadow_mine": "Hi, us! Wait... does that make three of us, or four?",
+      "shadow_other": "Hello, Mr. Shadow! Are you lost? Who do you belong to?"
+    },
+    "pt": {
+      "codex": "A mamãe dizia: nada de história de terror antes de dormir. Mas ainda tá cedo!",
+      "codex_needsfuel": "Tá com fome! A gente devia dar pra ele aquela coisa gelada e escorregadia.",
+      "no_max_sanity": "Nossa cabeça já tá lotada! Só tem lugar pra nós dois aqui dentro.",
+      "shadow_mine": "Oi, a gente! Peraí... agora somos três ou quatro?",
+      "shadow_other": "Olá, Sr. Sombra! Você tá perdido? De quem você é?"
+    },
+    "zh": {
+      "codex": "妈妈说睡前不许听吓人的故事。还没到睡觉时间呢！",
+      "codex_needsfuel": "它饿了！我们该喂它点那种又冰又滑的东西。",
+      "no_max_sanity": "我们的脑袋已经挤满啦！里面只住得下我俩。",
+      "shadow_mine": "嗨，我们！等等……现在我们算三个还是四个？",
+      "shadow_other": "你好，影子先生！你迷路了吗？你是谁家的？"
+    },
+    "ru": {
+      "codex": "Мама говорила: никаких страшилок перед сном. Но спать еще рано!",
+      "codex_needsfuel": "Он проголодался! Надо его покормить чем-нибудь холодным и скользким.",
+      "no_max_sanity": "У нас в голове уже тесно! Тут места только на нас двоих.",
+      "shadow_mine": "Привет, мы! Ой... теперь нас трое или четверо?",
+      "shadow_other": "Здравствуйте, мистер Тень! Вы потерялись? Вы чей?"
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Mommy used to say: no horror stories before bed. But it's still early!",
+      "codex_needsfuel": "It's hungry! We (a gente) should give it that cold, slippery stuff.",
+      "no_max_sanity": "Our head is already packed! There's only space for the two of us in here.",
+      "shadow_mine": "Hi, us (a gente)! Hang on... are we three or four now?",
+      "shadow_other": "Hello, Mr. Shadow! Are you lost? Whose are you?"
+    },
+    "zh": {
+      "codex": "Mom said no listening to scary stories before bed. It's not bedtime yet!",
+      "codex_needsfuel": "It's hungry! We should feed it some of that icy, slippery stuff.",
+      "no_max_sanity": "Our head is already crammed full! Only the two of us can live in there.",
+      "shadow_mine": "Hi, us! Wait... do we count as three now, or four?",
+      "shadow_other": "Hello, Mr. Shadow! Are you lost? Whose family do you belong to?"
+    },
+    "ru": {
+      "codex": "Mom used to say: no scary stories before sleep. But it's still too early to sleep!",
+      "codex_needsfuel": "It's gotten hungry! We need to feed it something cold and slippery.",
+      "no_max_sanity": "It's already cramped in our head! There's only room here for the two of us.",
+      "shadow_mine": "Hi, us! Oh... are there three of us now, or four?",
+      "shadow_other": "Hello (formal), Mister Shadow! Are you lost? Whose are you?"
+    }
+  },
+  "voice_notes": "Webber is a polite, cheerful little boy sharing one body and one head with a spider: he says 'we/us/our head', slips into 'I/me' when the boy remembers home ('Mum always said...', 'I want my nightlight'), treats scary things as playmates ('We'll dance with you, Mr. Shadow!') and jokes about his own crowded head ('What's one more voice in our head?'). PT-BR carries him with colloquial 'a gente' plus 'tá/pra', 'A mamãe', 'nós dois' for 'us both' and 'Sr. Sombra' (e.g. 'Acho que a gente não devia brincar com isso...', 'É mais fácil para nós dois.'). Simplified Chinese uses 我们 for the shared self, 我俩 for 'the two of us', 妈妈 for Mum and 影子先生 for Mr. Shadow, and reuses 又冰又滑 for nightmare fuel ('难得碰到我俩都喜欢的！'). Russian keeps мы/нам/нас, 'нам обоим', 'Мама говорила...', polite вы toward 'Мистер Тень', and plain е rather than ё ('Проще нам обоим.', 'На один голос в голове больше!').",
+  "line_notes": {
+    "codex": "Replaces 'I don't think we should play with that...' with a child obeying Mum's rule to the letter while finding the loophole, which shows he now uses the book.",
+    "codex_needsfuel": "Webber mothers everything (spider babies, kitcoons), so an empty book is simply hungry, and the fuel is described the way he already describes nightmare fuel: 'cold and slippery'.",
+    "no_max_sanity": "Builds on his 'one more voice in our head' joke: his head already holds a boy and a spider, so the failure is about room in his mind, not about the book.",
+    "shadow_mine": "A shadow copy of someone who is already two beings throws his counting off, and 'Hi, us!' echoes his greeting to other Webbers ('A spiderfriend! Hi %s!').",
+    "shadow_other": "He uses his official 'Mr. Shadow' and treats the stray copy like a lost pet or child, politely asking who it belongs to."
+  }
+}

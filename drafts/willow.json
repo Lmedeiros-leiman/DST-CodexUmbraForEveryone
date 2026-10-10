@@ -1,0 +1,64 @@
+{
+  "character": "willow",
+  "lines": {
+    "en": {
+      "codex": "Finally, a book worth NOT burning.",
+      "codex_needsfuel": "It burned through all its fuel. Heh, my kind of book.",
+      "no_max_sanity": "Ugh, my head can't handle one more Willow.",
+      "shadow_mine": "Heh, looking good, me. Now get to work!",
+      "shadow_other": "Whose creepy twin is that? Mine's way cuter."
+    },
+    "pt": {
+      "codex": "Finalmente um livro que vale a pena NÃO queimar.",
+      "codex_needsfuel": "Queimou todo o combustível. Heh, meu tipo de livro.",
+      "no_max_sanity": "Ugh, minha cabeça não aguenta mais uma Willow.",
+      "shadow_mine": "Heh, tô linda, hein? Agora vai trabalhar!",
+      "shadow_other": "De quem é essa cópia sinistra? A minha é bem mais bonita."
+    },
+    "zh": {
+      "codex": "总算有本书我舍不得烧了。",
+      "codex_needsfuel": "燃料全烧光了。呵，跟我一个德行。",
+      "no_max_sanity": "呃，再来一个薇洛，我脑袋可受不了。",
+      "shadow_mine": "呵，我可真好看。快干活去！",
+      "shadow_other": "这吓人的分身是谁的？我的可比它好看多了。"
+    },
+    "ru": {
+      "codex": "Наконец-то книга, которую жалко сжигать.",
+      "codex_needsfuel": "Спалил все топливо. Хех, весь в меня.",
+      "no_max_sanity": "Блин, еще одну Уиллоу моя голова не вынесет.",
+      "shadow_mine": "Хех, ну я и красотка. А теперь за работу!",
+      "shadow_other": "Чья это жуткая копия? Моя куда симпатичнее."
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Finally a book that's worth NOT burning.",
+      "codex_needsfuel": "It burned all the fuel. Heh, my kind of book.",
+      "no_max_sanity": "Ugh, my head can't take one more Willow.",
+      "shadow_mine": "Heh, I'm looking gorgeous, huh? Now go work!",
+      "shadow_other": "Whose creepy copy is this? Mine is way prettier."
+    },
+    "zh": {
+      "codex": "Finally there's a book I can't bear to burn.",
+      "codex_needsfuel": "The fuel is all burned up. Heh, same bad habits as me.",
+      "no_max_sanity": "Ugh, one more Willow and my head really can't take it.",
+      "shadow_mine": "Heh, I really am good-looking. Go get to work!",
+      "shadow_other": "Whose is this scary double? Mine is way better-looking than it."
+    },
+    "ru": {
+      "codex": "Finally, a book that's a shame to burn.",
+      "codex_needsfuel": "It torched all its fuel. Heh, takes after me.",
+      "no_max_sanity": "Dang, my head won't survive one more Willow.",
+      "shadow_mine": "Heh, what a looker I am. And now, to work!",
+      "shadow_other": "Whose creepy copy is this? Mine is much prettier."
+    }
+  },
+  "voice_notes": "Willow is blunt, impatient and irreverent: short exclamations, 'Ugh', 'Ew', 'Heh', calls things dumb or boring, hates reading ('Wow, another book I'll never read!', 'Looks like kindling to me!'), measures everything by whether it burns, and covers fear with bravado ('You don't scare me! Okay, maybe a little.'). She already has a self-copy joke in vanilla, 'Hey! That's my face, %s! Give it back!', which these shadow lines build on. PT-BR keeps her colloquial and spoken ('tô', 'pra', 'Ugh', 'Heh', 'Eca', 'sinistro' for creepy, feminine agreement: 'Eu não tô assustada'). ZH renders her with short, punchy clauses and casual particles (呃 for Ugh, 呵 for Heh, 吓人 for creepy, e.g. 'WX，你这个贪心的破铜烂铁！'). RU makes her a sharp-tongued girl with feminine verb forms and slangy interjections ('Блин, заряда не осталось.', 'Хех', 'Гадость. Дайте два.'), writing е instead of ё as the official file does.",
+  "line_notes": {
+    "codex": "Willow burns or mocks every book in the game, so the joke is that this is the first one she'd spare, now that it actually does something.",
+    "codex_needsfuel": "Says plainly the book is out of fuel, and Willow takes it as a compliment, since burning through fuel is her own habit.",
+    "no_max_sanity": "The shadows are copies of her, so the mental strain comes out as 'too many Willows', said with her usual 'Ugh'.",
+    "shadow_mine": "Vain, bossy and pleased with herself: she compliments her copy and orders it around in one breath.",
+    "shadow_other": "Picks up her 'that's my face' rivalry and her 'creepier than the real one' attitude, then insults the stranger's copy by comparing it with her own."
+  }
+}

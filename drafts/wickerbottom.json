@@ -1,0 +1,64 @@
+{
+  "character": "wickerbottom",
+  "lines": {
+    "en": {
+      "codex": "Strictly for reference. It will never be shelved in MY library.",
+      "codex_needsfuel": "Out of ink, so to speak. It requires more ectoplasmic residue.",
+      "no_max_sanity": "My mental faculties are at capacity. I daren't summon another.",
+      "shadow_mine": "A second edition of myself, sadly abridged. At least it keeps quiet.",
+      "shadow_other": "Someone else's duplicate. It ought to be labeled with the owner's name."
+    },
+    "pt": {
+      "codex": "Somente para consulta. Na estante da MINHA biblioteca ele não entra.",
+      "codex_needsfuel": "Sem tinta, por assim dizer. Precisa de mais resíduo ectoplásmico.",
+      "no_max_sanity": "Minhas faculdades mentais chegaram ao limite. Não ouso invocar mais uma.",
+      "shadow_mine": "Uma segunda edição de mim mesma, infelizmente resumida. Ao menos fica quieta.",
+      "shadow_other": "A cópia de outra pessoa. Deveria estar etiquetada com o nome do dono."
+    },
+    "zh": {
+      "codex": "仅供查阅。它绝不会出现在我图书馆的书架上！",
+      "codex_needsfuel": "可以说是墨水干了。它需要补充灵质残渣。",
+      "no_max_sanity": "我的心智已达极限。恐怕不能再召唤了。",
+      "shadow_mine": "这是我的第二版，可惜是删节本。至少它懂得保持安静。",
+      "shadow_other": "不知是谁的复制品。应该贴上写有主人名字的标签才对。"
+    },
+    "ru": {
+      "codex": "Только для справок. На полках МОЕЙ библиотеки ему не место!",
+      "codex_needsfuel": "Чернила, так сказать, иссякли. Нужны еще остатки эктоплазмы.",
+      "no_max_sanity": "Мой рассудок на пределе. Боюсь, еще одну тень мне не выдержать.",
+      "shadow_mine": "Второе издание меня самой, увы, сокращенное. Зато хотя бы молчит.",
+      "shadow_other": "Чья-то копия. Ее следовало бы подписать именем владельца."
+    }
+  },
+  "literal": {
+    "pt": {
+      "codex": "Reference use only. On the shelf of MY library, it does not go.",
+      "codex_needsfuel": "Out of ink, so to speak. It needs more ectoplasmic residue.",
+      "no_max_sanity": "My mental faculties have reached their limit. I don't dare summon one more.",
+      "shadow_mine": "A second edition of myself, unfortunately abridged. At least it stays quiet.",
+      "shadow_other": "Another person's copy. It should be tagged with the owner's name."
+    },
+    "zh": {
+      "codex": "For consultation only. It will never appear on the shelves of my library!",
+      "codex_needsfuel": "You could say the ink has dried up. It needs a top-up of ectoplasmic residue.",
+      "no_max_sanity": "My mind has reached its limit. I'm afraid I can't summon any more.",
+      "shadow_mine": "This is my second edition, unfortunately an abridged one. At least it knows to keep quiet.",
+      "shadow_other": "No idea whose copy this is. It really should carry a label with its owner's name."
+    },
+    "ru": {
+      "codex": "For reference only. It has no place on the shelves of MY library!",
+      "codex_needsfuel": "The ink, so to speak, has run dry. More ectoplasm residue is needed.",
+      "no_max_sanity": "My reason is at its limit. I'm afraid I couldn't bear one more shadow.",
+      "shadow_mine": "A second edition of my own self, alas, abridged. But at least it keeps silent.",
+      "shadow_other": "Somebody's copy. It ought to be signed with its owner's name."
+    }
+  },
+  "voice_notes": "Wickerbottom is a stern, precise librarian: clipped clinical labels (\"Ectoplasmic residue.\", \"Transdimensional weaponry.\"), Latin binomials, dry book puns (\"It's gripping, frankly.\", \"I've given it a glowing review.\"), a condescending \"dear\", and open distaste for shadow magic (\"I do not care for this type of magic.\"); she always calls nightmare fuel \"ectoplasmic residue\" and prizes silence (\"Shhhh! No talking!\"). PT-BR renders her formally and literally precise, \"meu bem\" for dear, and the vanilla Codex line as \"ISSO não entra na MINHA biblioteca de jeito nenhum!\", which the new codex line echoes with \"MINHA biblioteca ... não entra\". ZH keeps her formal and bookish (灵质残渣 for the fuel, 亲爱的, 啧啧) with the caps emphasis dropped, as in 我不会让那个出现在我的图书馆！. RU uses feminine forms, \"дорогуша\"/\"Божечки\", «Кодекс», no ё, and keeps the caps (\"Я не позволю ЭТОМУ быть в МОЕЙ библиотеке!\"), which the RU codex line mirrors with \"МОЕЙ библиотеки ему не место\". Fuel is always \"resíduo ectoplásmico\" / 灵质残渣 / \"остатки эктоплазмы\", following her official NIGHTMAREFUEL line in each language.",
+  "line_notes": {
+    "codex": "She can use the book now, but files it as a reference-only volume, library jargon that still keeps her vanilla 'not in MY library' disdain.",
+    "codex_needsfuel": "As a writer of her own books she treats the empty Codex as a pen out of ink, and she uses her own term for nightmare fuel.",
+    "no_max_sanity": "Precise, clinical self-assessment ('mental faculties', 'at capacity') makes the failure clear without any melodrama.",
+    "shadow_mine": "A self-publishing librarian describes her copy in publishing terms, and her 'Shhhh! No talking!' ideal survives in the one thing she approves of.",
+    "shadow_other": "The cataloguer's instinct: an unidentified copy should carry an owner's label, much like her praise for 'Color-coded and clearly labeled.'"
+  }
+}
