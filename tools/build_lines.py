@@ -18,6 +18,10 @@ ORDER = ["wilson", "willow", "wolfgang", "wendy", "wx78", "wickerbottom", "woodi
          "wathgrithr", "webber", "winona", "warly", "wormwood", "wurt", "walter",
          "wanda", "waxwell", "wortox"]
 MAX_CHARS = 110  # a two-line speech bubble
+# Optional per-gender versions of shadow_other, picked from the owner of the
+# shadow being examined (DST's CHARACTER_GENDERS). shadow_other covers the
+# rest (plural, neutral, unknown modded characters).
+VARIANTS = ["shadow_other_male", "shadow_other_female", "shadow_other_robot"]
 
 
 def lua_string(text):
@@ -33,7 +37,8 @@ def load(drafts):
             problems.append(f"{prefab}: missing draft")
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
-        keys = PARTIAL.get(prefab, KEYS)
+        keys = PARTIAL.get(prefab, KEYS) + [v for v in VARIANTS if v in data["lines"].get("en", {})]
+        data["keys"] = keys
         for lang in LANGUAGES:
             lines = data["lines"].get(lang, {})
             if sorted(lines) != sorted(keys):
@@ -59,7 +64,7 @@ def write_lua(characters, out):
         for lang in LANGUAGES:
             rows.append(f"            {lang} =")
             rows.append("            {")
-            for key in PARTIAL.get(prefab, KEYS):
+            for key in data["keys"]:
                 rows.append(f"                {key} = {lua_string(data['lines'][lang][key])},")
             rows.append("            },")
         rows.append("        },")
@@ -77,7 +82,7 @@ def write_table(characters, out):
         md.append("")
         md.append("| Moment | English | Português | 简体中文 | Русский |")
         md.append("|---|---|---|---|---|")
-        for key in PARTIAL.get(prefab, KEYS):
+        for key in data["keys"]:
             cells = [data["lines"]["en"][key]]
             for lang in ["pt", "zh", "ru"]:
                 lit = data.get("literal", {}).get(lang, {}).get(key, "")
@@ -97,4 +102,4 @@ if __name__ == "__main__":
     write_lua(characters, sys.argv[2])
     if len(sys.argv) > 3:
         write_table(characters, sys.argv[3])
-    print(f"{len(characters)} characters, {sum(len(PARTIAL.get(p, KEYS)) for p in characters) * len(LANGUAGES)} lines")
+    print(f"{len(characters)} characters, {sum(len(c['keys']) for c in characters.values()) * len(LANGUAGES)} lines")

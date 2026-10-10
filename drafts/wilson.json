@@ -3,62 +3,83 @@
   "lines": {
     "en": {
       "codex": "I've decided this counts as science. Very experimental science.",
-      "codex_needsfuel": "Out of nightmare fuel. Even magic obeys conservation of energy!",
-      "no_max_sanity": "Even my brilliant brain can't handle another one of me.",
+      "codex_needsfuel": "It needs more nightmare fuel. I deduced that all by myself.",
+      "no_max_sanity": "Ow. My head says that's enough of me.",
       "shadow_mine": "At last, an assistant who truly understands my work!",
-      "shadow_other": "Oh good. Now there's more of... whoever that is."
+      "shadow_other": "Oh good. Now there's more of them.",
+      "shadow_other_male": "Oh good. Now there's more of him.",
+      "shadow_other_female": "Oh good. Now there's more of her.",
+      "shadow_other_robot": "Oh good. Now there's more of it."
     },
     "pt": {
       "codex": "Decidi que isso conta como ciência. Ciência bem experimental.",
-      "codex_needsfuel": "Acabou o combustível de pesadelo. Nem a magia escapa da conservação de energia!",
-      "no_max_sanity": "Nem minha mente brilhante aguenta mais um de mim!",
+      "codex_needsfuel": "Precisa de mais combustível de pesadelo. Descobri isso sozinho.",
+      "no_max_sanity": "Ai. Minha cabeça diz que já chega de mim.",
       "shadow_mine": "Finalmente, um assistente que entende de verdade o meu trabalho!",
-      "shadow_other": "Puxa vida! Agora tem outros que nem... sei lá quem."
+      "shadow_other": "Puxa vida! Agora tem outros que nem eles.",
+      "shadow_other_male": "Puxa vida! Agora tem outros que nem ele.",
+      "shadow_other_female": "Puxa vida! Agora tem outras que nem ela.",
+      "shadow_other_robot": "Puxa vida! Agora tem outros que nem aquilo."
     },
     "zh": {
       "codex": "我决定了，这也算是科学。极其实验性的科学。",
-      "codex_needsfuel": "噩梦燃料用完了。看来魔法也得遵守能量守恒！",
-      "no_max_sanity": "就算是我这无与伦比的大脑，也撑不住再多一个我了。",
+      "codex_needsfuel": "需要更多噩梦燃料。这可是我自己推断出来的。",
+      "no_max_sanity": "哎哟。我的脑袋说，我已经够多了。",
       "shadow_mine": "终于有个真正懂我研究的助手了！",
-      "shadow_other": "哦，挺好的。现在又多出几个……也不知道是谁。"
+      "shadow_other": "哦，挺好的。现在不止他们了。",
+      "shadow_other_male": "哦，挺好的。现在不止他一个了。",
+      "shadow_other_female": "哦，挺好的。现在不止她一个了。",
+      "shadow_other_robot": "哦，挺好的。现在不止它一个了。"
     },
     "ru": {
       "codex": "Решено: это тоже наука. Весьма экспериментальная.",
-      "codex_needsfuel": "Топливо кошмара кончилось. Даже магия подчиняется закону сохранения энергии!",
-      "no_max_sanity": "Даже моя светлая голова не выдержит ещё одного меня.",
+      "codex_needsfuel": "Нужно больше топлива кошмара. Я сам до этого додумался.",
+      "no_max_sanity": "Ай. Голова говорит, что меня уже хватит.",
       "shadow_mine": "Наконец-то ассистент, который действительно понимает мою работу!",
-      "shadow_other": "Ох, шикарно. Теперь стало больше... кого-то."
+      "shadow_other": "Ох, шикарно. Теперь их стало больше.",
+      "shadow_other_male": "Ох, шикарно. Теперь его стало больше.",
+      "shadow_other_female": "Ох, шикарно. Теперь её стало больше.",
+      "shadow_other_robot": "Ох, шикарно. Теперь этого стало больше."
     }
   },
   "literal": {
     "pt": {
       "codex": "I decided this counts as science. Very experimental science.",
-      "codex_needsfuel": "The nightmare fuel ran out. Not even magic escapes conservation of energy!",
-      "no_max_sanity": "Not even my brilliant mind can take one more of me!",
+      "codex_needsfuel": "It needs more nightmare fuel. I figured that out by myself.",
+      "no_max_sanity": "Ow. My head says enough of me already.",
       "shadow_mine": "Finally, an assistant who really understands my work!",
-      "shadow_other": "Gosh! Now there are others just like... who knows who."
+      "shadow_other": "Gee! Now there are others like them.",
+      "shadow_other_male": "Gee! Now there are others like him. (official line)",
+      "shadow_other_female": "Gee! Now there are others like her.",
+      "shadow_other_robot": "Gee! Now there are others like that thing."
     },
     "zh": {
       "codex": "I've decided: this counts as science too. Extremely experimental science.",
-      "codex_needsfuel": "The nightmare fuel is used up. Looks like magic also has to obey conservation of energy!",
-      "no_max_sanity": "Even this peerless brain of mine can't hold up under one more me.",
+      "codex_needsfuel": "Needs more nightmare fuel. I deduced this myself, mind you.",
+      "no_max_sanity": "Ouch. My head says there's enough of me already.",
       "shadow_mine": "Finally, an assistant who truly understands my research!",
-      "shadow_other": "Oh, how nice. Now there are a few more... no idea whose."
+      "shadow_other": "Oh, great. Now it's not just them.",
+      "shadow_other_male": "Oh, great. Now he's not the only one. (official line)",
+      "shadow_other_female": "Oh, great. Now she's not the only one.",
+      "shadow_other_robot": "Oh, great. Now it's not the only one."
     },
     "ru": {
       "codex": "It's decided: this is science too. Highly experimental.",
-      "codex_needsfuel": "The nightmare fuel has run out. Even magic obeys the law of conservation of energy!",
-      "no_max_sanity": "Even my bright head won't withstand one more me.",
+      "codex_needsfuel": "Need more nightmare fuel. I came up with that myself.",
+      "no_max_sanity": "Ow. My head says there's enough of me already.",
       "shadow_mine": "Finally, an assistant who really understands my work!",
-      "shadow_other": "Oh, splendid. Now there's more of... someone."
+      "shadow_other": "Oh, splendid. Now there are more of them.",
+      "shadow_other_male": "Oh, splendid. Now there's more of him. (official line)",
+      "shadow_other_female": "Oh, splendid. Now there's more of her.",
+      "shadow_other_robot": "Oh, splendid. Now there's more of that."
     }
   },
   "voice_notes": "Wilson is an earnest, slightly pompous man of science. He uses 'science' as a noun for everything, likes a dry pun, is vain about his brain and hair, mutters 'Drat!', distrusts magic ('That's not science.', 'Science beats magic, every time.'), and resents Maxwell ('I hate that guy.'). The Brazilian Portuguese is relaxed and colloquial ('Que bagulho doido!', 'Puxa vida!', 'pra') and keeps 'ciência' front and centre. The Chinese leans on 科学 phrasings ('为了科学', '不科学啊', '科学，救救我们！') with short exclamatory sentences. The Russian carries his pomp with bookish turns and science oaths ('Святой Ньютон', 'Спаси нас, наука!', 'Научный факт-с'). The shadow_other line is modelled directly on his vanilla Maxwell-shadow line 'Oh good. Now there's more of him.' and its official renderings 'Puxa vida! Agora tem outros que nem ele.' / '哦，挺好的。现在不止他一个了。' / 'Ох, шикарно. Теперь его стало больше.', and no_max_sanity reuses the official 'mente brilhante' / 'светлая голова' from DREADSTONEHAT.",
   "line_notes": {
     "codex": "Wilson has always said magic 'is not science', so now that he can use the book he pompously reclassifies it instead of admitting he's dabbling in magic.",
-    "codex_needsfuel": "He makes the empty book sound like a lab result, which says plainly that it needs fuel and still sounds like him.",
-    "no_max_sanity": "His vanity about his 'brilliant brain' turns the sanity cap into a joke about having too many Wilsons, and it still reads clearly as 'I can't summon more'.",
+    "codex_needsfuel": "Proud of deducing the obvious: Wilson's confidence outruns his insight.",
+    "no_max_sanity": "Plain, slightly goofy self-report; his head 'says' he has had enough of himself.",
     "shadow_mine": "A shadowy copy of himself is the perfect lab assistant to a man this sure of his own genius.",
-    "shadow_other": "It reworks his vanilla Maxwell-shadow quip to fit an unknown caster, so players who know the original get a callback."
+    "shadow_other": "His vanilla Maxwell-shadow line with the pronoun matched to the shadow's owner (them for plural/unknown)."
   }
 }

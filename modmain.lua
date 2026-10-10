@@ -27,6 +27,17 @@ end
 -- Wortox shadows use WORTOX_MINE / WORTOX_OTHER.
 local MINE, OTHER = "CODEX_MINE", "CODEX_OTHER"
 
+-- Someone else's shadow gets a status from its owner's gender (DST's
+-- CHARACTER_GENDERS, which modded characters register into), so a line can
+-- say "more of him" or "more of her". Plural, neutral and unknown use OTHER.
+-- Each status maps to an optional per-gender line, else shadow_other.
+local GENDER_STATUS = { MALE = "CODEX_OTHER_MALE", FEMALE = "CODEX_OTHER_FEMALE", ROBOT = "CODEX_OTHER_ROBOT" }
+local STATUS_LINE = {
+    CODEX_OTHER_MALE = "shadow_other_male",
+    CODEX_OTHER_FEMALE = "shadow_other_female",
+    CODEX_OTHER_ROBOT = "shadow_other_robot",
+}
+
 -- The base mod may load after this one or be off; look the API up when it
 -- is needed, with rawget so strict.lua never throws.
 local function GetApi()
@@ -85,7 +96,11 @@ local function SetLines(prefab, lines)
         Sub(describe, "SHADOWWAXWELL")[MINE] = lines.shadow_mine
     end
     if lines.shadow_other ~= nil then
-        Sub(describe, "SHADOWWAXWELL")[OTHER] = lines.shadow_other
+        local shadow = Sub(describe, "SHADOWWAXWELL")
+        shadow[OTHER] = lines.shadow_other
+        for status, key in pairs(STATUS_LINE) do
+            shadow[status] = lines[key] or lines.shadow_other
+        end
     end
 end
 
@@ -95,17 +110,21 @@ end
 -- examining someone else's shadow.
 for prefab, by_language in pairs(LINES.characters) do
     local lines = by_language[language] or by_language.en
+    local shown = {
+        shadow_other = lines.shadow_other,
+        shadow_other_male = lines.shadow_other_male,
+        shadow_other_female = lines.shadow_other_female,
+        shadow_other_robot = lines.shadow_other_robot,
+    }
     if IsAllowed(prefab) then
-        SetLines(prefab, {
-            codex = lines.codex,
-            codex_needsfuel = lines.codex_needsfuel,
-            no_max_sanity = lines.no_max_sanity,
-            shadow_mine = lines.shadow_mine,
-            shadow_other = lines.shadow_other,
-        })
+        shown.codex = lines.codex
+        shown.codex_needsfuel = lines.codex_needsfuel
+        shown.no_max_sanity = lines.no_max_sanity
+        shown.shadow_mine = lines.shadow_mine
     else
-        SetLines(prefab, { codex = lines.codex_banned, shadow_other = lines.shadow_other })
+        shown.codex = lines.codex_banned
     end
+    SetLines(prefab, shown)
 end
 
 ---------------------------------------------------------------------------
@@ -132,7 +151,15 @@ local function AllegianceTint(inst)
     return api.TINT_NONE
 end
 
-local CASTER = { tint = AllegianceTint, mine = MINE, other = OTHER }
+local function OtherStatus(pet, viewer, leader)
+    local gender = leader ~= nil and GLOBAL.GetGenderStrings(leader.prefab) or nil
+    return GENDER_STATUS[gender] or OTHER
+end
+
+local CASTER = { tint = AllegianceTint, mine = MINE, other = OtherStatus }
+
+-- Version 2 lets config.other be a function (Codex Umbra for Wortox 0.2.0).
+local API_VERSION = 2
 
 -- Runs a frame after spawning, once every mod's post init is done (the base
 -- mod adds the tag to Wortox), on both sides so crafting and the spellbook
@@ -151,10 +178,10 @@ AddPlayerPostInit(function(inst)
         return
     end
     local api = GetApi()
-    if api == nil then
+    if api == nil or (api.version or 1) < API_VERSION then
         if not warned then
             warned = true
-            print("[Codex Umbra for Everyone] Codex Umbra for Wortox (with its Codex Umbra option) is required; characters keep the vanilla Codex.")
+            print("[Codex Umbra for Everyone] Codex Umbra for Wortox 0.2.0 or newer (with its Codex Umbra option) is required; characters keep the vanilla Codex.")
         end
         return
     end

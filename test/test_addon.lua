@@ -46,6 +46,9 @@ local function new_global(ismastersim, locale)
         printed = {},
     }
     G.print = function(text) table.insert(G.printed, text) end
+    -- DST's CHARACTER_GENDERS lookup.
+    local genders = { willow = "FEMALE", wendy = "FEMALE", wx78 = "ROBOT", wilson = "MALE", webber = "MALE" }
+    G.GetGenderStrings = function(prefab) return genders[prefab] or "DEFAULT" end
     if locale ~= nil then
         G.LOC = { GetLocaleCode = function() return locale end }
     end
@@ -116,7 +119,7 @@ local function run_tasks(inst)
 end
 
 local function fake_api(G)
-    local api = { version = 1, TINT_NONE = 0, TINT_GESTALT = 5, TINT_VOID_VIOLET = 10, enabled = {} }
+    local api = { version = 2, TINT_NONE = 0, TINT_GESTALT = 5, TINT_VOID_VIOLET = 10, enabled = {} }
     function api.EnableShadowCaster(inst, config)
         table.insert(api.enabled, { inst = inst, config = config })
     end
@@ -217,7 +220,11 @@ do
     assert_eq(#api.enabled, 3, "every other player prefab is hooked, modded ones included")
     local config = api.enabled[1].config
     assert_eq(config.mine, "CODEX_MINE", "own shadows use CODEX_MINE")
-    assert_eq(config.other, "CODEX_OTHER", "other viewers use CODEX_OTHER")
+    assert_eq(config.other(nil, wes, new_player("willow")), "CODEX_OTHER_FEMALE", "a female owner's shadow")
+    assert_eq(config.other(nil, wes, new_player("wilson")), "CODEX_OTHER_MALE", "a male owner's shadow")
+    assert_eq(config.other(nil, wes, new_player("wx78")), "CODEX_OTHER_ROBOT", "WX-78's shadow")
+    assert_eq(config.other(nil, wes, modded), "CODEX_OTHER", "unknown or plural owners use the plain status")
+    assert_eq(config.other(nil, wes, nil), "CODEX_OTHER", "a leaderless shadow uses the plain status")
 
     assert_eq(config.tint(wilson), 0, "no allegiance keeps Maxwell's black")
     wilson:AddTag("player_lunar_aligned")
@@ -228,6 +235,37 @@ do
     local skilled = new_player("wormwood")
     skilled.components.skilltreeupdater.active.wormwood_allegiance_lunar = true
     assert_eq(config.tint(skilled), 5, "an allegiance skill without the tag still counts")
+end
+
+-- Per-gender lines: Wilson has them, everyone else repeats shadow_other.
+do
+    local G = new_global(true, "en")
+    local env = load_addon(G)
+    local data = env.codex_everyone_lines.characters
+    local wilson = G.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SHADOWWAXWELL
+    assert_eq(wilson.CODEX_OTHER_MALE, "Oh good. Now there's more of him.", "Wilson: more of him")
+    assert_eq(wilson.CODEX_OTHER_FEMALE, "Oh good. Now there's more of her.", "Wilson: more of her")
+    assert_eq(wilson.CODEX_OTHER_ROBOT, "Oh good. Now there's more of it.", "Wilson: more of it")
+    assert_eq(wilson.CODEX_OTHER, "Oh good. Now there's more of them.", "Wilson: more of them")
+    local wolfgang = G.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SHADOWWAXWELL
+    for _, status in ipairs({ "CODEX_OTHER", "CODEX_OTHER_MALE", "CODEX_OTHER_FEMALE", "CODEX_OTHER_ROBOT" }) do
+        assert_eq(wolfgang[status], data.wolfgang.en.shadow_other, "Wolfgang's one line covers " .. status)
+    end
+    local pt = new_global(true, "pt")
+    load_addon(pt)
+    assert_eq(pt.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER_MALE,
+        "Puxa vida! Agora tem outros que nem ele.", "Portuguese uses the official vanilla line for him")
+end
+
+-- An old base mod (API version 1) cannot take a status function.
+do
+    local G = new_global(true)
+    local api = fake_api(G)
+    api.version = 1
+    local env = load_addon(G)
+    env.player_postinits[1](new_player("wilson"))
+    assert_eq(#api.enabled, 0, "an API older than version 2 is not used")
+    assert_true(G.printed[1] ~= nil and G.printed[1]:find("0.2.0", 1, true) ~= nil, "the log names the required version")
 end
 
 -- Without the base mod nothing breaks and the server log says why, once.
@@ -342,7 +380,9 @@ else
     assert_eq(shadow.AnimState.tinted, nil, "no allegiance keeps Maxwell's black")
     local status = shadow.components.inspectable.getstatus
     assert_eq(status(shadow, willow), "CODEX_MINE", "Willow sees her own shadow line")
-    assert_eq(status(shadow, new_player("wilson")), "CODEX_OTHER", "others see their other-shadow line")
+    assert_eq(status(shadow, new_player("wilson")), "CODEX_OTHER_FEMALE", "others get the status for Willow's gender")
+    assert_eq(G.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER_FEMALE,
+        "Oh good. Now there's more of her.", "so Wilson says there's more of her")
     assert_eq(G.STRINGS.CHARACTERS.WILLOW.DESCRIBE.SHADOWWAXWELL.CODEX_MINE,
         addon.codex_everyone_lines.characters.willow.en.shadow_mine, "that status maps to Willow's line")
 
