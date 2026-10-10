@@ -141,8 +141,18 @@ local function HasAllegiance(inst, kind)
     return skills ~= nil and skills:IsActivated(inst.prefab .. "_allegiance_" .. kind) == true
 end
 
+-- Characters whose shadows always take one allegiance colour, whatever
+-- their skill tree says. Wormwood is a lunar plant creature.
+local FIXED_ALLEGIANCE = { wormwood = "lunar" }
+
 local function AllegianceTint(inst)
     local api = GetApi()
+    local fixed = FIXED_ALLEGIANCE[inst.prefab]
+    if fixed == "lunar" then
+        return api.TINT_GESTALT
+    elseif fixed == "shadow" then
+        return api.TINT_VOID_VIOLET
+    end
     if HasAllegiance(inst, "lunar") then
         return api.TINT_GESTALT
     elseif HasAllegiance(inst, "shadow") then

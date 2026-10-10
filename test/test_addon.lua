@@ -238,9 +238,15 @@ do
     wilson:RemoveTag("player_lunar_aligned")
     wilson:AddTag("player_shadow_aligned")
     assert_eq(config.tint(wilson), 10, "the shadow tag gives void violet")
-    local skilled = new_player("wormwood")
-    skilled.components.skilltreeupdater.active.wormwood_allegiance_lunar = true
+    local skilled = new_player("walter")
+    skilled.components.skilltreeupdater.active.walter_allegiance_lunar = true
     assert_eq(config.tint(skilled), 5, "an allegiance skill without the tag still counts")
+
+    -- Wormwood's shadows are always lunar, with or without the allegiance.
+    local wormwood = new_player("wormwood")
+    assert_eq(config.tint(wormwood), 5, "Wormwood's shadows are lunar from the start")
+    wormwood:AddTag("player_shadow_aligned")
+    assert_eq(config.tint(wormwood), 5, "and stay lunar whatever his tags say")
 end
 
 -- Per-gender lines: Wilson has them, everyone else repeats shadow_other.
