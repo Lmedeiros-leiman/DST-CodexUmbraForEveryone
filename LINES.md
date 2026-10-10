@@ -125,11 +125,11 @@ Literal English meanings of the translations are in brackets.
 
 | Moment | English | Português | 简体中文 | Русский |
 |---|---|---|---|---|
-| `codex` | Scary book... but makes friends! | Livro assustador... mas faz amigos! [Scary book... but it makes friends!] | 吓人的书……可是会变出朋友！ [Scary book... but it can conjure friends!] | Страшная книга... Зато делает друзей! [Scary book... But it makes friends!] |
-| `codex_needsfuel` | Book hungry. Needs Dark Floaty Man | Livro com fome. Precisa de Homem Flutuante Escuro. [Book is hungry. Needs Dark Floaty Man.] | 书饿了。需要黑黑的漂浮的人 [Book is hungry. Needs the dark-dark floating man] | Книга голодная. Нужен темный летун [Book is hungry. Need a dark flier] |
-| `no_max_sanity` | Ow. Hurts head. No more friends | Ai. Machuca cabeça. Mais amigos não. [Ow. Hurts head. More friends, no.] | 噢。伤害脑袋。不能再多朋友了 [Oh. Hurts head. Can't have more friends] | Ой. Голове больно. Больше друзей нельзя [Oh. Head hurts. No more friends allowed] |
+| `codex` | Scary Dark Buddy Book | Livro Assustador de Amigo Escuro. [Scary Book of Dark Friend.] | 吓人的黑黑伙伴书 [Scary dark-dark buddy book] | Страшная книжка темных дружков [Scary little book of dark buddies] |
+| `codex_needsfuel` | Wants Dark Floaty Man | Quer Homem Flutuante Escuro. [Wants Dark Floating Man.] | 想要黑黑的漂浮的人 [Wants the dark-dark floating man] | Хочет темного летуна [Wants the dark flier] |
+| `no_max_sanity` | Ow. Head too full | Oun. Cabeça cheia demais. [Ow. Head too full.] | 噢。脑袋太满了 [Ow. Head too full] | Ой. Голове тесно [Ow. Head is cramped] |
 | `shadow_mine` | Dark self! Best friend! | Eu escuro! Melhor amigo! [Dark me! Best friend!] | 黑黑的我！最好的朋友！ [Dark-dark me! Best friend!] | Темный я! Лучший друг! [Dark me! Best friend!] |
-| `shadow_other` | Hello? Someone else's dark friend | Olá? Amigo escuro de outra pessoa. [Hello? Someone else's dark friend.] | 你好？别人的黑黑的朋友 [Hello? Someone else's dark-dark friend] | Привет? Чей-то еще темный друг [Hello? Somebody else's dark friend] |
+| `shadow_other` | Someone else's shadow | Sombra de outra pessoa. [Someone else's shadow.] | 别人的影子 [Someone else's shadow] | Чья-то еще тень [Someone else's shadow] |
 
 ## Wurt
 

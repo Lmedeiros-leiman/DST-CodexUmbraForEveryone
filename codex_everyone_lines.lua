@@ -429,35 +429,35 @@ codex_everyone_lines =
         {
             en =
             {
-                codex = "Scary book... but makes friends!",
-                codex_needsfuel = "Book hungry. Needs Dark Floaty Man",
-                no_max_sanity = "Ow. Hurts head. No more friends",
+                codex = "Scary Dark Buddy Book",
+                codex_needsfuel = "Wants Dark Floaty Man",
+                no_max_sanity = "Ow. Head too full",
                 shadow_mine = "Dark self! Best friend!",
-                shadow_other = "Hello? Someone else's dark friend",
+                shadow_other = "Someone else's shadow",
             },
             pt =
             {
-                codex = "Livro assustador... mas faz amigos!",
-                codex_needsfuel = "Livro com fome. Precisa de Homem Flutuante Escuro.",
-                no_max_sanity = "Ai. Machuca cabeça. Mais amigos não.",
+                codex = "Livro Assustador de Amigo Escuro.",
+                codex_needsfuel = "Quer Homem Flutuante Escuro.",
+                no_max_sanity = "Oun. Cabeça cheia demais.",
                 shadow_mine = "Eu escuro! Melhor amigo!",
-                shadow_other = "Olá? Amigo escuro de outra pessoa.",
+                shadow_other = "Sombra de outra pessoa.",
             },
             zh =
             {
-                codex = "吓人的书……可是会变出朋友！",
-                codex_needsfuel = "书饿了。需要黑黑的漂浮的人",
-                no_max_sanity = "噢。伤害脑袋。不能再多朋友了",
+                codex = "吓人的黑黑伙伴书",
+                codex_needsfuel = "想要黑黑的漂浮的人",
+                no_max_sanity = "噢。脑袋太满了",
                 shadow_mine = "黑黑的我！最好的朋友！",
-                shadow_other = "你好？别人的黑黑的朋友",
+                shadow_other = "别人的影子",
             },
             ru =
             {
-                codex = "Страшная книга... Зато делает друзей!",
-                codex_needsfuel = "Книга голодная. Нужен темный летун",
-                no_max_sanity = "Ой. Голове больно. Больше друзей нельзя",
+                codex = "Страшная книжка темных дружков",
+                codex_needsfuel = "Хочет темного летуна",
+                no_max_sanity = "Ой. Голове тесно",
                 shadow_mine = "Темный я! Лучший друг!",
-                shadow_other = "Привет? Чей-то еще темный друг",
+                shadow_other = "Чья-то еще тень",
             },
         },
         wurt =

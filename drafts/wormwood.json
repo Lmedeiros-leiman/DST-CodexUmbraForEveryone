@@ -2,63 +2,63 @@
   "character": "wormwood",
   "lines": {
     "en": {
-      "codex": "Scary book... but makes friends!",
-      "codex_needsfuel": "Book hungry. Needs Dark Floaty Man",
-      "no_max_sanity": "Ow. Hurts head. No more friends",
+      "codex": "Scary Dark Buddy Book",
+      "codex_needsfuel": "Wants Dark Floaty Man",
+      "no_max_sanity": "Ow. Head too full",
       "shadow_mine": "Dark self! Best friend!",
-      "shadow_other": "Hello? Someone else's dark friend"
+      "shadow_other": "Someone else's shadow"
     },
     "pt": {
-      "codex": "Livro assustador... mas faz amigos!",
-      "codex_needsfuel": "Livro com fome. Precisa de Homem Flutuante Escuro.",
-      "no_max_sanity": "Ai. Machuca cabeça. Mais amigos não.",
+      "codex": "Livro Assustador de Amigo Escuro.",
+      "codex_needsfuel": "Quer Homem Flutuante Escuro.",
+      "no_max_sanity": "Oun. Cabeça cheia demais.",
       "shadow_mine": "Eu escuro! Melhor amigo!",
-      "shadow_other": "Olá? Amigo escuro de outra pessoa."
+      "shadow_other": "Sombra de outra pessoa."
     },
     "zh": {
-      "codex": "吓人的书……可是会变出朋友！",
-      "codex_needsfuel": "书饿了。需要黑黑的漂浮的人",
-      "no_max_sanity": "噢。伤害脑袋。不能再多朋友了",
+      "codex": "吓人的黑黑伙伴书",
+      "codex_needsfuel": "想要黑黑的漂浮的人",
+      "no_max_sanity": "噢。脑袋太满了",
       "shadow_mine": "黑黑的我！最好的朋友！",
-      "shadow_other": "你好？别人的黑黑的朋友"
+      "shadow_other": "别人的影子"
     },
     "ru": {
-      "codex": "Страшная книга... Зато делает друзей!",
-      "codex_needsfuel": "Книга голодная. Нужен темный летун",
-      "no_max_sanity": "Ой. Голове больно. Больше друзей нельзя",
+      "codex": "Страшная книжка темных дружков",
+      "codex_needsfuel": "Хочет темного летуна",
+      "no_max_sanity": "Ой. Голове тесно",
       "shadow_mine": "Темный я! Лучший друг!",
-      "shadow_other": "Привет? Чей-то еще темный друг"
+      "shadow_other": "Чья-то еще тень"
     }
   },
   "literal": {
     "pt": {
-      "codex": "Scary book... but it makes friends!",
-      "codex_needsfuel": "Book is hungry. Needs Dark Floaty Man.",
-      "no_max_sanity": "Ow. Hurts head. More friends, no.",
+      "codex": "Scary Book of Dark Friend.",
+      "codex_needsfuel": "Wants Dark Floating Man.",
+      "no_max_sanity": "Ow. Head too full.",
       "shadow_mine": "Dark me! Best friend!",
-      "shadow_other": "Hello? Someone else's dark friend."
+      "shadow_other": "Someone else's shadow."
     },
     "zh": {
-      "codex": "Scary book... but it can conjure friends!",
-      "codex_needsfuel": "Book is hungry. Needs the dark-dark floating man",
-      "no_max_sanity": "Oh. Hurts head. Can't have more friends",
+      "codex": "Scary dark-dark buddy book",
+      "codex_needsfuel": "Wants the dark-dark floating man",
+      "no_max_sanity": "Ow. Head too full",
       "shadow_mine": "Dark-dark me! Best friend!",
-      "shadow_other": "Hello? Someone else's dark-dark friend"
+      "shadow_other": "Someone else's shadow"
     },
     "ru": {
-      "codex": "Scary book... But it makes friends!",
-      "codex_needsfuel": "Book is hungry. Need a dark flier",
-      "no_max_sanity": "Oh. Head hurts. No more friends allowed",
+      "codex": "Scary little book of dark buddies",
+      "codex_needsfuel": "Wants the dark flier",
+      "no_max_sanity": "Ow. Head is cramped",
       "shadow_mine": "Dark me! Best friend!",
-      "shadow_other": "Hello? Somebody else's dark friend"
+      "shadow_other": "Someone else's shadow"
     }
   },
-  "voice_notes": "Wormwood speaks in short fragments with dropped articles and subjects, names things by childlike compounds (nightmare fuel is 'Dark Floaty Man', the moon 'Night Ball', ghosts 'Floaty Friend'), calls almost everything 'friend', and his loneliness shows in how eagerly he greets things ('Hello?'). Books are judged by whether they are nice or scary ('About Scary Arms', 'About friends!'), and mental strain is always 'head' ('Ow. Hurts head...'). The Portuguese drops articles the same way ('Machuca cabeça', 'Cadê cabeça?') and renders nicknames as literal noun phrases ('Homem Flutuante Escuro'). The Chinese uses reduplicated 黑黑的 and stiff-simple constructions like 伤害脑袋 and 别人的朋友. The Russian is plain and grammatical but clipped, mirrors 'Dead self!' as 'Мертвый я!', and uses 'Чей-то еще друг' for 'Someone else's friend'; I modelled shadow_mine and shadow_other directly on those two official patterns in every language.",
+  "voice_notes": "Wormwood speaks in short fragments with dropped articles and subjects, names things by childlike compounds (nightmare fuel is 'Dark Floaty Man', the moon 'Night Ball', ghosts 'Floaty Friend'), calls almost everything 'friend', and his loneliness shows in how eagerly he greets things ('Hello?'). Books are judged by whether they are nice or scary ('About Scary Arms', 'About friends!'), and mental strain is always 'head' ('Ow. Hurts head...'). The Portuguese drops articles the same way ('Machuca cabeça', 'Cadê cabeça?') and renders nicknames as literal noun phrases ('Homem Flutuante Escuro'). The Chinese uses reduplicated 黑黑的 and stiff-simple constructions like 伤害脑袋 and 别人的朋友. The Russian is plain and grammatical but clipped, mirrors 'Dead self!' as 'Мертвый я!', and uses 'Чей-то еще друг' for 'Someone else's friend'; I modelled shadow_mine and shadow_other directly on those two official patterns in every language. Revised: lines cut to four words or fewer (92% of his vanilla lines), 'friend' kept to one line (18% of his lines), and the Codex gets one of his descriptive nicknames.",
   "line_notes": {
-    "codex": "For the Lonesome, a book that conjures companions outweighs its scariness, and 'Scary' is how he sizes up every book.",
-    "codex_needsfuel": "Uses his own name for nightmare fuel and his 'belly'/hunger framing, so 'empty' comes across in his words.",
-    "no_max_sanity": "Echoes his official 'Ow. Hurts head...' for sanity drain and says plainly that no more friends can come.",
+    "codex": "His signature made-up nickname, built like 'Shaggy Buddy brusher': the shadows are dark buddies.",
+    "codex_needsfuel": "Four words, with his official nickname for nightmare fuel.",
+    "no_max_sanity": "Short and simple, echoing his official 'Ow. Hurts head...'.",
     "shadow_mine": "Built on his official 'Dead self!' line, and the lonely creature delighted that his own copy is a friend is the heart of the character.",
-    "shadow_other": "Mirrors his official 'Someone else's friend' and opens with the hopeful 'Hello?' he gives to unknown things."
+    "shadow_other": "Patterned on his vanilla 'Someone else's friend'."
   }
 }
