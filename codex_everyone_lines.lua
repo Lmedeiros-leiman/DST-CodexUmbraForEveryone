@@ -499,35 +499,35 @@ codex_everyone_lines =
         {
             en =
             {
-                codex = "Real shadow magic, Woby! I wonder if there's a badge for this?",
+                codex = "Real shadow magic! I wonder if there's a badge for this?",
                 codex_needsfuel = "It's out of nightmare fuel. Maybe I should tell it a campfire story?",
-                no_max_sanity = "My head... Even a Pinetree Pioneer can only handle so many shadows.",
+                no_max_sanity = "My head... I think I need to sit down for a minute.",
                 shadow_mine = "It's me, but way spookier! Woby, stop growling at him!",
-                shadow_other = "Neat! Hey buddy, whose shadow are you supposed to be?",
+                shadow_other = "Hey buddy, whose shadow are you supposed to be?",
             },
             pt =
             {
-                codex = "Magia das sombras de verdade, Woby! Será que tem medalha pra isso?",
+                codex = "Magia das sombras de verdade! Será que tem medalha pra isso?",
                 codex_needsfuel = "Ficou sem combustível de pesadelo. E se eu contar uma história de terror pra ele?",
-                no_max_sanity = "Minha cabeça... Nem um Pioneiro dos Pinheiros aguenta tanta sombra assim.",
+                no_max_sanity = "Minha cabeça... Acho que preciso sentar um minutinho.",
                 shadow_mine = "Sou eu, só que bem mais assustador! Woby, pare de rosnar para ele!",
-                shadow_other = "Bacana! E aí, parceiro, você é a sombra de quem?",
+                shadow_other = "E aí, parceiro, você é a sombra de quem?",
             },
             zh =
             {
-                codex = "真正的暗影魔法，沃比！不知道有没有这方面的奖章？",
+                codex = "真正的暗影魔法！不知道有没有这方面的奖章？",
                 codex_needsfuel = "噩梦燃料用完了。要不我给它讲个篝火故事？",
-                no_max_sanity = "我的头……就算是松树先锋队员，也承受不了这么多暗影。",
+                no_max_sanity = "我的头……我想我得坐下歇一会儿。",
                 shadow_mine = "这是我！只不过更吓人一点！沃比，别冲他叫了！",
-                shadow_other = "真不错！嘿，伙计，你是谁的影子呀？",
+                shadow_other = "嘿，伙计，你是谁的影子呀？",
             },
             ru =
             {
-                codex = "Настоящая теневая магия, Воби! Интересно, за нее дают значок?",
+                codex = "Настоящая теневая магия! Интересно, за нее дают значок?",
                 codex_needsfuel = "Кончилось топливо кошмара. Может, рассказать ему историю у костра?",
-                no_max_sanity = "Ой, моя голова... Даже Сосновому скауту столько теней не выдержать.",
+                no_max_sanity = "Моя голова... Кажется, мне надо присесть на минутку.",
                 shadow_mine = "Это же я, только страшнее! Воби, фу, не рычи!",
-                shadow_other = "Отпад! Эй, приятель, а ты чья тень?",
+                shadow_other = "Эй, приятель, а ты чья тень?",
             },
         },
         wanda =

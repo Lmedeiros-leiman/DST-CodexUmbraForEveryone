@@ -2,63 +2,63 @@
   "character": "walter",
   "lines": {
     "en": {
-      "codex": "Real shadow magic, Woby! I wonder if there's a badge for this?",
+      "codex": "Real shadow magic! I wonder if there's a badge for this?",
       "codex_needsfuel": "It's out of nightmare fuel. Maybe I should tell it a campfire story?",
-      "no_max_sanity": "My head... Even a Pinetree Pioneer can only handle so many shadows.",
+      "no_max_sanity": "My head... I think I need to sit down for a minute.",
       "shadow_mine": "It's me, but way spookier! Woby, stop growling at him!",
-      "shadow_other": "Neat! Hey buddy, whose shadow are you supposed to be?"
+      "shadow_other": "Hey buddy, whose shadow are you supposed to be?"
     },
     "pt": {
-      "codex": "Magia das sombras de verdade, Woby! Será que tem medalha pra isso?",
+      "codex": "Magia das sombras de verdade! Será que tem medalha pra isso?",
       "codex_needsfuel": "Ficou sem combustível de pesadelo. E se eu contar uma história de terror pra ele?",
-      "no_max_sanity": "Minha cabeça... Nem um Pioneiro dos Pinheiros aguenta tanta sombra assim.",
+      "no_max_sanity": "Minha cabeça... Acho que preciso sentar um minutinho.",
       "shadow_mine": "Sou eu, só que bem mais assustador! Woby, pare de rosnar para ele!",
-      "shadow_other": "Bacana! E aí, parceiro, você é a sombra de quem?"
+      "shadow_other": "E aí, parceiro, você é a sombra de quem?"
     },
     "zh": {
-      "codex": "真正的暗影魔法，沃比！不知道有没有这方面的奖章？",
+      "codex": "真正的暗影魔法！不知道有没有这方面的奖章？",
       "codex_needsfuel": "噩梦燃料用完了。要不我给它讲个篝火故事？",
-      "no_max_sanity": "我的头……就算是松树先锋队员，也承受不了这么多暗影。",
+      "no_max_sanity": "我的头……我想我得坐下歇一会儿。",
       "shadow_mine": "这是我！只不过更吓人一点！沃比，别冲他叫了！",
-      "shadow_other": "真不错！嘿，伙计，你是谁的影子呀？"
+      "shadow_other": "嘿，伙计，你是谁的影子呀？"
     },
     "ru": {
-      "codex": "Настоящая теневая магия, Воби! Интересно, за нее дают значок?",
+      "codex": "Настоящая теневая магия! Интересно, за нее дают значок?",
       "codex_needsfuel": "Кончилось топливо кошмара. Может, рассказать ему историю у костра?",
-      "no_max_sanity": "Ой, моя голова... Даже Сосновому скауту столько теней не выдержать.",
+      "no_max_sanity": "Моя голова... Кажется, мне надо присесть на минутку.",
       "shadow_mine": "Это же я, только страшнее! Воби, фу, не рычи!",
-      "shadow_other": "Отпад! Эй, приятель, а ты чья тень?"
+      "shadow_other": "Эй, приятель, а ты чья тень?"
     }
   },
   "literal": {
     "pt": {
-      "codex": "Real shadow magic, Woby! Could there be a badge for that?",
+      "codex": "Real shadow magic! I wonder if there's a medal for this?",
       "codex_needsfuel": "It ran out of nightmare fuel. What if I tell it a horror story?",
-      "no_max_sanity": "My head... Not even a Pinetree Pioneer can take this much shadow.",
+      "no_max_sanity": "My head... I think I need to sit down for a minute.",
       "shadow_mine": "It's me, only a lot scarier! Woby, stop growling at him!",
-      "shadow_other": "Cool! Hey there, partner, whose shadow are you?"
+      "shadow_other": "Hey, buddy, whose shadow are you?"
     },
     "zh": {
-      "codex": "Real shadow magic, Woby! I wonder if there's a badge for this?",
+      "codex": "Real shadow magic! I wonder if there's a badge for this?",
       "codex_needsfuel": "The nightmare fuel is used up. How about I tell it a campfire story?",
-      "no_max_sanity": "My head... Even a Pinetree Pioneer can't bear this many shadows.",
+      "no_max_sanity": "My head... I think I need to sit down and rest a bit.",
       "shadow_mine": "This is me! Just a bit scarier! Woby, stop barking at him!",
-      "shadow_other": "Pretty neat! Hey, buddy, whose shadow are you?"
+      "shadow_other": "Hey, buddy, whose shadow are you?"
     },
     "ru": {
-      "codex": "Real shadow magic, Woby! I wonder, do they give a badge for it?",
+      "codex": "Real shadow magic! I wonder if they give a badge for it?",
       "codex_needsfuel": "The nightmare fuel ran out. Maybe tell it a campfire story?",
-      "no_max_sanity": "Oh, my head... Even a Pinetree Scout can't withstand so many shadows.",
+      "no_max_sanity": "My head... Looks like I need to sit down for a minute.",
       "shadow_mine": "Why, it's me, only scarier! Woby, no, don't growl!",
-      "shadow_other": "Awesome! Hey, pal, and whose shadow are you?"
+      "shadow_other": "Hey, buddy, whose shadow are you?"
     }
   },
-  "voice_notes": "Walter is a cheerful, fearless boy scout who treats every monster as a thrill: he talks to Woby constantly, measures life in Pinetree Pioneer badges and handbook rules, cracks corny jokes, and his campfire and radio horror stories come up all the time. He is polite to adults ('Mr. Maxwell') and calls Woby 'girl' or 'Wobes'. PT-BR keeps him casual and boyish ('tá', 'pra', 'Peraí', 'Droga', 'Bacana!'), renders badge as 'medalha' and the scouts as 'Pioneiro dos Pinheiros', and calls his campfire stories 'histórias de terror' ('...minhas histórias de terror são combustível de pesadelo'). Chinese uses plain, bright kid speech with 沃比, 松树先锋队员, 奖章 and 篝火故事, interjections like 呵呵 and 哎呀, and the Maxwell line '沃比，别冲他叫了！'. Russian makes him a lively, slangy kid ('Блин', 'Отпад!', 'Ого'), with 'Сосновые скауты', 'значок', Woby as feminine 'Воби/Вобс', and the Maxwell line 'Воби, фу, не рычи!', which I reused for shadow_mine.",
+  "voice_notes": "Walter is a cheerful, fearless boy scout who treats every monster as a thrill: he talks to Woby constantly, measures life in Pinetree Pioneer badges and handbook rules, cracks corny jokes, and his campfire and radio horror stories come up all the time. He is polite to adults ('Mr. Maxwell') and calls Woby 'girl' or 'Wobes'. PT-BR keeps him casual and boyish ('tá', 'pra', 'Peraí', 'Droga', 'Bacana!'), renders badge as 'medalha' and the scouts as 'Pioneiro dos Pinheiros', and calls his campfire stories 'histórias de terror' ('...minhas histórias de terror são combustível de pesadelo'). Chinese uses plain, bright kid speech with 沃比, 松树先锋队员, 奖章 and 篝火故事, interjections like 呵呵 and 哎呀, and the Maxwell line '沃比，别冲他叫了！'. Russian makes him a lively, slangy kid ('Блин', 'Отпад!', 'Ого'), with 'Сосновые скауты', 'значок', Woby as feminine 'Воби/Вобс', and the Maxwell line 'Воби, фу, не рычи!', which I reused for shadow_mine. Revised: trademarks spread out (Woby, badge, campfire story) instead of one per line, letting his plain kid voice through.",
   "line_notes": {
-    "codex": "Now that he can use it, his old 'teach me magic tricks' eagerness pays off, and he tells Woby about it and wonders about a badge, his signature tic.",
+    "codex": "Eager scout curiosity; Woby is saved for the own-shadow line.",
     "codex_needsfuel": "Plays off his official nightmare fuel line ('People always say my campfire stories are nightmare fuel'), so the empty book becomes a setup for his favourite hobby.",
-    "no_max_sanity": "Echoes his ANNOUNCE_GHOSTDRAIN 'My head...' and his scout pride. He isn't scared, he's at his limit, so the line reads clearly as 'no more shadows right now'.",
+    "no_max_sanity": "His plain, earnest kid voice instead of another Pinetree Pioneer reference.",
     "shadow_mine": "Seeing a spooky copy of himself delights him, and the second half reuses his exact line about Woby growling at Maxwell, now aimed at a shadow Walter.",
-    "shadow_other": "'Neat!' is his reaction to every monster, and asking an unknown silhouette whose shadow it is fits his curious, friendly way of treating creatures."
+    "shadow_other": "Friendly and curious, without stacking another catchphrase."
   }
 }
