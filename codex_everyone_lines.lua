@@ -56,32 +56,32 @@ codex_everyone_lines =
             en =
             {
                 codex = "Finally, a book worth NOT burning.",
-                codex_needsfuel = "It burned through all its fuel. Heh, my kind of book.",
-                no_max_sanity = "Ugh, my head can't handle one more Willow.",
+                codex_needsfuel = "No fuel? Then it's just kindling.",
+                no_max_sanity = "I'm burnt out. And not the fun kind.",
                 shadow_mine = "Heh, looking good, me. Now get to work!",
                 shadow_other = "Whose creepy twin is that? Mine's way cuter.",
             },
             pt =
             {
                 codex = "Finalmente um livro que vale a pena NÃO queimar.",
-                codex_needsfuel = "Queimou todo o combustível. Heh, meu tipo de livro.",
-                no_max_sanity = "Ugh, minha cabeça não aguenta mais uma Willow.",
+                codex_needsfuel = "Sem combustível? Então é só lenha.",
+                no_max_sanity = "Tô torrada. E não do jeito divertido.",
                 shadow_mine = "Heh, tô linda, hein? Agora vai trabalhar!",
                 shadow_other = "De quem é essa cópia sinistra? A minha é bem mais bonita.",
             },
             zh =
             {
                 codex = "总算有本书我舍不得烧了。",
-                codex_needsfuel = "燃料全烧光了。呵，跟我一个德行。",
-                no_max_sanity = "呃，再来一个薇洛，我脑袋可受不了。",
+                codex_needsfuel = "没燃料了？那它就只是引火柴了。",
+                no_max_sanity = "我燃尽了。不是好玩的那种。",
                 shadow_mine = "呵，我可真好看。快干活去！",
                 shadow_other = "这吓人的分身是谁的？我的可比它好看多了。",
             },
             ru =
             {
                 codex = "Наконец-то книга, которую жалко сжигать.",
-                codex_needsfuel = "Спалил все топливо. Хех, весь в меня.",
-                no_max_sanity = "Блин, еще одну Уиллоу моя голова не вынесет.",
+                codex_needsfuel = "Нет топлива? Значит, это просто растопка.",
+                no_max_sanity = "Я выгорела. И не в веселом смысле.",
                 shadow_mine = "Хех, ну я и красотка. А теперь за работу!",
                 shadow_other = "Чья это жуткая копия? Моя куда симпатичнее.",
             },
