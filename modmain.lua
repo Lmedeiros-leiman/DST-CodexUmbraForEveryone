@@ -10,6 +10,19 @@ local LINES = codex_everyone_lines
 -- other player prefab, modded characters included, gets the hook.
 local EXCLUDED = { waxwell = true, wortox = true }
 
+-- Host options: one switch per vanilla character ("allow_<prefab>") and one
+-- for every modded character ("allow_modded"). All default to allowed.
+local VANILLA = {
+    wilson = true, willow = true, wolfgang = true, wendy = true, wx78 = true, wickerbottom = true,
+    woodie = true, wes = true, waxwell = true, wathgrithr = true, webber = true, winona = true,
+    warly = true, wortox = true, wormwood = true, wurt = true, walter = true, wanda = true,
+}
+
+local function IsAllowed(prefab)
+    local option = VANILLA[prefab] and "allow_" .. prefab or "allow_modded"
+    return GetModConfigData(option) ~= false
+end
+
 -- Examine statuses for shadows summoned through this add-on. The base mod's
 -- Wortox shadows use WORTOX_MINE / WORTOX_OTHER.
 local MINE, OTHER = "CODEX_MINE", "CODEX_OTHER"
@@ -76,8 +89,23 @@ local function SetLines(prefab, lines)
     end
 end
 
+-- Allowed characters get their Codex lines. Banned ones keep their vanilla
+-- Codex lines, which fit again (most say they can't use the book); Maxwell
+-- and Wortox have a codex_banned line instead. Everyone keeps the line for
+-- examining someone else's shadow.
 for prefab, by_language in pairs(LINES.characters) do
-    SetLines(prefab, by_language[language] or by_language.en)
+    local lines = by_language[language] or by_language.en
+    if IsAllowed(prefab) then
+        SetLines(prefab, {
+            codex = lines.codex,
+            codex_needsfuel = lines.codex_needsfuel,
+            no_max_sanity = lines.no_max_sanity,
+            shadow_mine = lines.shadow_mine,
+            shadow_other = lines.shadow_other,
+        })
+    else
+        SetLines(prefab, { codex = lines.codex_banned, shadow_other = lines.shadow_other })
+    end
 end
 
 ---------------------------------------------------------------------------
@@ -106,8 +134,19 @@ end
 
 local CASTER = { tint = AllegianceTint, mine = MINE, other = OTHER }
 
+-- Runs a frame after spawning, once every mod's post init is done (the base
+-- mod adds the tag to Wortox), on both sides so crafting and the spellbook
+-- agree. Without the tag the Codex can be neither crafted nor opened.
+local function RemoveShadowMagic(inst)
+    inst:RemoveTag("shadowmagic")
+end
+
 local warned = false
 AddPlayerPostInit(function(inst)
+    if not IsAllowed(inst.prefab) then
+        inst:DoTaskInTime(0, RemoveShadowMagic)
+        return
+    end
     if EXCLUDED[inst.prefab] then
         return
     end

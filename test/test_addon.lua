@@ -101,7 +101,18 @@ local function new_player(prefab)
     end
     inst.components.skilltreeupdater = { active = {} }
     function inst.components.skilltreeupdater:IsActivated(skill) return self.active[skill] == true end
+    -- Deferred like the game's: run them with run_tasks(inst).
+    inst.tasks = {}
+    function inst:DoTaskInTime(delay, fn, ...)
+        table.insert(self.tasks, { fn = fn, args = { ... } })
+    end
     return inst
+end
+
+local function run_tasks(inst)
+    local tasks = inst.tasks
+    inst.tasks = {}
+    for _, t in ipairs(tasks) do t.fn(inst, unpack(t.args)) end
 end
 
 local function fake_api(G)
@@ -134,6 +145,7 @@ do
         for _, lang in ipairs({ "en", "pt", "zh", "ru" }) do
             local lines = data.characters[prefab][lang]
             assert_true(type(lines.shadow_other) == "string", prefab .. "/" .. lang .. " has its other-shadow line")
+            assert_true(type(lines.codex_banned) == "string", prefab .. "/" .. lang .. " has a banned Codex line")
             assert_eq(lines.codex, nil, prefab .. "/" .. lang .. " keeps its own Codex lines")
         end
     end
@@ -341,6 +353,85 @@ else
     local wortox = new_player("wortox")
     addon.player_postinits[1](wortox)
     assert_eq(wortox._codexumbra, nil, "the add-on leaves Wortox to the base mod")
+end
+
+---------------------------------------------------------------------------
+-- Host options: who may cast shadow magic
+---------------------------------------------------------------------------
+do
+    local env = { locale = "en" }
+    local chunk = assert(loadfile(mod_root .. "/modinfo.lua"))
+    setfenv(chunk, env)
+    chunk()
+    local by_name = {}
+    for _, option in ipairs(env.configuration_options) do
+        by_name[option.name] = option
+    end
+    assert_true(by_name.header_casters ~= nil, "the options have an allowed-casters section")
+    local vanilla = { "wilson", "willow", "wolfgang", "wendy", "wx78", "wickerbottom", "woodie", "wes", "waxwell",
+        "wathgrithr", "webber", "winona", "warly", "wortox", "wormwood", "wurt", "walter", "wanda" }
+    for _, prefab in ipairs(vanilla) do
+        local option = by_name["allow_" .. prefab]
+        assert_true(option ~= nil and option.default == true, prefab .. " has an allow switch, on by default")
+    end
+    assert_true(by_name.allow_modded ~= nil and by_name.allow_modded.default == true, "modded characters have a switch")
+    assert_eq(by_name.allow_waxwell.label, "Maxwell", "switches use the characters' names")
+    local ru = { locale = "ru" }
+    setfenv(chunk, ru)
+    chunk()
+    local ru_names = {}
+    for _, option in ipairs(ru.configuration_options) do ru_names[option.name] = option.label end
+    assert_eq(ru_names.allow_wanda, "Ванда", "Russian switches use the official names")
+end
+
+do
+    local G = new_global(true, "en")
+    local api = fake_api(G)
+    local env = load_addon(G, { allow_wolfgang = false, allow_waxwell = false, allow_wortox = false })
+    local chars = G.STRINGS.CHARACTERS
+    local data = env.codex_everyone_lines.characters
+
+    assert_eq(chars.WOLFGANG.DESCRIBE.WAXWELLJOURNAL.GENERIC, "vanilla WOLFGANG", "a banned character keeps the vanilla Codex line")
+    assert_eq(chars.WOLFGANG.DESCRIBE.WAXWELLJOURNAL.NEEDSFUEL, nil, "a banned character gets no fuel line")
+    assert_eq(chars.WOLFGANG.DESCRIBE.SHADOWWAXWELL.CODEX_MINE, nil, "a banned character gets no own-shadow line")
+    assert_eq(chars.WOLFGANG.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER, data.wolfgang.en.shadow_other, "but still comments on others' shadows")
+    assert_eq(chars.WAXWELL.DESCRIBE.WAXWELLJOURNAL.GENERIC, data.waxwell.en.codex_banned, "a banned Maxwell gets his locked-out line")
+    assert_eq(chars.WORTOX.DESCRIBE.WAXWELLJOURNAL.GENERIC, data.wortox.en.codex_banned, "a banned Wortox gets his vanilla line back")
+    assert_eq(chars.WILLOW.DESCRIBE.WAXWELLJOURNAL.GENERIC, data.willow.en.codex, "allowed characters keep their Codex lines")
+
+    local postinit = env.player_postinits[1]
+    for _, prefab in ipairs({ "wolfgang", "waxwell", "wortox" }) do
+        local inst = new_player(prefab)
+        inst:AddTag("shadowmagic") -- Maxwell's own tag, or the base mod's on Wortox
+        postinit(inst)
+        assert_eq(inst:HasTag("shadowmagic"), true, prefab .. " keeps the tag until other mods are done")
+        run_tasks(inst)
+        assert_eq(inst:HasTag("shadowmagic"), false, "a banned " .. prefab .. " loses shadow magic")
+    end
+    assert_eq(#api.enabled, 0, "banned characters are never hooked")
+
+    local willow = new_player("willow")
+    postinit(willow)
+    run_tasks(willow)
+    assert_eq(#api.enabled, 1, "allowed characters are still hooked")
+end
+
+do
+    local G = new_global(true)
+    local api = fake_api(G)
+    local env = load_addon(G, { allow_modded = false })
+    local modded = new_player("modded_hero")
+    modded:AddTag("shadowmagic")
+    env.player_postinits[1](modded)
+    run_tasks(modded)
+    assert_eq(modded:HasTag("shadowmagic"), false, "banning modded characters removes their shadow magic")
+    env.player_postinits[1](new_player("wilson"))
+    assert_eq(#api.enabled, 1, "vanilla characters ignore the modded switch")
+    local info = { locale = "en" }
+    local chunk = assert(loadfile(mod_root .. "/modinfo.lua"))
+    setfenv(chunk, info)
+    chunk()
+    assert_eq(info.priority, -10, "the add-on loads after the base mod")
 end
 
 if failures > 0 then

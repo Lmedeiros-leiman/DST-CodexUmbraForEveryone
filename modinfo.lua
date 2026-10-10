@@ -51,6 +51,10 @@ reign_of_giants_compatible = false
 all_clients_require_mod = true
 client_only_mod = false
 
+-- Load after Codex Umbra for Wortox (priority 0): its API and lines must be
+-- in place before this mod reads or replaces them.
+priority = -10
+
 icon = "modicon.tex"
 icon_atlas = "modicon.xml"
 
@@ -69,6 +73,42 @@ mod_dependencies =
         ["wortox_shenanigans"] = false,
         ["Codex Umbra for Wortox"] = true,
     },
+}
+
+-- modinfo runs in a bare environment (no ipairs, table or string), so the
+-- option lists below are built with plain loops and concatenation.
+local YES_NO =
+{
+    { description = T{ en = "Yes", pt = "Sim", zh = "是", ru = "Да" }, data = true },
+    { description = T{ en = "No", pt = "Não", zh = "否", ru = "Нет" }, data = false },
+}
+
+-- A label-only row that groups the options under it.
+local function Header(id, texts)
+    return { name = id, label = T(texts), hover = "", options = { { description = "", data = 0 } }, default = 0 }
+end
+
+-- Official names from the game's translations.
+local CASTERS =
+{
+    { "wilson", { en = "Wilson", pt = "Wilson", zh = "威尔逊", ru = "Уилсон" } },
+    { "willow", { en = "Willow", pt = "Willow", zh = "薇洛", ru = "Уиллоу" } },
+    { "wolfgang", { en = "Wolfgang", pt = "Wolfgang", zh = "沃尔夫冈", ru = "Вольфганг" } },
+    { "wendy", { en = "Wendy", pt = "Wendy", zh = "温蒂", ru = "Венди" } },
+    { "wx78", { en = "WX-78", pt = "WX-78", zh = "WX-78", ru = "WX-78" } },
+    { "wickerbottom", { en = "Wickerbottom", pt = "Wickerbottom", zh = "薇克巴顿", ru = "Уикерботтом" } },
+    { "woodie", { en = "Woodie", pt = "Woodie", zh = "伍迪", ru = "Вуди" } },
+    { "wes", { en = "Wes", pt = "Wes", zh = "韦斯", ru = "Вэс" } },
+    { "waxwell", { en = "Maxwell", pt = "Maxwell", zh = "麦斯威尔", ru = "Максвелл" } },
+    { "wathgrithr", { en = "Wigfrid", pt = "Wigfrid", zh = "薇格弗德", ru = "Вигфрид" } },
+    { "webber", { en = "Webber", pt = "Webber", zh = "韦伯", ru = "Веббер" } },
+    { "winona", { en = "Winona", pt = "Winona", zh = "薇诺娜", ru = "Вайнона" } },
+    { "warly", { en = "Warly", pt = "Warly", zh = "沃利", ru = "Варли" } },
+    { "wortox", { en = "Wortox", pt = "Wortox", zh = "沃拓克斯", ru = "Вортокс" } },
+    { "wormwood", { en = "Wormwood", pt = "Wormwood", zh = "沃姆伍德", ru = "Вормвуд" } },
+    { "wurt", { en = "Wurt", pt = "Wurt", zh = "沃特", ru = "Вурт" } },
+    { "walter", { en = "Walter", pt = "Walter", zh = "沃尔特", ru = "Уолтер" } },
+    { "wanda", { en = "Wanda", pt = "Vanda", zh = "旺达", ru = "Ванда" } },
 }
 
 configuration_options =
@@ -92,4 +132,50 @@ configuration_options =
         },
         default = "auto",
     },
+    Header("header_casters", {
+        en = "Allowed to cast shadow magic",
+        pt = "Podem usar magia de sombra",
+        zh = "允许使用暗影魔法",
+        ru = "Могут использовать теневую магию",
+    }),
+}
+
+for i = 1, #CASTERS do
+    local prefab, names = CASTERS[i][1], CASTERS[i][2]
+    local hover = T{
+        en = "Lets " .. names.en .. " craft and use the Codex Umbra.",
+        pt = "Permite que " .. names.pt .. " crie e use o Codex Umbra.",
+        zh = "允许" .. names.zh .. "制作和使用暗影秘典。",
+        ru = names.ru .. " может создавать и использовать Кодекс Умбра.",
+    }
+    if prefab == "waxwell" then
+        hover = T{
+            en = "Off also takes away Maxwell's own shadow magic, magician recipes included.",
+            pt = "Desligado também tira a magia de sombra do próprio Maxwell, incluindo as receitas de mágico.",
+            zh = "关闭后，麦斯威尔本人也会失去暗影魔法，包括魔术师配方。",
+            ru = "«Нет» лишает теневой магии и самого Максвелла, включая рецепты фокусника.",
+        }
+    end
+    configuration_options[#configuration_options + 1] =
+    {
+        name = "allow_" .. prefab,
+        label = T(names),
+        hover = hover,
+        options = YES_NO,
+        default = true,
+    }
+end
+
+configuration_options[#configuration_options + 1] =
+{
+    name = "allow_modded",
+    label = T{ en = "Modded characters", pt = "Personagens de mods", zh = "模组角色", ru = "Персонажи из модов" },
+    hover = T{
+        en = "Characters added by other mods. They get the Codex too, but are not guaranteed to work.",
+        pt = "Personagens adicionados por outros mods. Também recebem o Codex, mas sem garantia de funcionar.",
+        zh = "其他模组添加的角色。他们也能使用暗影秘典，但不保证正常工作。",
+        ru = "Персонажи из других модов. Они тоже получают Кодекс, но работа не гарантируется.",
+    },
+    options = YES_NO,
+    default = true,
 }

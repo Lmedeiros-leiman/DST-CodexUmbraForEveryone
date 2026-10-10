@@ -534,18 +534,22 @@ codex_everyone_lines =
             en =
             {
                 shadow_other = "Someone's been performing my act. Without the flair, naturally.",
+                codex_banned = "The show goes on... without me, apparently.",
             },
             pt =
             {
                 shadow_other = "Alguém anda apresentando o meu número. Sem a mesma classe, é claro.",
+                codex_banned = "O show continua... sem mim, pelo visto.",
             },
             zh =
             {
                 shadow_other = "有人在表演我的魔术。当然，可没有我的派头。",
+                codex_banned = "表演照常继续……看来是没我的戏份了。",
             },
             ru =
             {
                 shadow_other = "Кто-то повторяет мой номер. Без моего шика, разумеется.",
+                codex_banned = "Шоу продолжается... но, как видно, без меня.",
             },
         },
         wortox =
@@ -553,18 +557,22 @@ codex_everyone_lines =
             en =
             {
                 shadow_other = "Some mortal's been dabbling in the dark! Hyuyu, what a lark!",
+                codex_banned = "I don't think he knows how to use it.",
             },
             pt =
             {
                 shadow_other = "Algum mortal anda mexendo com magia sombria! Huehue, que alegria!",
+                codex_banned = "Acho que ele não sabe como usar isso.",
             },
             zh =
             {
                 shadow_other = "哪个凡人玩起了暗影把戏？哼哼，真有趣！",
+                codex_banned = "他应该不会用。",
             },
             ru =
             {
                 shadow_other = "Кто-то из смертных балуется тёмной магией! Хо-хо, вот потеха!",
+                codex_banned = "Вряд ли он знает, как этим пользоваться.",
             },
         },
     },

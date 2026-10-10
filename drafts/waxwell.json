@@ -1,18 +1,40 @@
 {
   "character": "waxwell",
   "lines": {
-    "en": { "shadow_other": "Someone's been performing my act. Without the flair, naturally." },
-    "pt": { "shadow_other": "Alguém anda apresentando o meu número. Sem a mesma classe, é claro." },
-    "zh": { "shadow_other": "有人在表演我的魔术。当然，可没有我的派头。" },
-    "ru": { "shadow_other": "Кто-то повторяет мой номер. Без моего шика, разумеется." }
+    "en": {
+      "shadow_other": "Someone's been performing my act. Without the flair, naturally.",
+      "codex_banned": "The show goes on... without me, apparently."
+    },
+    "pt": {
+      "shadow_other": "Alguém anda apresentando o meu número. Sem a mesma classe, é claro.",
+      "codex_banned": "O show continua... sem mim, pelo visto."
+    },
+    "zh": {
+      "shadow_other": "有人在表演我的魔术。当然，可没有我的派头。",
+      "codex_banned": "表演照常继续……看来是没我的戏份了。"
+    },
+    "ru": {
+      "shadow_other": "Кто-то повторяет мой номер. Без моего шика, разумеется.",
+      "codex_banned": "Шоу продолжается... но, как видно, без меня."
+    }
   },
   "literal": {
-    "pt": { "shadow_other": "Someone has been presenting my (stage) act. Without the same class, of course." },
-    "zh": { "shadow_other": "Someone is performing my magic act. Of course, without my style/swagger." },
-    "ru": { "shadow_other": "Someone is repeating my (stage) number. Without my chic/panache, naturally." }
+    "pt": {
+      "shadow_other": "Someone has been presenting my (stage) act. Without the same class, of course.",
+      "codex_banned": "The show goes on... without me, by the looks of it."
+    },
+    "zh": {
+      "shadow_other": "Someone is performing my magic act. Of course, without my style/swagger.",
+      "codex_banned": "The show carries on as usual... it seems there's no part (role) for me any more."
+    },
+    "ru": {
+      "shadow_other": "Someone is repeating my (stage) number. Without my chic/panache, naturally.",
+      "codex_banned": "The show goes on... but, evidently, without me."
+    }
   },
   "voice_notes": "Maxwell talks like a vaudeville stage magician who used to rule the world: clipped, dry, condescending, full of showbiz vocabulary (the show, tricks, props, parlour tricks) and quick to call other people's magic amateurish (\"Amateur magic for children.\", \"Not bad, for a parlour trick.\"). He is possessive about the Codex and reads others' magic as imitation of his own (\"Taking some inspiration from the Codex, are we? I'm flattered.\"). PT renders him in polished, slightly formal Portuguese with \"Hunf\" and stage terms (\"truque de salão\", \"O show deve continuar\"); ZH keeps the performance frame with 表演/魔术 (表演必须继续, 给孩子们看的业余魔术) and blunt sniffs like 哼 and 外行; RU gives him a sardonic, idiomatic register with stage words and set phrases (\"Неплохо для дешевого фокуса\", \"Шоу должно продолжаться\", \"И в подметки не годится\").",
   "line_notes": {
-    "shadow_other": "It frames another caster's shadow as an understudy doing his stage act, a theatrical image in place of the Wortox line's 'notes', and the sting comes in the second sentence, the way his BOOK_LIGHT and parlour-trick lines land it; it never claims to know whose shadow it is."
+    "shadow_other": "It frames another caster's shadow as an understudy doing his stage act, a theatrical image in place of the Wortox line's 'notes', and the sting comes in the second sentence, the way his BOOK_LIGHT and parlour-trick lines land it; it never claims to know whose shadow it is.",
+    "codex_banned": "It twists his own vanilla Codex line \"The show must go on\" into a dry admission that the act now runs without its star, so the sting to his pride comes from irony, not complaint, and it fits that others can still use the book."
   }
 }

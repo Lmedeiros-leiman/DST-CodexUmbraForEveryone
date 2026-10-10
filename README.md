@@ -10,6 +10,7 @@ An add-on for [Codex Umbra for Wortox](https://github.com/Lmedeiros-leiman/DST-C
 - **Shadows are silhouettes of their caster**, coloured by allegiance: none keeps Maxwell's black, Lunar glows gestalt cyan, Shadow turns void violet. Characters with their own pets (Walter, Wormwood, WX-78) keep them; shadows use separate pet limits.
 - **Every character has their own lines** about the book, the empty book, the "my mind can't take more" failure, their own shadow and someone else's shadow, in English, Portuguese (Brazil), Simplified Chinese and Russian. See [LINES.md](LINES.md) for the full table.
 - **Maxwell** plays exactly as in the base game. **Wortox** keeps the base mod's skill-tree colours, lines and panflute troupe. **Wes** uses the book in silence. Modded characters get the book too, but are not guaranteed to work.
+- **Allowed to cast shadow magic:** one switch per character (Maxwell included) plus one for modded characters, all on by default. A banned character can neither craft nor open the Codex and keeps their vanilla Codex line; a banned Maxwell loses his own shadow magic (magician recipes included) and grumbles about it.
 - **Language** option: Auto (server language), English, Português, 简体中文, Русский.
 
 **Requires** Codex Umbra for Wortox **0.2.0 or newer** with its Codex Umbra option on. Older versions lack the API this add-on uses; the server log then says so and characters keep the vanilla Codex.
@@ -22,6 +23,7 @@ Complemento do [Codex Umbra para o Wortox](https://github.com/Lmedeiros-leiman/D
 - **As sombras são silhuetas de quem as invoca**, coloridas pela aliança: nenhuma mantém o preto do Maxwell, Lunar brilha em ciano de gestalt, Sombra fica violeta do vazio. Personagens com bichinhos próprios (Walter, Wormwood, WX-78) continuam com eles; as sombras usam limites separados.
 - **Cada personagem tem falas próprias** sobre o livro, o livro vazio, a falha de "minha mente não aguenta mais", a própria sombra e a sombra de outro jogador, em inglês, português (Brasil), chinês simplificado e russo. A tabela completa está em [LINES.md](LINES.md).
 - O **Maxwell** continua como no jogo base. O **Wortox** mantém as cores, falas e a trupe da flauta do mod base. O **Wes** usa o livro em silêncio. Personagens de mods também recebem o livro, sem garantia de funcionar.
+- **Podem usar magia de sombra:** uma chave por personagem (inclusive o Maxwell) e uma para personagens de mods, todas ligadas por padrão. Quem for bloqueado não cria nem abre o Codex e mantém a fala original sobre ele; o Maxwell bloqueado perde a própria magia de sombra (inclusive as receitas de mágico) e reclama disso.
 - Opção **Idioma**: Automático (idioma do servidor), English, Português, 简体中文, Русский.
 
 **Requer** o Codex Umbra para o Wortox **0.2.0 ou mais novo** com a opção Codex Umbra ativada.
@@ -34,6 +36,7 @@ Complemento do [Codex Umbra para o Wortox](https://github.com/Lmedeiros-leiman/D
 - **暗影是施法者的剪影**，颜色取决于阵营：无阵营为麦斯威尔的黑色，月亮为发光的虚影青色，暗影为虚空紫。
 - **每个角色都有专属台词**，支持英语、巴西葡萄牙语、简体中文和俄语。完整表格见 [LINES.md](LINES.md)。
 - 麦斯威尔与原版相同；沃拓克斯保留基础模组的功能；韦斯默默使用这本书。
+- **允许使用暗影魔法：**每个角色（包括麦斯威尔）以及模组角色都有单独的开关，默认全部开启。
 
 **需要**沃拓克斯的暗影秘典 **0.2.0 或更新版本**，并开启其暗影秘典选项。
 
@@ -44,7 +47,8 @@ Complemento do [Codex Umbra para o Wortox](https://github.com/Lmedeiros-leiman/D
 - **Правила те же, что у Максвелла:** теневые слуги и партнёры, теневые уловка и клетка, топливо кошмара за заклинание, штраф к максимальному рассудку за каждую тень.
 - **Тени — силуэты призвавшего**, окрашенные по союзу: нет — чёрный, как у Максвелла, лунный — светящийся голубой, как у гештальта, теневой — фиолетовый цвет пустоты.
 - **У каждого персонажа свои реплики** на английском, португальском (Бразилия), упрощённом китайском и русском. Полная таблица — в [LINES.md](LINES.md).
-- Максвелл играет как в оригинале; Вортокс сохраняет возможности базового мода; Уэс пользуется книгой молча.
+- Максвелл играет как в оригинале; Вортокс сохраняет возможности базового мода; Вэс пользуется книгой молча.
+- **Могут использовать теневую магию:** отдельный переключатель для каждого персонажа (включая Максвелла) и для персонажей из модов, по умолчанию всё включено.
 
 **Требуется** «Кодекс Умбра для Вортокса» **версии 0.2.0 или новее** с включённой настройкой «Кодекс Умбра».
 

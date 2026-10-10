@@ -4,7 +4,8 @@
 Usage: python3 -I tools/build_lines.py <drafts dir> <output .lua> [<table .md>]
 
 Each draft is {character, lines: {en, pt, zh, ru: {key: text}}, literal: {...}}.
-Maxwell and Wortox only have shadow_other; everyone else has all five keys.
+Maxwell and Wortox have shadow_other and codex_banned (said when the host bans
+them from shadow magic); everyone else has the five regular keys.
 """
 import json
 import sys
@@ -12,7 +13,7 @@ from pathlib import Path
 
 LANGUAGES = ["en", "pt", "zh", "ru"]
 KEYS = ["codex", "codex_needsfuel", "no_max_sanity", "shadow_mine", "shadow_other"]
-PARTIAL = {"waxwell": ["shadow_other"], "wortox": ["shadow_other"]}
+PARTIAL = {"waxwell": ["shadow_other", "codex_banned"], "wortox": ["shadow_other", "codex_banned"]}
 ORDER = ["wilson", "willow", "wolfgang", "wendy", "wx78", "wickerbottom", "woodie",
          "wathgrithr", "webber", "winona", "warly", "wormwood", "wurt", "walter",
          "wanda", "waxwell", "wortox"]

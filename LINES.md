@@ -157,9 +157,11 @@ Literal English meanings of the translations are in brackets.
 | Moment | English | Português | 简体中文 | Русский |
 |---|---|---|---|---|
 | `shadow_other` | Someone's been performing my act. Without the flair, naturally. | Alguém anda apresentando o meu número. Sem a mesma classe, é claro. [Someone has been presenting my (stage) act. Without the same class, of course.] | 有人在表演我的魔术。当然，可没有我的派头。 [Someone is performing my magic act. Of course, without my style/swagger.] | Кто-то повторяет мой номер. Без моего шика, разумеется. [Someone is repeating my (stage) number. Without my chic/panache, naturally.] |
+| `codex_banned` | The show goes on... without me, apparently. | O show continua... sem mim, pelo visto. [The show goes on... without me, by the looks of it.] | 表演照常继续……看来是没我的戏份了。 [The show carries on as usual... it seems there's no part (role) for me any more.] | Шоу продолжается... но, как видно, без меня. [The show goes on... but, evidently, without me.] |
 
 ## Wortox
 
 | Moment | English | Português | 简体中文 | Русский |
 |---|---|---|---|---|
 | `shadow_other` | Some mortal's been dabbling in the dark! Hyuyu, what a lark! | Algum mortal anda mexendo com magia sombria! Huehue, que alegria! [Some mortal is messing around with shadowy magic! Huehue, what joy!] | 哪个凡人玩起了暗影把戏？哼哼，真有趣！ [Which mortal has started playing shadow tricks? Hmhm, how amusing!] | Кто-то из смертных балуется тёмной магией! Хо-хо, вот потеха! [One of the mortals is dabbling in dark magic! Ho-ho, what fun!] |
+| `codex_banned` | I don't think he knows how to use it. | Acho que ele não sabe como usar isso. [I think he doesn't know how to use this.] | 他应该不会用。 [He probably can't use it.] | Вряд ли он знает, как этим пользоваться. [He hardly knows how to use it.] |
