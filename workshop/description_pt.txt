@@ -1,8 +1,7 @@
 [h1]Codex Umbra para Todos[/h1]
-Complemento do [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra para o Wortox[/url]: agora todos os personagens podem criar e usar o Codex Umbra do Maxwell.
+Agora todos os personagens podem criar e usar o Codex Umbra do Maxwell, e o Wortox ganha cores, falas e uma trupe da flauta só dele.
 
-[h2]Requer[/h2]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816756986]Codex Umbra para o Wortox[/url] versão 0.2.0 ou mais nova, com a opção Codex Umbra ativada. Sem ele, os personagens ficam com o Codex original e o log do servidor explica o motivo.
+Este item era o Codex Umbra para o Wortox. Tudo o que ele fazia agora faz parte deste mod, então não precisa assinar mais nada.
 
 [h2]O Codex para todos[/h2]
 [list]
@@ -15,22 +14,26 @@ Complemento do [url=https://steamcommunity.com/sharedfiles/filedetails/?id=38167
 [list]
 [*]As sombras são silhuetas de quem as invoca, com a skin dele.
 [*]A cor segue a aliança de quem invoca: nenhuma mantém o preto do Maxwell, Lunar brilha em ciano de gestalt, Sombra fica violeta do vazio. O Wormwood, uma criatura lunar, sempre tem a cor Lunar.
-[*]O Wortox mantém as cores da árvore de habilidades do mod base.
+[*]As sombras do Wortox seguem a árvore de habilidades dele: Bonzinho é rosado, Neutro é carmesim, Travesso é um vermelho sangue escuro. A aliança Lunar deixa as sombras ciano e brilhantes; a aliança Sombra escurece tudo puxando para vinho e violeta.
 [/list]
 
 [h2]Todo mundo tem algo a dizer[/h2]
 Cada personagem tem falas próprias sobre o Codex, o Codex vazio, a mente cheia demais para mais sombras, a própria sombra e a sombra de outro jogador, em inglês, português (Brasil), chinês simplificado e russo. Algumas falas mudam conforme o gênero do dono da sombra, e outras sorteiam entre duas versões. O Maxwell tem opiniões sobre amadores apresentando o número dele.
 
+[h2]Trupe da Flauta[/h2]
+Quando o Wortox toca a flauta de pã carregando o Codex Umbra, três sombras dançarinas com a cor dele aparecem ao redor para um showzinho. Só visual: não custa sanidade, não é salvo e não espanta os bichos.
+
 [h2]Opções[/h2]
 [list]
+[*][b]Trupe da Flauta[/b]: ativado / desativado.
 [*][b]Idioma[/b]: Automático (idioma do servidor), English, Português, 简体中文, Русский.
 [*][b]Podem usar magia de sombra[/b]: uma chave por personagem, inclusive o Maxwell, e uma para personagens de mods. Todas ligadas por padrão. Quem for bloqueado não cria nem abre o Codex e mantém a fala original sobre ele; o Maxwell bloqueado perde a própria magia de sombra e não fica nada feliz.
 [/list]
 
 [h2]Bom saber[/h2]
 [list]
-[*]Todos os jogadores precisam dos dois mods.
-[*]O Maxwell continua como no jogo base, a não ser que seja bloqueado. O Wortox mantém os recursos do mod base. O Wes usa o livro em silêncio.
+[*]Todos os jogadores precisam do mod.
+[*]O Maxwell continua como no jogo base, a não ser que seja bloqueado. O Wes usa o livro em silêncio.
 [*]Personagens de mods também recebem o livro, sem garantia de funcionar.
 [*]Aprender magia de sombra também mostra as receitas do chapéu e do baú de mágico do Maxwell; só o Maxwell usa a magia do chapéu.
 [/list]

@@ -6,9 +6,6 @@ local function T(texts)
     return texts[locale] or texts[ALIASES[locale]] or texts.en
 end
 
--- Workshop item of Codex Umbra for Wortox.
-local BASE_MOD_WORKSHOP = "workshop-3816756986"
-
 name = T{
     en = "Codex Umbra for Everyone",
     pt = "Codex Umbra para Todos",
@@ -16,29 +13,29 @@ name = T{
     ru = "Кодекс Умбра для всех",
 }
 description = T{
-    en = [[Add-on for Codex Umbra for Wortox: every character can craft and use Maxwell's Codex Umbra.
+    en = [[Every character can craft and use Maxwell's Codex Umbra.
 
-Same rules as Maxwell: shadow workers and protectors, shadow trap and pillars, nightmare fuel per spell and a max sanity penalty per shadow. Shadows are silhouettes of their caster, coloured by allegiance (none: Maxwell's black, Lunar: glowing gestalt cyan, Shadow: void violet), and every character has their own lines about the book and the shadows. Maxwell plays as in the base game; Wortox keeps the base mod's features.
+Same rules as Maxwell: shadow workers and protectors, shadow trap and pillars, nightmare fuel per spell and a max sanity penalty per shadow. Shadows are silhouettes of their caster, coloured by allegiance (none: Maxwell's black, Lunar: glowing gestalt cyan, Shadow: void violet), and every character has their own lines about the book and the shadows. Maxwell plays as in the base game.
 
-Requires Codex Umbra for Wortox with its Codex Umbra option on.]],
-    pt = [[Complemento do Codex Umbra para o Wortox: todos os personagens podem criar e usar o Codex Umbra do Maxwell.
+Wortox colours his shadows by his skill tree lean and allegiance, and playing the panflute while carrying the Codex Umbra summons a troupe of shadow dancers.]],
+    pt = [[Todos os personagens podem criar e usar o Codex Umbra do Maxwell.
 
-Mesmas regras do Maxwell: servos e duelistas das sombras, armadilha e prisão sombrias, combustível de pesadelo por feitiço e penalidade de sanidade máxima por sombra. As sombras são silhuetas de quem as invoca, coloridas pela aliança (nenhuma: preto do Maxwell, Lunar: ciano brilhante de gestalt, Sombra: violeta do vazio), e cada personagem tem falas próprias sobre o livro e as sombras. O Maxwell continua como no jogo base; o Wortox mantém os recursos do mod base.
+Mesmas regras do Maxwell: servos e duelistas das sombras, armadilha e prisão sombrias, combustível de pesadelo por feitiço e penalidade de sanidade máxima por sombra. As sombras são silhuetas de quem as invoca, coloridas pela aliança (nenhuma: preto do Maxwell, Lunar: ciano brilhante de gestalt, Sombra: violeta do vazio), e cada personagem tem falas próprias sobre o livro e as sombras. O Maxwell continua como no jogo base.
 
-Requer o Codex Umbra para o Wortox com a opção Codex Umbra ativada.]],
-    zh = [[沃拓克斯的暗影秘典的扩展：所有角色都可以制作并使用麦斯威尔的暗影秘典。
+O Wortox colore as sombras conforme a inclinação e a aliança da árvore de habilidades, e ao tocar a flauta de pã carregando o Codex Umbra ele invoca uma trupe de sombras dançarinas.]],
+    zh = [[所有角色都可以制作并使用麦斯威尔的暗影秘典。
 
-规则与麦斯威尔相同：暗影仆人和暗影角斗士、暗影陷阱和暗影囚牢，每次施法消耗噩梦燃料，每个暗影傀儡降低理智上限。暗影是施法者的剪影，颜色取决于阵营（无阵营：麦斯威尔的黑色，月亮：发光的虚影青色，暗影：虚空紫），每个角色对暗影秘典和暗影都有专属台词。麦斯威尔与原版相同；沃拓克斯保留基础模组的功能。
+规则与麦斯威尔相同：暗影仆人和暗影角斗士、暗影陷阱和暗影囚牢，每次施法消耗噩梦燃料，每个暗影傀儡降低理智上限。暗影是施法者的剪影，颜色取决于阵营（无阵营：麦斯威尔的黑色，月亮：发光的虚影青色，暗影：虚空紫），每个角色对暗影秘典和暗影都有专属台词。麦斯威尔与原版相同。
 
-需要沃拓克斯的暗影秘典，并开启其暗影秘典选项。]],
-    ru = [[Дополнение к «Кодекс Умбра для Вортокса»: все персонажи могут создавать и использовать Кодекс Умбра Максвелла.
+沃拓克斯的暗影颜色取决于技能树的倾向和阵营；携带暗影秘典时吹奏排箫，他会召唤一群暗影舞者。]],
+    ru = [[Все персонажи могут создавать и использовать Кодекс Умбра Максвелла.
 
-Правила те же, что у Максвелла: теневые слуги и партнёры, теневые уловка и клетка, топливо кошмара за заклинание и штраф к максимальному рассудку за каждую тень. Тени — силуэты призвавшего, окрашенные по союзу (нет: чёрный, как у Максвелла, лунный: светящийся голубой, как у гештальта, теневой: фиолетовый цвет пустоты), и у каждого персонажа свои реплики о книге и тенях. Максвелл играет как в оригинале; Вортокс сохраняет возможности базового мода.
+Правила те же, что у Максвелла: теневые слуги и партнёры, теневые уловка и клетка, топливо кошмара за заклинание и штраф к максимальному рассудку за каждую тень. Тени — силуэты призвавшего, окрашенные по союзу (нет: чёрный, как у Максвелла, лунный: светящийся голубой, как у гештальта, теневой: фиолетовый цвет пустоты), и у каждого персонажа свои реплики о книге и тенях. Максвелл играет как в оригинале.
 
-Требуется «Кодекс Умбра для Вортокса» с включённой настройкой «Кодекс Умбра».]],
+Тени Вортокса окрашены по наклонностям и союзу в древе навыков, а если сыграть на флейте Пана с Кодексом Умбра при себе, он призовёт труппу теневых танцоров.]],
 }
 author = "Leonardo"
-version = "0.1.0"
+version = "0.3.0"
 
 forumthread = ""
 
@@ -51,10 +48,6 @@ reign_of_giants_compatible = false
 all_clients_require_mod = true
 client_only_mod = false
 
--- Load after Codex Umbra for Wortox (priority 0): its API and lines must be
--- in place before this mod reads or replaces them.
-priority = -10
-
 icon = "modicon.tex"
 icon_atlas = "modicon.xml"
 
@@ -64,23 +57,18 @@ server_filter_tags =
     "maxwell",
 }
 
--- Matched by workshop id, then by the local folder name (false) or the
--- displayed mod name (true), so local copies of the base mod count too.
-mod_dependencies =
-{
-    {
-        workshop = BASE_MOD_WORKSHOP,
-        ["wortox_shenanigans"] = false,
-        ["Codex Umbra for Wortox"] = true,
-    },
-}
-
 -- modinfo runs in a bare environment (no ipairs, table or string), so the
 -- option lists below are built with plain loops and concatenation.
 local YES_NO =
 {
     { description = T{ en = "Yes", pt = "Sim", zh = "是", ru = "Да" }, data = true },
     { description = T{ en = "No", pt = "Não", zh = "否", ru = "Нет" }, data = false },
+}
+
+local ON_OFF =
+{
+    { description = T{ en = "Enabled", pt = "Ativado", zh = "启用", ru = "Включено" }, data = true },
+    { description = T{ en = "Disabled", pt = "Desativado", zh = "禁用", ru = "Отключено" }, data = false },
 }
 
 -- A label-only row that groups the options under it.
@@ -131,6 +119,18 @@ configuration_options =
             { description = "Русский", data = "ru" },
         },
         default = "auto",
+    },
+    {
+        name = "panflute_troupe",
+        label = T{ en = "Panflute Troupe", pt = "Trupe da Flauta", zh = "排箫剧团", ru = "Труппа флейты" },
+        hover = T{
+            en = "Wortox playing the panflute while carrying the Codex Umbra summons shadow dancers for a few seconds.",
+            pt = "Ao tocar a flauta de pã carregando o Codex Umbra, o Wortox invoca sombras dançarinas por alguns segundos.",
+            zh = "沃拓克斯携带暗影秘典时吹奏排箫，会召唤暗影舞者跳几秒舞。",
+            ru = "Если Вортокс сыграет на флейте Пана с Кодексом Умбра при себе, он призовёт теневых танцоров на несколько секунд.",
+        },
+        options = ON_OFF,
+        default = true,
     },
     Header("header_casters", {
         en = "Allowed to cast shadow magic",

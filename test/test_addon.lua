@@ -1,13 +1,11 @@
--- Lua 5.1 harness for Codex Umbra for Everyone.
+-- Lua 5.1 harness for Codex Umbra for Everyone: lines, casters and options.
 -- Run from the mod root: lua5.1 test/test_addon.lua
--- The integration part loads the base mod from ../DST-WortoxShenanigans when
--- that checkout exists next to this one.
+-- The engine modules have their own harness, test/test_engine.lua.
 
 local mod_root = arg[0]:match("^(.*)/test/test_addon%.lua$")
 if mod_root == nil or mod_root == "" then
     mod_root = "."
 end
-local base_root = mod_root .. "/../DST-WortoxShenanigans"
 
 local count, failures = 0, 0
 
@@ -45,6 +43,8 @@ local function new_global(ismastersim, locale)
         rawget = rawget,
         printed = {},
     }
+    -- strict.lua's global(), which the engine uses to publish its API.
+    G.global = function() end
     G.print = function(text) table.insert(G.printed, text) end
     -- DST's CHARACTER_GENDERS lookup.
     local genders = { willow = "FEMALE", wendy = "FEMALE", wx78 = "ROBOT", wilson = "MALE", webber = "MALE" }
@@ -181,11 +181,12 @@ do
     assert_eq(chars.WAXWELL.DESCRIBE.WAXWELLJOURNAL.GENERIC, "vanilla WAXWELL", "Maxwell keeps his vanilla Codex line")
     assert_eq(chars.WAXWELL.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER, data.waxwell.en.shadow_other, "Maxwell comments on others' shadows")
     assert_eq(chars.WORTOX.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER, data.wortox.en.shadow_other, "Wortox comments on mortals' shadows")
-    assert_eq(chars.WORTOX.DESCRIBE.WAXWELLJOURNAL.GENERIC, nil, "Wortox's Codex line is left to the base mod")
+    assert_eq(chars.WORTOX.DESCRIBE.WAXWELLJOURNAL.GENERIC, "His shadowy tricks are mine to mix, hyuyu!",
+        "Wortox's Codex line comes from the engine")
     assert_eq(chars.WES.DESCRIBE.SHADOWWAXWELL, nil, "Wes gets no lines")
 end
 
--- Language selection mirrors the base mod.
+-- Language selection mirrors the engine's.
 do
     local function codex_line(locale, forced)
         local G = new_global(true, locale)
@@ -209,8 +210,8 @@ end
 ---------------------------------------------------------------------------
 do
     local G = new_global(true)
-    local api = fake_api(G)
     local env = load_addon(G)
+    local api = fake_api(G)
     local postinit = env.player_postinits[1]
     assert_true(postinit ~= nil, "a player post init is registered")
 
@@ -277,34 +278,6 @@ do
         "Puxa vida! Agora tem outros que nem ele.", "Portuguese uses the official vanilla line for him")
 end
 
--- An old base mod (API version 1) cannot take a status function.
-do
-    local G = new_global(true)
-    local api = fake_api(G)
-    api.version = 1
-    local env = load_addon(G)
-    env.player_postinits[1](new_player("wilson"))
-    assert_eq(#api.enabled, 0, "an API older than version 2 is not used")
-    assert_true(G.printed[1] ~= nil and G.printed[1]:find("0.2.0", 1, true) ~= nil, "the log names the required version")
-end
-
--- Without the base mod nothing breaks and the server log says why, once.
-do
-    local G = new_global(true)
-    local env = load_addon(G)
-    env.player_postinits[1](new_player("wilson"))
-    env.player_postinits[1](new_player("willow"))
-    local warnings = 0
-    for _, text in ipairs(G.printed) do
-        if text:find("Codex Umbra for Wortox", 1, true) then
-            warnings = warnings + 1
-        end
-    end
-    assert_eq(warnings, 1, "a missing base mod is reported once")
-    assert_eq(G.STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WAXWELLJOURNAL.GENERIC ~= "vanilla WOLFGANG", true,
-        "lines still load without the base mod")
-end
-
 ---------------------------------------------------------------------------
 -- modinfo
 ---------------------------------------------------------------------------
@@ -323,23 +296,15 @@ do
     assert_eq(zhr.name, zh.name, "WeGame Chinese name")
     assert_eq(ru.name, "Кодекс Умбра для всех", "Russian name")
     assert_eq(modinfo_for("fr").name, en.name, "other languages fall back to English")
-    local dep = en.mod_dependencies and en.mod_dependencies[1] or {}
-    assert_eq(dep.wortox_shenanigans, false, "depends on the base mod's local folder")
-    assert_eq(dep["Codex Umbra for Wortox"], true, "depends on the base mod's name")
-    assert_eq(dep.workshop, "workshop-3816756986", "depends on the published Workshop item")
+    assert_eq(en.mod_dependencies, nil, "the mod stands alone")
     assert_eq(en.all_clients_require_mod, true, "every client needs the add-on")
 end
 
 ---------------------------------------------------------------------------
--- Integration with the real base mod
+-- Integration with the engine modules
 ---------------------------------------------------------------------------
-local base_main = io.open(base_root .. "/modmain.lua")
-if base_main == nil then
-    print("SKIP: base mod not found at " .. base_root)
-else
-    base_main:close()
+do
     local G = new_global(true, "en")
-    G.global = function() end
     G.net_smallbyte = function()
         local v = { current = 0 }
         function v:set(x) self.current = x end
@@ -348,9 +313,8 @@ else
     end
     G.TUNING = { SHADOWWAXWELL_SANITY_PENALTY = { SHADOWWORKER = .15, SHADOWPROTECTOR = .15 } }
     G.STRINGS.CHARACTERS.WORTOX.DESCRIBE.WAXWELLJOURNAL = {}
-    local base = load_env(base_root, G, {})
     local addon = load_addon(G)
-    assert_true(type(rawget(G, "CodexUmbraForWortox")) == "table", "the base mod publishes its API")
+    assert_true(type(rawget(G, "CodexUmbraForWortox")) == "table", "the engine publishes its API")
 
     local function find_postinit(env, prefab)
         for _, p in ipairs(env.postinits) do
@@ -393,7 +357,7 @@ else
         SetLightOverride = function() end, SetBloomEffectHandle = function() end, ClearBloomEffectHandle = function() end,
     }
     function shadow:AddComponent(name) self.components[name] = {} end
-    find_postinit(base, "shadowworker")(shadow)
+    find_postinit(addon, "shadowworker")(shadow)
     petleash.onspawnfn(willow, shadow)
     assert_eq(willow.components.sanity.penalties[shadow], .15, "Willow pays Maxwell's sanity cost")
     assert_eq(shadow.components.skinner.copied, willow, "the shadow wears Willow's skin")
@@ -406,13 +370,19 @@ else
     assert_eq(G.STRINGS.CHARACTERS.WILLOW.DESCRIBE.SHADOWWAXWELL.CODEX_MINE,
         addon.codex_everyone_lines.characters.willow.en.shadow_mine, "that status maps to Willow's line")
 
-    -- Base and add-on lines share SHADOWWAXWELL tables without clobbering.
+    -- Wortox's and everyone's lines share SHADOWWAXWELL tables without clobbering.
     assert_true(G.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SHADOWWAXWELL.WORTOX_OTHER ~= nil, "Maxwell keeps his Wortox line")
     assert_true(G.STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SHADOWWAXWELL.CODEX_OTHER ~= nil, "and gains his everyone line")
 
     local wortox = new_player("wortox")
     addon.player_postinits[1](wortox)
-    assert_eq(wortox._codexumbra, nil, "the add-on leaves Wortox to the base mod")
+    assert_eq(wortox._codexumbra, nil, "the player post init leaves Wortox to the engine")
+    assert_true(find_postinit(addon, "wortox") ~= nil, "the engine hooks Wortox")
+    assert_true(find_postinit(addon, "panflute") ~= nil, "the panflute troupe is on by default")
+
+    local no_troupe = load_addon(new_global(true), { panflute_troupe = false })
+    assert_eq(find_postinit(no_troupe, "panflute"), nil, "the troupe option leaves the panflute alone")
+    assert_true(find_postinit(no_troupe, "wortox") ~= nil, "Wortox keeps the Codex without the troupe")
 end
 
 ---------------------------------------------------------------------------
@@ -435,6 +405,10 @@ do
         assert_true(option ~= nil and option.default == true, prefab .. " has an allow switch, on by default")
     end
     assert_true(by_name.allow_modded ~= nil and by_name.allow_modded.default == true, "modded characters have a switch")
+    local troupe = by_name.panflute_troupe
+    assert_true(troupe ~= nil and troupe.default == true, "the panflute troupe has a switch, on by default")
+    assert_eq(troupe and troupe.label, "Panflute Troupe", "troupe label")
+    assert_eq(troupe and troupe.options[1].description, "Enabled", "troupe on label")
     assert_eq(by_name.allow_waxwell.label, "Maxwell", "switches use the characters' names")
     local ru = { locale = "ru" }
     setfenv(chunk, ru)
@@ -442,12 +416,13 @@ do
     local ru_names = {}
     for _, option in ipairs(ru.configuration_options) do ru_names[option.name] = option.label end
     assert_eq(ru_names.allow_wanda, "Ванда", "Russian switches use the official names")
+    assert_eq(ru_names.panflute_troupe, "Труппа флейты", "Russian troupe label")
 end
 
 do
     local G = new_global(true, "en")
-    local api = fake_api(G)
     local env = load_addon(G, { allow_wolfgang = false, allow_waxwell = false, allow_wortox = false })
+    local api = fake_api(G)
     local chars = G.STRINGS.CHARACTERS
     local data = env.codex_everyone_lines.characters
 
@@ -462,7 +437,7 @@ do
     local postinit = env.player_postinits[1]
     for _, prefab in ipairs({ "wolfgang", "waxwell", "wortox" }) do
         local inst = new_player(prefab)
-        inst:AddTag("shadowmagic") -- Maxwell's own tag, or the base mod's on Wortox
+        inst:AddTag("shadowmagic") -- Maxwell's own tag, or the engine's on Wortox
         postinit(inst)
         assert_eq(inst:HasTag("shadowmagic"), true, prefab .. " keeps the tag until other mods are done")
         run_tasks(inst)
@@ -478,8 +453,8 @@ end
 
 do
     local G = new_global(true)
-    local api = fake_api(G)
     local env = load_addon(G, { allow_modded = false })
+    local api = fake_api(G)
     local modded = new_player("modded_hero")
     modded:AddTag("shadowmagic")
     env.player_postinits[1](modded)
@@ -491,7 +466,6 @@ do
     local chunk = assert(loadfile(mod_root .. "/modinfo.lua"))
     setfenv(chunk, info)
     chunk()
-    assert_eq(info.priority, -10, "the add-on loads after the base mod")
 end
 
 if failures > 0 then
