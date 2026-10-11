@@ -1,12 +1,21 @@
 -- Codex Umbra for Everyone
--- Add-on for Codex Umbra for Wortox: every character can craft and use the
--- Codex Umbra like Maxwell. The base mod's engine does the work through its
--- CodexUmbraForWortox API; this mod picks who, the colours and the lines.
+-- Every character can craft and use the Codex Umbra like Maxwell. The shadow
+-- engine and Wortox's own features (formerly the Codex Umbra for Wortox mod)
+-- live in the wortox_shenanigans_*.lua modules and do the work through the
+-- CodexUmbraForWortox API; this file picks who, the colours and the lines.
+
+-- Imported first: the API and Wortox's lines must be in place before the
+-- lines below replace any of them.
+modimport("wortox_shenanigans_tint.lua")
+modimport("wortox_shenanigans_codex.lua")
+if GetModConfigData("panflute_troupe") ~= false then
+    modimport("wortox_shenanigans_panflute.lua")
+end
 
 modimport("codex_everyone_lines.lua")
 local LINES = codex_everyone_lines
 
--- Maxwell already has the Codex; Wortox is handled by the base mod. Every
+-- Maxwell already has the Codex; Wortox is handled by the engine. Every
 -- other player prefab, modded characters included, gets the hook.
 local EXCLUDED = { waxwell = true, wortox = true }
 
@@ -23,7 +32,7 @@ local function IsAllowed(prefab)
     return GetModConfigData(option) ~= false
 end
 
--- Examine statuses for shadows summoned through this add-on. The base mod's
+-- Examine statuses for shadows summoned through this file. The engine's
 -- Wortox shadows use WORTOX_MINE / WORTOX_OTHER.
 local MINE, OTHER = "CODEX_MINE", "CODEX_OTHER"
 
@@ -38,8 +47,7 @@ local STATUS_LINE = {
     CODEX_OTHER_ROBOT = "shadow_other_robot",
 }
 
--- The base mod may load after this one or be off; look the API up when it
--- is needed, with rawget so strict.lua never throws.
+-- Looked up when needed rather than at load, so tests can swap the API.
 local function GetApi()
     return GLOBAL.rawget(GLOBAL, "CodexUmbraForWortox")
 end
@@ -48,7 +56,7 @@ end
 -- Lines
 ---------------------------------------------------------------------------
 
--- Same rules as the base mod: the "language" option can force one, "auto"
+-- Same rules as the engine: the "language" option can force one, "auto"
 -- uses the server's game language, anything unknown falls back to English.
 -- Speech is resolved on the server, so every player hears that language.
 local LANGUAGE_ALIASES = { zhr = "zh" }
@@ -168,17 +176,13 @@ end
 
 local CASTER = { tint = AllegianceTint, mine = MINE, other = OtherStatus }
 
--- Version 2 lets config.other be a function (Codex Umbra for Wortox 0.2.0).
-local API_VERSION = 2
-
--- Runs a frame after spawning, once every mod's post init is done (the base
--- mod adds the tag to Wortox), on both sides so crafting and the spellbook
+-- Runs a frame after spawning, once every post init is done (the engine
+-- adds the tag to Wortox), on both sides so crafting and the spellbook
 -- agree. Without the tag the Codex can be neither crafted nor opened.
 local function RemoveShadowMagic(inst)
     inst:RemoveTag("shadowmagic")
 end
 
-local warned = false
 AddPlayerPostInit(function(inst)
     if not IsAllowed(inst.prefab) then
         inst:DoTaskInTime(0, RemoveShadowMagic)
@@ -187,13 +191,5 @@ AddPlayerPostInit(function(inst)
     if EXCLUDED[inst.prefab] then
         return
     end
-    local api = GetApi()
-    if api == nil or (api.version or 1) < API_VERSION then
-        if not warned then
-            warned = true
-            print("[Codex Umbra for Everyone] Codex Umbra for Wortox 0.2.0 or newer (with its Codex Umbra option) is required; characters keep the vanilla Codex.")
-        end
-        return
-    end
-    api.EnableShadowCaster(inst, CASTER)
+    GetApi().EnableShadowCaster(inst, CASTER)
 end)
